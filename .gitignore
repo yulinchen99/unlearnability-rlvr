@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.ipynb_checkpoints/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Claude Code local state
+.claude/
+
+# Runtime outputs (user-generated; not part of the release)
+logs/
+checkpoints/
+results/
+figures/
+wandb/
+example_ids/
+grpo_gradient_analysis_output/
+
+# Local data / model trees (paper artifacts under example_data/ are kept)
+/data/
+/models/
+
+# Local environment files
+.env
+.env.*
+*.local
+
+# Misc
+*.log
+*.tmp

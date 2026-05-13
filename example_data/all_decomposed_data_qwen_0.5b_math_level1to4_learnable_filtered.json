@@ -1,0 +1,1634 @@
+[
+  {
+    "solution": "Since $1$ dollar equals $100$ cents, we have $13$ dollars $= 1300$ cents and $0.20$ dollars $= 20$ cents. Therefore, the total in cents is $1300 + 20 = 1320$.",
+    "answer": "1320",
+    "id": "200_0",
+    "question": "Convert a total value of $\\$13.20$ to cents."
+  },
+  {
+    "solution": "A nickel is worth $5$ cents, a dime is worth $10$ cents, and a quarter is worth $25$ cents. With $n$ of each, the total value in cents is $5n + 10n + 25n = (5 + 10 + 25)n = 40n$.",
+    "answer": "40n",
+    "id": "200_1",
+    "question": "A jar contains the same number $n$ of nickels, dimes, and quarters. Express the total value of all the coins in cents as a function of $n$."
+  },
+  {
+    "solution": "Let $n$ be the common number of each coin type. The total value in cents is $5n + 10n + 25n = 40n$. Given the total is $1320$ cents, set $40n = 1320$. Solving, $n = 1320 / 40 = 33$. Since there are $n$ nickels, the number of nickels is $33$.",
+    "answer": "33",
+    "id": "200_2",
+    "question": "A jar contains the same number $n$ of nickels, dimes, and quarters, and the total value is $1320$ cents. Find the number of nickels."
+  },
+  {
+    "solution": "The length of $1011001_2$ is $n = 7$ bits. We seek the smallest $k \\in \\mathbb{Z}_{\\ge 0}$ such that $n + k \\equiv 0 \\pmod{2}$. Since $7 \\equiv 1 \\pmod{2}$, we need $k \\equiv 1 \\pmod{2}$. The smallest nonnegative such $k$ is $k = 1$. Therefore, add $1$ leading zero.",
+    "answer": "1",
+    "id": "201_0",
+    "question": "Given the binary number $1011001_2$, determine the minimum number of leading zeros $k$ that must be added so that the total number of bits is a multiple of $2$."
+  },
+  {
+    "solution": "Since $1011001_2$ has $7$ bits, pad with one leading zero to obtain $01011001_2$. Group into pairs from left to right: $01,\\ 01,\\ 10,\\ 01$. Interpret each pair as a base-$4$ digit using $00_2 \\to 0$, $01_2 \\to 1$, $10_2 \\to 2$, $11_2 \\to 3$: $01_2 = 1$, $01_2 = 1$, $10_2 = 2$, $01_2 = 1$. Therefore, the base-$4$ representation is $1121_4$.",
+    "answer": "$1121_4$",
+    "id": "201_1",
+    "question": "Convert the binary number $1011001_2$ to base $4$ by grouping bits into pairs (since $4 = 2^2$). If necessary, pad with leading zeros to make the total number of bits a multiple of $2$, then map each $2$-bit group to a base-$4$ digit."
+  },
+  {
+    "solution": "Compute $1011001_2$ in base $10$: $1\\cdot 2^6 + 0\\cdot 2^5 + 1\\cdot 2^4 + 1\\cdot 2^3 + 0\\cdot 2^2 + 0\\cdot 2^1 + 1\\cdot 2^0 = 64 + 0 + 16 + 8 + 0 + 0 + 1 = 89$. Compute $1121_4$ in base $10$: $1\\cdot 4^3 + 1\\cdot 4^2 + 2\\cdot 4^1 + 1\\cdot 4^0 = 64 + 16 + 8 + 1 = 89$. Both equal $89$, confirming the conversion.",
+    "answer": "89",
+    "id": "201_2",
+    "question": "Verify the conversion by computing the common base-$10$ value of $1011001_2$ and $1121_4$."
+  },
+  {
+    "solution": "There are $60$ seconds in a minute, so $30$ seconds equals $\\frac{30}{60} = 0.5$ minutes. Therefore, $1$ minute $30$ seconds equals $1 + 0.5 = 1.5$ minutes.",
+    "answer": "1.5",
+    "id": "202_0",
+    "question": "Convert 1 minute 30 seconds into minutes as a single decimal value."
+  },
+  {
+    "solution": "First convert $1$ minute $30$ seconds to minutes: $1 + \\frac{30}{60} = 1.5$ minutes. The number of such intervals in $60$ minutes is $N = \\frac{60}{1.5} = 40$.",
+    "answer": "40",
+    "id": "202_1",
+    "question": "An hour has 60 minutes. How many intervals of length 1 minute 30 seconds fit into 1 hour? Show all calculations."
+  },
+  {
+    "solution": "In each interval, the train travels $1$ mile. With $40$ intervals in $1$ hour, the total distance is $D = 1 \\times 40 = 40$ miles.",
+    "answer": "40",
+    "id": "202_2",
+    "question": "A freight train travels at a constant rate of 1 mile every 1 minute 30 seconds. Given there are 40 such intervals in 1 hour, how many miles does the train travel in 1 hour?"
+  },
+  {
+    "solution": "Let the translation be $z \\mapsto z + t$. Since $5 + 5i$ is mapped to $6 + 8i$, we have $5 + 5i + t = 6 + 8i$. Solving for $t$ gives $t = (6 + 8i) - (5 + 5i) = (6 - 5) + (8 - 5)i = 1 + 3i$.",
+    "answer": "1+3i",
+    "id": "203_0",
+    "question": "In the complex plane, a translation is a mapping of the form $z \\mapsto z + t$ for a fixed complex number $t$. Suppose a translation maps $5 + 5i$ to $6 + 8i$. Determine the translation vector $t$."
+  },
+  {
+    "solution": "Under the translation $z \\mapsto z + (1 + 3i)$, substitute $z = -6 + 0i$. Then the image is $(-6 + 0i) + (1 + 3i) = (-6 + 1) + (0 + 3)i = -5 + 3i$.",
+    "answer": "-5+3i",
+    "id": "203_1",
+    "question": "Consider the translation of the complex plane defined by $z \\mapsto z + (1 + 3i)$. Find the image of the complex number $-6$ (that is, $-6 + 0i$) under this translation."
+  },
+  {
+    "solution": "For a complex number \\(a + bi\\), the modulus is \\(|a + bi| = \\sqrt{a^2 + b^2}\\). Here, \\(a = 12\\) and \\(b = -8\\). Thus, \\n\\[|12 - 8i| = \\sqrt{12^2 + (-8)^2} = \\sqrt{144 + 64} = \\sqrt{208} = \\sqrt{16\\cdot 13} = 4\\sqrt{13}.\\]",
+    "answer": "4\\sqrt{13}",
+    "id": "204_0",
+    "question": "Compute the modulus of the complex number \\(12 - 8i\\); that is, find \\(|12 - 8i|\\)."
+  },
+  {
+    "solution": "By the multiplicative property of modulus, \\(|wz| = |w|\\,|z|\\). Substitute the given values: \\n\\[4\\sqrt{13} = (\\sqrt{13})\\,|z|.\\] Divide both sides by \\(\\sqrt{13}\\): \\n\\[|z| = \\frac{4\\sqrt{13}}{\\sqrt{13}} = 4.\\]",
+    "answer": "4",
+    "id": "204_1",
+    "question": "Let complex numbers \\(w\\) and \\(z\\) satisfy \\(|w| = \\sqrt{13}\\) and \\(|wz| = 4\\sqrt{13}\\). Using the multiplicative property \\(|wz| = |w|\\,|z|\\), compute \\(|z|\\)."
+  },
+  {
+    "solution": "By direct proportionality, $R = kN$. Using the given pair $(N, R) = (9, 42)$, we have $42 = k \\cdot 9$. Solving for $k$,\\[k = \\frac{42}{9} = \\frac{42 \\div 3}{9 \\div 3} = \\frac{14}{3}.\\]",
+    "answer": "\\frac{14}{3}",
+    "id": "205_0",
+    "question": "Let $R$ denote rock-climbing shoe size and $N$ denote normal shoe size. Assume $R$ is directly proportional to $N$, meaning $R = kN$ for some constant $k$. Given that when $N = 9$, the corresponding rock-climbing shoe size is $R = 42$, determine the constant of proportionality $k$."
+  },
+  {
+    "solution": "Using $R = kN$ with $k = \\frac{14}{3}$ and $N = 6$, we compute\\[R = \\frac{14}{3} \\cdot 6 = \\frac{84}{3} = 28.\\]Therefore, the corresponding rock-climbing shoe size is $28$.",
+    "answer": "28",
+    "id": "205_1",
+    "question": "Let $R$ denote rock-climbing shoe size and $N$ denote normal shoe size. Suppose $R$ is directly proportional to $N$ with proportionality constant $k = \\frac{14}{3}$, so that $R = kN$. If a person has normal shoe size $N = 6$, compute the corresponding rock-climbing shoe size $R$."
+  },
+  {
+    "solution": "By the Pythagorean theorem for a right triangle at $Z$, we have $XY^2 = XZ^2 + YZ^2$. Solve for $XZ^2$: \n\\[XZ^2 = XY^2 - YZ^2 = 10^2 - (\\sqrt{51})^2 = 100 - 51 = 49.\\]\nTaking the positive square root (since a length is positive), \n\\[XZ = \\sqrt{49} = 7.\\]",
+    "answer": "7",
+    "id": "206_0",
+    "question": "In right triangle $\\triangle XYZ$ with right angle at $Z$, the hypotenuse is $XY = 10$ and one leg is $YZ = \\sqrt{51}$. Find the length of the other leg $XZ$."
+  },
+  {
+    "solution": "In a right triangle, $\\tan$ of an acute angle equals the ratio of the length of the side opposite the angle to the length of the side adjacent to the angle. At angle $X$, the side opposite is $YZ$ and the adjacent leg is $XZ$. Therefore,\n\\[\\tan X = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{YZ}{XZ} = \\frac{\\sqrt{51}}{7}.\\]",
+    "answer": "\\frac{\\sqrt{51}}{7}",
+    "id": "206_1",
+    "question": "In right triangle $\\triangle XYZ$ with right angle at $Z$, the side lengths are $YZ = \\sqrt{51}$ and $XZ = 7$. Compute $\\tan X$."
+  },
+  {
+    "solution": "Let the numbers of marbles received be distinct positive integers ordered as $a_1 < a_2 < \\cdots < a_{10}$ with each $a_i \\in \\mathbb{Z}_{\\ge 1}$. Because they are strictly increasing and all at least $1$, we have by induction that $a_k \\ge k$ for each $k = 1,2,\\ldots,10$:\n- Base case: $a_1 \\ge 1$.\n- Inductive step: If $a_k \\ge k$, then $a_{k+1} \\ge a_k + 1 \\ge k + 1$.\nThus, the total satisfies\n\\[\\sum_{k=1}^{10} a_k \\ge \\sum_{k=1}^{10} k = \\frac{10 \\cdot 11}{2} = 55.\\]\nThis bound is achieved by the assignment $(1,2,3,4,5,6,7,8,9,10)$, which uses distinct positive integers and sums to $55$. Therefore, the minimum total number of marbles required is $55$.",
+    "answer": "55",
+    "id": "207_0",
+    "question": "What is the minimum total number of marbles needed to distribute to $10$ friends so that each friend receives a distinct positive integer number of marbles (i.e., each receives at least $1$ and no two receive the same number)?"
+  },
+  {
+    "solution": "Since the minimum total required is $55$ and Lisa has $34$, the fewest additional marbles needed is the nonnegative difference:\n\\[55 - 34 = 21.\\]\nBecause $34 < 55$, she must add at least $21$ marbles. With exactly $21$ more, she will have $55$ marbles, which is sufficient (e.g., she can distribute $(1,2,3,4,5,6,7,8,9,10)$). Hence, $21$ is both necessary and sufficient.",
+    "answer": "21",
+    "id": "207_1",
+    "question": "Lisa has $34$ marbles. Given that the minimum total required to distribute marbles to $10$ friends with distinct positive counts is $55$, what is the minimum number of additional marbles she needs?"
+  },
+  {
+    "solution": "Since 0 < \\theta < \\frac{\\pi}{2}, we have \\cos \\theta > 0 and \\sin \\theta > 0. Consider the two positive terms x = 2 \\cos \\theta and y = \\frac{\\sqrt{2} \\sin \\theta}{\\cos \\theta}. By the AM-GM inequality, x + y \\ge 2 \\sqrt{xy}. Thus, 2 \\cos \\theta + \\sqrt{2} \\tan \\theta = x + y \\ge 2 \\sqrt{ 2 \\cos \\theta \\cdot \\frac{\\sqrt{2} \\sin \\theta}{\\cos \\theta} } = 2 \\sqrt{ 2 \\sqrt{2} \\sin \\theta } = 2^{7/4} \\sqrt{\\sin \\theta}. Therefore, the inequality holds with C = 2^{7/4}. To see this C is maximal, evaluate at \\theta = \\frac{\\pi}{4}, where \\sin \\theta = \\cos \\theta = \\frac{\\sqrt{2}}{2}. Then 2 \\cos \\theta + \\sqrt{2} \\tan \\theta = \\sqrt{2} + \\sqrt{2} = 2 \\sqrt{2}, while \\sqrt{\\sin \\theta} = \\sqrt{ \\frac{\\sqrt{2}}{2} } = 2^{-1/4}. Hence the ratio is \\frac{2 \\sqrt{2}}{2^{-1/4}} = 2^{7/4}, proving no larger constant can work. Equality occurs when x = y, i.e., 2 \\cos \\theta = \\frac{\\sqrt{2} \\sin \\theta}{\\cos \\theta}, which is satisfied at \\theta = \\frac{\\pi}{4}.",
+    "answer": "2^{7/4}",
+    "id": "208_0",
+    "question": "For 0 < \\theta < \\frac{\\pi}{2}, determine the largest constant C such that the inequality 2 \\cos \\theta + \\sqrt{2} \\tan \\theta \\ge C \\sqrt{\\sin \\theta} holds for all such \\theta. State when equality occurs."
+  },
+  {
+    "solution": "Let g(y) = 2^{7/4} y^{1/2} + y^{-1} for y > 0. Differentiate: g'(y) = 2^{7/4} \\cdot \\frac{1}{2} y^{-1/2} - y^{-2} = 2^{3/4} y^{-1/2} - y^{-2}. Set g'(y) = 0 to find critical points: 2^{3/4} y^{-1/2} = y^{-2} \\Rightarrow 2^{3/4} y^{3/2} = 1 \\Rightarrow y^{3/2} = 2^{-3/4} \\Rightarrow y = 2^{-1/2} = \\frac{1}{\\sqrt{2}}. Compute the second derivative: g''(y) = -\\tfrac{1}{2} 2^{7/4} y^{-3/2} + 2 y^{-3} = -2^{3/4} y^{-3/2} + 2 y^{-3}. At y = 2^{-1/2}, we have y^{-3/2} = 2^{3/4} and y^{-3} = 2^{3/2}, so g''(2^{-1/2}) = -2^{3/4} \\cdot 2^{3/4} + 2 \\cdot 2^{3/2} = -2^{3/2} + 2^{5/2} = 2^{3/2} > 0, confirming a minimum. Evaluate g at this point: g(2^{-1/2}) = 2^{7/4} \\cdot 2^{-1/4} + 2^{1/2} = 2^{3/2} + \\sqrt{2} = 2 \\sqrt{2} + \\sqrt{2} = 3 \\sqrt{2}.",
+    "answer": "3\\sqrt{2}",
+    "id": "208_1",
+    "question": "For y \\in (0,1], find the minimum value of the function g(y) = 2^{7/4} \\sqrt{y} + \\frac{1}{y}."
+  },
+  {
+    "solution": "For 0 < \\theta < \\frac{\\pi}{2}, apply AM-GM to the positive terms 2 \\cos \\theta and \\frac{\\sqrt{2} \\sin \\theta}{\\cos \\theta}: 2 \\cos \\theta + \\sqrt{2} \\tan \\theta \\ge 2 \\sqrt{ 2 \\cos \\theta \\cdot \\frac{\\sqrt{2} \\sin \\theta}{\\cos \\theta} } = 2^{7/4} \\sqrt{\\sin \\theta}. Therefore, f(\\theta) \\ge 2^{7/4} \\sqrt{\\sin \\theta} + \\frac{1}{\\sin \\theta}. For y = \\sin \\theta \\in (0,1], the function h(y) = 2^{7/4} \\sqrt{y} + \\frac{1}{y} attains its minimum value 3 \\sqrt{2} at y = \\frac{1}{\\sqrt{2}} (by calculus: set h'(y) = 0 and check h''(y) > 0). Hence for all \\theta, f(\\theta) \\ge 3 \\sqrt{2}. Finally, at \\theta = \\frac{\\pi}{4}, we have \\sin \\theta = \\cos \\theta = \\frac{\\sqrt{2}}{2} and \\tan \\theta = 1, so f\\left( \\frac{\\pi}{4} \\right) = 2 \\cdot \\frac{\\sqrt{2}}{2} + \\frac{1}{\\frac{\\sqrt{2}}{2}} + \\sqrt{2} \\cdot 1 = \\sqrt{2} + \\sqrt{2} + \\sqrt{2} = 3 \\sqrt{2}. Thus the minimum value of f on (0, \\frac{\\pi}{2}) is 3 \\sqrt{2}.",
+    "answer": "3\\sqrt{2}",
+    "id": "208_2",
+    "question": "Find the minimum value of f(\\theta) = 2 \\cos \\theta + \\frac{1}{\\sin \\theta} + \\sqrt{2} \\tan \\theta for 0 < \\theta < \\frac{\\pi}{2}."
+  },
+  {
+    "solution": "The word \"monkey\" consists of the letters $m, o, n, k, e, y$. Counting them gives $6$ letters. Therefore, the total number of letters is $6$.",
+    "answer": "6",
+    "id": "209_0",
+    "question": "Count the total number of letters in the word \"monkey\"."
+  },
+  {
+    "solution": "In the word \"monkey\", the distinct letters are $m, o, n, k, e, y$, and each appears exactly once. Thus, the multiplicities are $c_1 = c_2 = c_3 = c_4 = c_5 = c_6 = 1$. Therefore, the product is $P = \\prod_{i=1}^{6} 1! = 1! \\cdot 1! \\cdot 1! \\cdot 1! \\cdot 1! \\cdot 1! = 1$.",
+    "answer": "1",
+    "id": "209_1",
+    "question": "For the word \"monkey\", compute the product $P$ of the factorials of the multiplicities of each distinct letter. That is, if each distinct letter appears $c_i$ times, compute $P = \\prod_i c_i!$."
+  },
+  {
+    "solution": "Apply the formula: the number of distinct arrangements is $\\dfrac{n!}{\\prod_{i=1}^{k} c_i!}$. For \"monkey\", $n = 6$ and $c_i = 1$ for $i=1,\\dots,6$, so the count is $\\dfrac{6!}{1!^6} = 6!$. Compute $6!$: $6! = 6 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 = 720$. Therefore, the number of distinct arrangements is $720$.",
+    "answer": "720",
+    "id": "209_2",
+    "question": "Using the standard formula for permutations of a multiset, compute the number of distinct arrangements of the letters in the word \"monkey\". Recall that for a word with $n$ total letters and multiplicities $c_1, c_2, \\dots, c_k$ for each distinct letter, the number of distinct arrangements is $\\dfrac{n!}{\\prod_{i=1}^{k} c_i!}$. For \"monkey\", there are $n=6$ letters and six distinct letters each with multiplicity $1$."
+  },
+  {
+    "solution": "Being one more than a multiple of $9$ means there exists an integer $k$ such that $N = 9k + 1$, which is equivalent to $N \\equiv 1 \\pmod{9}$. Being three more than a multiple of $5$ means there exists an integer $m$ such that $N = 5m + 3$, which is equivalent to $N \\equiv 3 \\pmod{5}$. Therefore, the two congruences are $N \\equiv 1 \\pmod{9}$ and $N \\equiv 3 \\pmod{5}$.",
+    "answer": "N \\equiv 1 \\pmod{9},\\ N \\equiv 3 \\pmod{5}",
+    "id": "210_0",
+    "question": "Let $N$ be an integer that is both one more than a multiple of $9$ and three more than a multiple of $5$. Translate these conditions into congruences for $N$."
+  },
+  {
+    "solution": "Since $\\gcd(9,5)=1$, there is a unique solution modulo $\\operatorname{lcm}(9,5)=45$. Let $N = 1 + 9k$ for some integer $k$. Substitute into the second congruence: $1 + 9k \\equiv 3 \\pmod{5}$. Reduce $9 \\equiv 4 \\pmod{5}$ to get $1 + 4k \\equiv 3 \\pmod{5}$, so $4k \\equiv 2 \\pmod{5}$. The inverse of $4$ modulo $5$ is $4$ (since $4\\cdot 4 = 16 \\equiv 1 \\pmod{5}$). Multiply both sides by $4$: $k \\equiv 4\\cdot 2 \\equiv 8 \\equiv 3 \\pmod{5}$. Write $k = 3 + 5t$ for some integer $t$. Then $N = 1 + 9k = 1 + 9(3 + 5t) = 1 + 27 + 45t = 28 + 45t$. Hence $N \\equiv 28 \\pmod{45}$.",
+    "answer": "N \\equiv 28 \\pmod{45}",
+    "id": "210_1",
+    "question": "Solve the simultaneous congruences $N \\equiv 1 \\pmod{9}$ and $N \\equiv 3 \\pmod{5}$ to obtain an equivalent single congruence modulo $45$."
+  },
+  {
+    "solution": "All solutions have the form $N = 28 + 45t$ for integer $t$. To maximize $N$ under $N \\le 999$, solve $28 + 45t \\le 999$. This gives $45t \\le 971$, so $t \\le \\left\\lfloor \\dfrac{971}{45} \\right\\rfloor = 21$. Thus the maximal $t$ is $21$, yielding $N = 28 + 45\\cdot 21 = 28 + 945 = 973$. Check: $973 \\le 999$ and the next value $28 + 45\\cdot 22 = 1018 > 999$, so $973$ is the greatest three-digit solution. Verification: $973 \\equiv 28 \\pmod{45}$, hence $973 \\equiv 1 \\pmod{9}$ and $973 \\equiv 3 \\pmod{5}$.",
+    "answer": "973",
+    "id": "210_2",
+    "question": "Find the greatest three-digit integer $N$ (i.e., $100 \\le N \\le 999$) satisfying $N \\equiv 28 \\pmod{45}$."
+  },
+  {
+    "solution": "Using \\((\\mathbf{A}\\mathbf{B})^{-1} = \\mathbf{B}^{-1}\\mathbf{A}^{-1}\\), compute\n\\[\\mathbf{B}^{-1}\\mathbf{A}^{-1} = \\begin{pmatrix} 2 & -1 \\\\ -1 & 3 \\end{pmatrix} \\begin{pmatrix} 4 & 0 \\\\ 1 & -1 \\end{pmatrix}.\\]\nEntry-wise computation:\n- \\((1,1)\\): \\(2\\cdot 4 + (-1)\\cdot 1 = 8 - 1 = 7\\).\n- \\((1,2)\\): \\(2\\cdot 0 + (-1)\\cdot (-1) = 0 + 1 = 1\\).\n- \\((2,1)\\): \\((-1)\\cdot 4 + 3\\cdot 1 = -4 + 3 = -1\\).\n- \\((2,2)\\): \\((-1)\\cdot 0 + 3\\cdot (-1) = 0 - 3 = -3\\).\nTherefore,\n\\[(\\mathbf{A}\\mathbf{B})^{-1} = \\mathbf{B}^{-1}\\mathbf{A}^{-1} = \\begin{pmatrix} 7 & 1 \\\\ -1 & -3 \\end{pmatrix}.\\]",
+    "answer": "\\(\\begin{pmatrix} 7 & 1 \\\\ -1 & -3 \\end{pmatrix}\\)",
+    "id": "211_1",
+    "question": "Given \\(\\mathbf{A}^{-1} = \\begin{pmatrix} 4 & 0 \\\\ 1 & -1 \\end{pmatrix}\\) and \\(\\mathbf{B}^{-1} = \\begin{pmatrix} 2 & -1 \\\\ -1 & 3 \\end{pmatrix}\\), compute \\((\\mathbf{A}\\mathbf{B})^{-1}\\). Use the property \\((\\mathbf{A}\\mathbf{B})^{-1} = \\mathbf{B}^{-1}\\mathbf{A}^{-1}\\) and perform the matrix multiplication explicitly."
+  },
+  {
+    "solution": "Since $N$ is a multiple of $22$, it must be divisible by $2$. An integer is divisible by $2$ if and only if its last digit is even. The last digit of $N$ is $e$. Therefore, $e$ must be an even digit: $e \\in \\{0,2,4,6,8\\}.$",
+    "answer": "$e \\in \\{0,2,4,6,8\\}$",
+    "id": "212_0",
+    "question": "Consider the 6-digit integer $N$ whose decimal digits (from left to right) are $5, d, 5, 2, 2, e$, where $d$ and $e$ are digits ($0 \\le d \\le 9$, $0 \\le e \\le 9$). If $N$ is a multiple of $22$, what necessary condition does this impose on $e$ from the divisibility-by-2 requirement?"
+  },
+  {
+    "solution": "For a 6-digit number with digits $a,b,c,d,e,f$, divisibility by $11$ holds if $(a+c+e) - (b+d+f)$ is a multiple of $11$. Here, $(a,b,c,d,e,f) = (5, d, 5, 2, 2, e)$. Compute the alternating sums: $S_{\\text{odd}} = 5 + 5 + 2 = 12$, $S_{\\text{even}} = d + 2 + e$. Their difference is $D = S_{\\text{odd}} - S_{\\text{even}} = 12 - (d + 2 + e) = 10 - d - e$. Since $0 \\le d \\le 9$ and $0 \\le e \\le 9$, we have $-8 \\le 10 - d - e \\le 10$. The only multiple of $11$ in the interval $[-8, 10]$ is $0$. Therefore $10 - d - e = 0$, which gives $d + e = 10.$",
+    "answer": "$d + e = 10$",
+    "id": "212_1",
+    "question": "Let $N$ be the 6-digit integer with digits $5, d, 5, 2, 2, e$ (in that order). Using the divisibility rule for $11$, derive an equation relating $d$ and $e$ that must hold if $N$ is divisible by $11$."
+  },
+  {
+    "solution": "From $d + e = 10$, we have $e = 10 - d$. Since $e$ must be even and a digit, $e \\in \\{0,2,4,6,8\\}$ and $0 \\le d \\le 9$. The condition $e = 10 - d \\in \\{0,2,4,6,8\\}$ forces $d$ to be even as well. Testing even $d$ in $[0,9]$: - $d=0 \\Rightarrow e=10$ (invalid, not a digit). - $d=2 \\Rightarrow e=8$ (valid). - $d=4 \\Rightarrow e=6$ (valid). - $d=6 \\Rightarrow e=4$ (valid). - $d=8 \\Rightarrow e=2$ (valid). Thus the possible $d$ are $\\{2,4,6,8\\}$. The maximum is $8$.",
+    "answer": "8",
+    "id": "212_2",
+    "question": "Let $N$ be the 6-digit integer with digits $5, d, 5, 2, 2, e$. Suppose $N$ is a multiple of $22$. From divisibility by $2$ and $11$, it follows that $e \\in \\{0,2,4,6,8\\}$ and $d+e=10$. Determine all possible values of $d$ and state the maximum value of $d$."
+  },
+  {
+    "solution": "With three squares in a single row, the shorter side of the rectangle equals one square side, which is $s$, and the longer side equals the sum of three square sides, which is $3s$. Therefore, the ratio of the longer side to the shorter side is $(3s)/s = 3$.",
+    "answer": "3",
+    "id": "213_0",
+    "question": "Three congruent squares are placed side by side (sharing entire edges) to form a rectangle. Let the side length of each square be $s$. What is the ratio of the rectangle's longer side to its shorter side?"
+  },
+  {
+    "solution": "Let the shorter side be $x$ and the longer side be $3x$. The perimeter is $2(x + 3x) = 2(4x) = 8x$. Given $8x = 120$, we solve $x = 120/8 = 15$. Thus, the shorter side is $15$ cm.",
+    "answer": "15",
+    "id": "213_1",
+    "question": "A rectangle has side lengths in the ratio $1:3$. Its perimeter is $120$ cm. What is the length of the shorter side, in centimeters?"
+  },
+  {
+    "solution": "The area of a rectangle is the product of its side lengths. Compute $A = 15 \\times 45 = 15(40 + 5) = 600 + 75 = 675$. Hence, the area is $675\\text{ cm}^2$.",
+    "answer": "675",
+    "id": "213_2",
+    "question": "A rectangle has side lengths $15$ cm and $45$ cm. What is its area, in square centimeters?"
+  },
+  {
+    "solution": "The number of integers in an inclusive interval $[a,b]$ is given by $b - a + 1$. Here, $a = 100$ and $b = 200$, so the count is $200 - 100 + 1 = 101$. Therefore, there are $101$ integers in the set.",
+    "answer": "101",
+    "id": "214_0",
+    "question": "Consider the set of integers from 100 to 200 inclusive. How many integers are in this set?"
+  },
+  {
+    "solution": "We find the smallest integer $k$ such that $k^2 \\ge 100$ and the largest integer $k$ such that $k^2 \\le 200$. We have $\\sqrt{100} = 10$, so $k_{\\min} = 10$. Also, $\\sqrt{200} \\approx 14.142$, so $k_{\\max} = 14$ because $14^2 = 196 \\le 200$ and $15^2 = 225 > 200$. The number of perfect squares is $k_{\\max} - k_{\\min} + 1 = 14 - 10 + 1 = 5$. The squares are $10^2=100$, $11^2=121$, $12^2=144$, $13^2=169$, $14^2=196$.",
+    "answer": "5",
+    "id": "214_1",
+    "question": "How many perfect squares are in the set of integers from 100 to 200 inclusive? A perfect square is an integer of the form $k^2$ for some integer $k$."
+  },
+  {
+    "solution": "Let $N_{\\text{total}} = 101$ and $N_{\\text{sq}} = 5$. The count of non-perfect squares is $N_{\\text{non}} = N_{\\text{total}} - N_{\\text{sq}} = 101 - 5 = 96$.",
+    "answer": "96",
+    "id": "214_2",
+    "question": "Given that there are $101$ integers between $100$ and $200$ inclusive, and exactly $5$ of them are perfect squares, how many integers in this range are not perfect squares? An integer is a non-perfect square if it is not a perfect square."
+  },
+  {
+    "solution": "Since the die is fair, each outcome k in {1,2,3,4,5,6,7,8} has probability 1/8. The expected value is\n\\[ E[X] = \\sum_{k=1}^{8} k \\cdot \\frac{1}{8} = \\frac{1}{8} \\sum_{k=1}^{8} k. \\]\nCompute the arithmetic series:\n\\[ \\sum_{k=1}^{8} k = \\frac{8 \\cdot 9}{2} = 36. \\]\nTherefore,\n\\[ E[X] = \\frac{1}{8} \\cdot 36 = \\frac{36}{8} = \\frac{9}{2}. \\]",
+    "answer": "9/2",
+    "id": "215_0",
+    "question": "A single fair eight-sided die has faces numbered from 1 to 8. Let X be the outcome when the die is rolled once. What is the expected value E[X]?"
+  },
+  {
+    "solution": "By linearity of expectation,\n\\[ E[S] = E[X + Y] = E[X] + E[Y]. \\]\nFor a single fair eight-sided die with outcomes 1 through 8, the expected value is\n\\[ E[X] = \\sum_{k=1}^{8} k \\cdot \\frac{1}{8} = \\frac{1}{8} \\cdot \\frac{8 \\cdot 9}{2} = \\frac{36}{8} = \\frac{9}{2}. \\]\nSimilarly, \\(E[Y] = \\frac{9}{2}\\). Hence,\n\\[ E[S] = \\frac{9}{2} + \\frac{9}{2} = 9. \\]",
+    "answer": "9",
+    "id": "215_1",
+    "question": "Two fair eight-sided dice, each with faces numbered from 1 to 8, are rolled once. Let X and Y be the outcomes of the first and second die, respectively, and let S = X + Y be the sum. What is the expected value E[S]?"
+  },
+  {
+    "solution": "A row with index $k$ has $k+1$ entries because the entries are $\\binom{k}{0},\\binom{k}{1},\\dots,\\binom{k}{k}$. Set $k+1=43$. Solving gives $k=43-1=42$.",
+    "answer": "42",
+    "id": "216_0",
+    "question": "In Pascal's triangle, the row indexed by $k$ (starting with $k=0$ for the top row) contains the entries $\\binom{k}{0},\\binom{k}{1},\\dots,\\binom{k}{k}$ and thus has $k+1$ numbers. If a row has exactly $43$ numbers, find the value of $k$."
+  },
+  {
+    "solution": "The $j$-th entry from the left (starting at $j=0$) in row $k$ is $\\binom{k}{j}$. The second number corresponds to $j=1$, so it is $\\binom{42}{1}$. Using $\\binom{n}{1}=\\frac{n!}{1!(n-1)!}=n$, we have $\\binom{42}{1}=42$.",
+    "answer": "42",
+    "id": "216_1",
+    "question": "In Pascal's triangle, the $k$-th row (with $k$ starting at $0$) has entries $\\binom{k}{0},\\binom{k}{1},\\dots,\\binom{k}{k}$. Given $k=42$ (the row that has $43$ numbers), compute the second number from the left in this row."
+  },
+  {
+    "solution": "Let the radius be $r = \\frac{10}{2} = 5$ feet and the height be $h = 18$ feet. The lateral surface area of a right circular cylinder (excluding top and bottom) is given by $A = 2\\pi r h$, which is the circumference $2\\pi r$ times the height $h$. Substituting $r=5$ and $h=18$: $A = 2\\pi(5)(18) = 10\\pi\\cdot 18 = 180\\pi$ square feet.",
+    "answer": "180\\pi",
+    "id": "217_0",
+    "question": "Consider one right circular cylinder (column) with height $18$ feet and diameter $10$ feet. Only the curved lateral surface is to be painted; the top and bottom circular faces are not painted. What is the lateral surface area to be painted (in square feet) for this one column?"
+  },
+  {
+    "solution": "The total area is the sum over all columns: $A_{\\text{total}} = 16 \\times 180\\pi = (16\\cdot 180)\\pi = 2880\\pi$ square feet since $16\\cdot 180 = 2880$.",
+    "answer": "2880\\pi",
+    "id": "217_1",
+    "question": "There are $16$ identical columns. Each column has a paintable lateral surface area of $180\\pi$ square feet. What is the total lateral surface area to be painted for all $16$ columns (in square feet)?"
+  },
+  {
+    "solution": "The number of gallons required is the ceiling of the ratio of total area to coverage: $G = \\left\\lceil \\dfrac{2880\\pi}{350} \\right\\rceil = \\left\\lceil \\dfrac{288\\pi}{35} \\right\\rceil$. Compute a decimal approximation: $288\\pi \\approx 288 \\times 3.141592653589793 = 904.7786842338603$, so $\\dfrac{288\\pi}{35} \\approx \\dfrac{904.7786842338603}{35} \\approx 25.850819549538866$. Taking the ceiling gives $G = 26$ gallons.",
+    "answer": "26",
+    "id": "217_2",
+    "question": "One gallon of paint covers $350$ square feet. If the total area to be painted is $2880\\pi$ square feet and paint is sold only in full gallons, what is the minimum number of gallons Tony must buy?"
+  },
+  {
+    "solution": "We compute $247 \\div 13$. Since $13 \\times 19 = 247$, we have $247 = 13 \\cdot 19 + 0$. Therefore, $247 \\equiv 0 \\pmod{13}$. The residue is $0$.",
+    "answer": "0",
+    "id": "218_0",
+    "question": "Compute the residue modulo $13$ of $247$. The residue is the unique integer $r \\in \\{0,1,\\dots,12\\}$ such that $247 \\equiv r \\pmod{13}$."
+  },
+  {
+    "solution": "Note that $39 = 13 \\cdot 3$, so $39 \\equiv 0 \\pmod{13}$. Hence $5 \\cdot 39 \\equiv 5 \\cdot 0 = 0 \\pmod{13}$. Alternatively, $5 \\cdot 39 = 195$ and $195 = 13 \\cdot 15$, confirming $195 \\equiv 0 \\pmod{13}$. The residue is $0$.",
+    "answer": "0",
+    "id": "218_1",
+    "question": "Compute the residue modulo $13$ of $5 \\cdot 39$. The residue is the unique integer $r \\in \\{0,1,\\dots,12\\}$ such that $5\\cdot 39 \\equiv r \\pmod{13}$."
+  },
+  {
+    "solution": "Since $143 = 13 \\cdot 11$, we have $143 \\equiv 0 \\pmod{13}$. Therefore $7 \\cdot 143 \\equiv 7 \\cdot 0 = 0 \\pmod{13}$. The residue is $0$.",
+    "answer": "0",
+    "id": "218_2",
+    "question": "Compute the residue modulo $13$ of $7 \\cdot 143$. The residue is the unique integer $r \\in \\{0,1,\\dots,12\\}$ such that $7\\cdot 143 \\equiv r \\pmod{13}$."
+  },
+  {
+    "solution": "We reduce $15$ modulo $13$: since $15 = 13 + 2$, we have $15 \\equiv 2 \\pmod{13}$. Then $4 \\cdot 15 \\equiv 4 \\cdot 2 = 8 \\pmod{13}$. The residue is $8$.",
+    "answer": "8",
+    "id": "218_3",
+    "question": "Compute the residue modulo $13$ of $4 \\cdot 15$. The residue is the unique integer $r \\in \\{0,1,\\dots,12\\}$ such that $4\\cdot 15 \\equiv r \\pmod{13}$."
+  },
+  {
+    "solution": "Reduce each term modulo $13$ and sum the residues:\n- $247 = 13 \\cdot 19 \\Rightarrow 247 \\equiv 0 \\pmod{13}$.\n- $39 = 13 \\cdot 3 \\Rightarrow 39 \\equiv 0 \\pmod{13} \\Rightarrow 5 \\cdot 39 \\equiv 0$.\n- $143 = 13 \\cdot 11 \\Rightarrow 143 \\equiv 0 \\pmod{13} \\Rightarrow 7 \\cdot 143 \\equiv 0$.\n- $15 \\equiv 2 \\pmod{13} \\Rightarrow 4 \\cdot 15 \\equiv 4 \\cdot 2 = 8 \\pmod{13}$.\nSumming residues: $0 + 0 + 0 + 8 \\equiv 8 \\pmod{13}$. Therefore, the residue is $8$.",
+    "answer": "8",
+    "id": "218_4",
+    "question": "Compute the residue modulo $13$ of the sum $247 + 5 \\cdot 39 + 7 \\cdot 143 + 4 \\cdot 15$. The residue is the unique integer $r \\in \\{0,1,\\dots,12\\}$ such that $247 + 5 \\cdot 39 + 7 \\cdot 143 + 4 \\cdot 15 \\equiv r \\pmod{13}$."
+  },
+  {
+    "solution": "We successively factor out primes.\nStart with $200$:\n$200 = 2 \\cdot 100 = 2^2 \\cdot 50 = 2^3 \\cdot 25$.\nSince $25 = 5^2$, we obtain $200 = 2^3 \\cdot 5^2$.\nThus, the prime factorization is $2^3 \\cdot 5^2$.",
+    "answer": "2^3 \\cdot 5^2",
+    "id": "219_0",
+    "question": "Find the prime factorization of the integer 200."
+  },
+  {
+    "solution": "For $n = \\prod p_i^{a_i}$, the sum of divisors is $\\sigma(n) = \\prod_i (1 + p_i + p_i^2 + \\cdots + p_i^{a_i})$.\nUsing $200 = 2^3 \\cdot 5^2$:\n$\\sigma(200) = (1 + 2 + 2^2 + 2^3)(1 + 5 + 5^2) = (1 + 2 + 4 + 8)(1 + 5 + 25)$.\nCompute each sum:\n$1 + 2 + 4 + 8 = 15$, and $1 + 5 + 25 = 31$.\nTherefore, $\\sigma(200) = 15 \\cdot 31 = 465$.\nHence, $N = 465$.",
+    "answer": "465",
+    "id": "219_1",
+    "question": "Given the prime factorization $200 = 2^3 \\cdot 5^2$, compute $N$, the sum of all positive divisors of $200$."
+  },
+  {
+    "solution": "Factor $465$ by testing small primes:\n- $465$ is odd, so not divisible by $2$.\n- Sum of digits is $4 + 6 + 5 = 15$, which is divisible by $3$, so $465$ is divisible by $3$.\nCompute: $465 \\div 3 = 155$.\nNow factor $155$:\n- Last digit is $5$, so $155$ is divisible by $5$.\nCompute: $155 \\div 5 = 31$.\nWe have $465 = 3 \\cdot 5 \\cdot 31$, and $31$ is prime.\nThus, the largest prime factor is $31$.",
+    "answer": "31",
+    "id": "219_2",
+    "question": "Given $N = 465$, determine the largest prime factor of $N$."
+  },
+  {
+    "solution": "The minute hand rotates at a constant rate of \\( \\frac{360^{\\circ}}{60} = 6^{\\circ} \\) per minute. At \\(20\\) minutes past the hour, its angular position is \\(20 \\times 6^{\\circ} = 120^{\\circ}\\).",
+    "answer": "120^{\\circ}",
+    "id": "220_0",
+    "question": "On a standard analog clock, the minute hand completes one full rotation of 360 degrees in 60 minutes. Angles are measured in degrees clockwise from the 12 o'clock position. At exactly 20 minutes past the hour, what is the angular position of the minute hand?"
+  },
+  {
+    "solution": "The hour hand rotates \\( \\frac{360^{\\circ}}{12} = 30^{\\circ} \\) per hour and thus \\( \\frac{30^{\\circ}}{60} = 0.5^{\\circ} \\) per minute. At 3:20, the hour hand has moved \\(3 \\times 30^{\\circ} + 20 \\times 0.5^{\\circ} = 90^{\\circ} + 10^{\\circ} = 100^{\\circ}\\) clockwise from 12 o'clock.",
+    "answer": "100^{\\circ}",
+    "id": "220_1",
+    "question": "On a standard analog clock, the hour hand completes one full rotation of 360 degrees in 12 hours. Angles are measured in degrees clockwise from the 12 o'clock position. At the time 3:20 (i.e., 3 hours and 20 minutes after 12:00), what is the angular position of the hour hand?"
+  },
+  {
+    "solution": "Let \\(\\theta_m = 120^{\\circ}\\) and \\(\\theta_h = 100^{\\circ}\\). The absolute difference is \\(d = |\\theta_m - \\theta_h| = |120^{\\circ} - 100^{\\circ}| = 20^{\\circ}\\). The lesser angle between two directions on a circle is \\(\\min(d, 360^{\\circ} - d) = \\min(20^{\\circ}, 340^{\\circ}) = 20^{\\circ}\\).",
+    "answer": "20^{\\circ}",
+    "id": "220_2",
+    "question": "At a certain instant on a clock, the minute hand is at \\(120^{\\circ}\\) and the hour hand is at \\(100^{\\circ}\\), both measured clockwise from the 12 o'clock position. What is the measure of the lesser angle between the two hands?"
+  },
+  {
+    "solution": "Compute the product: $r_1 r_2=\\left(\\frac{-11+\\sqrt{7}}{3}\\right)\\left(\\frac{-11-\\sqrt{7}}{3}\\right)=\\frac{((-11)+\\sqrt{7})(( -11)-\\sqrt{7})}{9}$. Using $(a+b)(a-b)=a^2-b^2$ with $a=-11$ and $b=\\sqrt{7}$, the numerator is $(-11)^2-(\\sqrt{7})^2=121-7=114$. Thus $r_1 r_2=\\frac{114}{9}$. Simplify by dividing numerator and denominator by $3$: $\\frac{114}{9}=\\frac{38}{3}$.",
+    "answer": "38/3",
+    "id": "221_0",
+    "question": "Given the two numbers $r_1=\\frac{-11+\\sqrt{7}}{3}$ and $r_2=\\frac{-11-\\sqrt{7}}{3}$, compute their product $r_1 r_2$ as a simplified rational number."
+  },
+  {
+    "solution": "By Vi\u00e8ta's formulas, for $ax^2+bx+c=0$ with roots $r_1$ and $r_2$, we have $r_1 r_2=\\frac{c}{a}$. Here $a=\\frac{3}{2}$ and $r_1 r_2=\\frac{38}{3}$, so $\\frac{c}{a}=\\frac{38}{3}$. Therefore $c=a\\cdot r_1 r_2=\\frac{3}{2}\\cdot\\frac{38}{3}=\\frac{38}{2}=19$.",
+    "answer": "19",
+    "id": "221_1",
+    "question": "For the quadratic equation $\\frac{3}{2}x^2+11x+c=0$ with roots $r_1$ and $r_2$ satisfying $r_1 r_2=\\frac{38}{3}$, find the value of $c$."
+  },
+  {
+    "solution": "Substitute $x=1$ into $f(x)$:\n$f(1)=3(1^4)-7(1^3)+2(1^2)-b(1)+1$.\nCompute the powers: $1^4=1$, $1^3=1$, $1^2=1$.\nSo $f(1)=3(1)-7(1)+2(1)-b+1=3-7+2-b+1$.\nCombine constants: $3-7=-4$, $-4+2=-2$, $-2+1=-1$.\nThus, $f(1)=-1-b$.",
+    "answer": "-1 - b",
+    "id": "222_0",
+    "question": "Let $f(x)=3x^4-7x^3+2x^2-bx+1$, where $b$ is a real constant. Compute $f(1)$ and express the result as a simplified expression in $b$."
+  },
+  {
+    "solution": "Start with $-1-b=1$.\nAdd $1$ to both sides: $-b=2$.\nMultiply both sides by $-1$: $b=-2$.",
+    "answer": "-2",
+    "id": "222_1",
+    "question": "Solve for $b$ in the linear equation $-1 - b = 1$."
+  },
+  {
+    "solution": "By definition of modular equivalence, for integers $a,b$, we have $a \\equiv b \\pmod{12}$ if and only if $12 \\mid (a-b)$. The statement that $n$ hours is clock equivalent to $n^2$ hours means $n \\equiv n^2 \\pmod{12}$. This is equivalent to $12 \\mid (n^2 - n) = n(n-1)$, i.e., $n(n-1) \\equiv 0 \\pmod{12}$. Conversely, if $n(n-1) \\equiv 0 \\pmod{12}$, then $n^2 - n \\equiv 0 \\pmod{12}$, so $n \\equiv n^2 \\pmod{12}$. Thus the conditions are equivalent.",
+    "answer": "n(n-1) \\equiv 0 \\pmod{12}",
+    "id": "223_0",
+    "question": "On a 12-hour clock, two elapsed times are considered equivalent if they differ by a multiple of 12. For an integer $n$, show that the condition that $n$ hours is clock equivalent to $n^2$ hours is equivalent to the congruence $n(n-1) \\equiv 0 \\pmod{12}$. State the resulting congruence."
+  },
+  {
+    "solution": "From the residue classification $n \\equiv 0,1,4,9 \\pmod{12}$, we seek the smallest integer $n>4$ in these classes. The candidates in increasing order are $n=9,12,13,16,\\dots$. The smallest is $n=9$. Verification: $9^2=81$ and $81-9=72$, and since $12 \\mid 72$, we have $9^2 \\equiv 9 \\pmod{12}$. Therefore, $n=9$ satisfies the condition and is minimal with $n>4$.",
+    "answer": "9",
+    "id": "223_4",
+    "question": "Determine the least integer $n>4$ such that $n$ hours is clock equivalent to $n^2$ hours on a 12-hour clock, i.e., $n \\equiv n^2 \\pmod{12}$. Provide the minimal such $n$ and verify it satisfies the congruence."
+  },
+  {
+    "solution": "Substitute x = 13t into the equation:\n\\[4(13t)^3 - 41(13t)^2 + 10(13t) = 1989.\\]\nCompute each term:\n\\[(13t)^3 = 2197t^3,\\quad 4(13t)^3 = 4\\cdot 2197 t^3 = 8788 t^3,\\]\n\\[(13t)^2 = 169t^2,\\quad 41(13t)^2 = 41\\cdot 169 t^2 = 6929 t^2,\\]\n\\[10(13t) = 130 t.\\]\nThus,\n\\[8788 t^3 - 6929 t^2 + 130 t = 1989.\\]\nBoth sides are divisible by 13 (since 1989 = 13\\cdot 153), so dividing by 13 gives\n\\[676 t^3 - 533 t^2 + 10 t = 153.\\]\nCheck t = 1:\n\\[676 - 533 + 10 = 143 + 10 = 153,\\]\nso t = 1 is a solution. For t \\ge 2,\n\\[676 t^3 - 533 t^2 + 10 t \\ge 676\\cdot 8 - 533\\cdot 4 + 10\\cdot 2 = 5408 - 2132 + 20 = 3296 > 153,\\]\nso no t \\ge 2 satisfies the equation. Since t is positive, the only possibility is t = 1.",
+    "answer": "1",
+    "id": "224_1",
+    "question": "Assume x is a positive integer multiple of 13 that satisfies 4x^3 - 41x^2 + 10x = 1989. Set x = 13t with t \\in \\mathbb{Z}_{>0}, reduce the equation, and determine t."
+  },
+  {
+    "solution": "Compute at x = 13:\n\\[13^2 = 169,\\quad 13^3 = 2197.\\]\nThen\n\\[4x^3 - 41x^2 + 10x = 4\\cdot 2197 - 41\\cdot 169 + 10\\cdot 13 = 8788 - 6929 + 130.\\]\nEvaluate:\n\\[8788 - 6929 = 1859,\\quad 1859 + 130 = 1989.\\]\nThus x = 13 satisfies the equation.",
+    "answer": "13",
+    "id": "224_2",
+    "question": "Let x = 13. Verify that it satisfies 4x^3 - 41x^2 + 10x = 1989 and conclude the value of x."
+  },
+  {
+    "solution": "Reduce the terms modulo $5$. Since $6 \\equiv 1 \\pmod{5}$, the residues are: $a \\bmod 5$, $(a+6) \\bmod 5 \\equiv a+1 \\bmod 5$, $(a+12) \\bmod 5 \\equiv a+2 \\bmod 5$, $(a+18) \\bmod 5 \\equiv a+3 \\bmod 5$, $(a+24) \\bmod 5 \\equiv a+4 \\bmod 5$. These are five consecutive residues modulo $5$, namely $\\{a, a+1, a+2, a+3, a+4\\} \\bmod 5$, which are a complete residue system $\\{0,1,2,3,4\\}$ in some order. Exactly one of these residues is $0 \\pmod{5}$, so exactly one term is divisible by $5$.",
+    "answer": "1",
+    "id": "225_0",
+    "question": "Consider any integer $a$. Examine the five-term arithmetic progression $a,\\ a+6,\\ a+12,\\ a+18,\\ a+24$. How many of these five terms are divisible by $5$?"
+  },
+  {
+    "solution": "From modular analysis, exactly one of the five terms is divisible by $5$. Any integer divisible by $5$ and greater than $5$ is composite. The only prime divisible by $5$ is $5$ itself. Therefore, the term that is divisible by $5$ must equal $5$.",
+    "answer": "5",
+    "id": "225_1",
+    "question": "Suppose $a,\\ a+6,\\ a+12,\\ a+18,\\ a+24$ are all prime numbers. Which value must the term that is divisible by $5$ take?"
+  },
+  {
+    "solution": "If one term equals $5$, then $5 = a + 6k$ for some $k \\in \\{0,1,2,3,4\\}$. Solving for $a$ gives $a = 5 - 6k$. The possibilities are: $k=0 \\Rightarrow a=5$, $k=1 \\Rightarrow a=-1$, $k=2 \\Rightarrow a=-7$, $k=3 \\Rightarrow a=-13$, $k=4 \\Rightarrow a=-19$. Since $a$ must be a prime greater than $1$, the only valid value is $a=5$. Hence the smallest term is uniquely $a=5$.",
+    "answer": "5",
+    "id": "225_2",
+    "question": "Let $a$ be the smallest term of a five-term arithmetic progression of primes with common difference $6$: $a,\\ a+6,\\ a+12,\\ a+18,\\ a+24$. If one of the terms equals $5$, find all possible values of $a$ and determine which are valid given that $a$ must be a prime greater than $1$."
+  },
+  {
+    "solution": "Check primality: $5$ is prime. For $11$, test primes up to $\\sqrt{11} < 4$: not divisible by $2$ or $3$, so prime. For $17$, $\\sqrt{17} < 5$: not divisible by $2$ or $3$, so prime. For $23$, $\\sqrt{23} < 5$: not divisible by $2$ or $3$, so prime. For $29$, $\\sqrt{29} < 6$: not divisible by $2,3,5$, so prime. Sum: $5+11=16$, $16+17=33$, $33+23=56$, $56+29=85$.",
+    "answer": "85",
+    "id": "225_3",
+    "question": "Verify that the five integers $5,\\ 11,\\ 17,\\ 23,\\ 29$ (which form an arithmetic progression with common difference $6$) are all prime, and compute their sum."
+  },
+  {
+    "solution": "Starting with \\( \\frac{n}{72} = \\frac{5}{6} \\), cross-multiply to get \\(6n = 72 \\cdot 5\\). Compute \\(72 \\cdot 5 = 360\\), so \\(6n = 360\\). Divide both sides by \\(6\\): \\(n = \\frac{360}{6} = 60\\).",
+    "answer": "60",
+    "id": "226_0",
+    "question": "Solve for \\(n\\) given the equation \\( \\frac{n}{72} = \\frac{5}{6} \\)."
+  },
+  {
+    "solution": "Substitute \\(n = 60\\) into \\( \\frac{m + n}{84} = \\frac{5}{6} \\) to get \\( \\frac{m + 60}{84} = \\frac{5}{6} \\). Cross-multiply: \\(6(m + 60) = 84 \\cdot 5\\). Compute \\(84 \\cdot 5 = 420\\), so \\(6m + 360 = 420\\). Subtract \\(360\\) from both sides: \\(6m = 60\\). Divide by \\(6\\): \\(m = 10\\).",
+    "answer": "10",
+    "id": "226_1",
+    "question": "Given \\(n = 60\\), solve for \\(m\\) in the equation \\( \\frac{m + n}{84} = \\frac{5}{6} \\)."
+  },
+  {
+    "solution": "Substitute \\(m = 10\\) into \\( \\frac{p - m}{120} = \\frac{5}{6} \\) to get \\( \\frac{p - 10}{120} = \\frac{5}{6} \\). Cross-multiply: \\(6(p - 10) = 120 \\cdot 5\\). Compute \\(120 \\cdot 5 = 600\\), so \\(6p - 60 = 600\\). Add \\(60\\) to both sides: \\(6p = 660\\). Divide by \\(6\\): \\(p = 110\\).",
+    "answer": "110",
+    "id": "226_2",
+    "question": "Given \\(m = 10\\), solve for \\(p\\) in the equation \\( \\frac{p - m}{120} = \\frac{5}{6} \\)."
+  },
+  {
+    "solution": "Each flip has $2$ possible outcomes. For $6$ independent flips, the total number of ordered sequences is $2^6$. Compute: $2^6 = 64$.",
+    "answer": "64",
+    "id": "227_0",
+    "question": "In six independent flips of a fair coin (each flip results in Head (H) or Tail (T) with probability $\\tfrac{1}{2}$ each, and outcomes across flips are independent), how many distinct ordered outcome sequences are possible?"
+  },
+  {
+    "solution": "Exactly $0$ heads means all flips are tails. There is exactly $1$ such ordered sequence: TTTTTT.",
+    "answer": "1",
+    "id": "227_1",
+    "question": "In six independent flips of a fair coin (each flip results in Head (H) or Tail (T) with probability $\\tfrac{1}{2}$ each), how many ordered outcome sequences have exactly $0$ heads?"
+  },
+  {
+    "solution": "To have exactly $1$ head in $6$ flips, choose the single position of the head among the $6$ flip positions. The number of sequences is $\\binom{6}{1} = 6$.",
+    "answer": "6",
+    "id": "227_2",
+    "question": "In six independent flips of a fair coin (each flip results in Head (H) or Tail (T) with probability $\\tfrac{1}{2}$ each), how many ordered outcome sequences have exactly $1$ head?"
+  },
+  {
+    "solution": "Let the total number of sequences be $64$. The sequences with fewer than $2$ heads are those with $0$ heads and $1$ head. Their counts are $1$ and $6$, respectively. Therefore, the number with at least $2$ heads is $64 - (1 + 6) = 64 - 7 = 57$.",
+    "answer": "57",
+    "id": "227_3",
+    "question": "Given that there are $64$ total ordered outcome sequences when flipping six independent fair coins, with $1$ sequence having exactly $0$ heads and $6$ sequences having exactly $1$ head, how many ordered sequences have at least $2$ heads?"
+  },
+  {
+    "solution": "The probability of an event with $f$ favorable sequences out of $N$ equally likely sequences is $\\dfrac{f}{N}$. Here, $f = 57$ and $N = 64$, so the probability is $\\dfrac{57}{64}$. As a decimal, $\\dfrac{57}{64} = 0.890625$.",
+    "answer": "57/64",
+    "id": "227_4",
+    "question": "In six independent flips of a fair coin, all $64$ ordered outcome sequences are equally likely. If $57$ of these sequences have at least $2$ heads, what is the probability of getting at least $2$ heads?"
+  },
+  {
+    "solution": "Using the formula for combinations, we have\n\\[\\binom{8}{4} = \\frac{8!}{4!\\,4!} = \\frac{8\\cdot 7 \\cdot 6 \\cdot 5}{4 \\cdot 3 \\cdot 2 \\cdot 1} = \\frac{1680}{24} = 70.\\]",
+    "answer": "70",
+    "id": "228_0",
+    "question": "Compute the binomial coefficient, defined as the number of ways to choose 4 objects from 8 distinct objects: $\\binom{8}{4} = \\dfrac{8!}{4!\\,4!}$. What is its value?"
+  },
+  {
+    "solution": "The total number of possible outcomes is $2^8 = 256$. The number of outcomes with exactly 4 heads is $\\binom{8}{4} = 70$. Therefore, the probability is\n\\[\\frac{\\binom{8}{4}}{2^8} = \\frac{70}{256} = \\frac{35}{128}.\\]",
+    "answer": "35/128",
+    "id": "228_1",
+    "question": "Consider 8 independent flips of a fair coin, where the probability of heads is $\\tfrac{1}{2}$ and the probability of tails is $\\tfrac{1}{2}$ on each flip. What is the probability of obtaining exactly 4 heads?"
+  },
+  {
+    "solution": "Let $H$ be the event that the number of heads exceeds the number of tails, and let $E$ be the event of a tie (exactly 4 heads). By symmetry, $\\mathbb{P}(H) = \\mathbb{P}(\\text{more tails than heads})$, and these three events partition the sample space:\n\\[ \\mathbb{P}(H) + \\mathbb{P}(\\text{more tails}) + \\mathbb{P}(E) = 1. \\]\nThus,\n\\[ 2\\mathbb{P}(H) + \\mathbb{P}(E) = 1 \\quad \\Rightarrow \\quad \\mathbb{P}(H) = \\frac{1 - \\mathbb{P}(E)}{2}. \\]\nCompute the tie probability:\n\\[ \\mathbb{P}(E) = \\frac{\\binom{8}{4}}{2^8} = \\frac{70}{256} = \\frac{35}{128}. \\]\nTherefore,\n\\[ \\mathbb{P}(H) = \\frac{1 - \\frac{35}{128}}{2} = \\frac{\\frac{93}{128}}{2} = \\frac{93}{256}. \\]",
+    "answer": "93/256",
+    "id": "228_2",
+    "question": "In 8 independent flips of a fair coin, what is the probability that the number of heads is greater than the number of tails?"
+  },
+  {
+    "solution": "The integer $202$ is even, but we need an integer strictly greater than $202$. The next integer is $203$, which is odd since $203 \\equiv 1 \\pmod{2}$. The next integer after that is $204$. Check evenness: $204 \\equiv 0 \\pmod{2}$, so $204$ is even. Also, $204 > 202$. Therefore, the smallest even integer strictly greater than $202$ is $204$.",
+    "answer": "204",
+    "id": "229_0",
+    "question": "Find the smallest even integer that is strictly greater than $202$. Recall that an even integer is any integer divisible by $2$."
+  },
+  {
+    "solution": "The integer $405$ is odd since $405 \\equiv 1 \\pmod{2}$. The largest integer strictly less than $405$ is $404$. Check evenness: $404 \\equiv 0 \\pmod{2}$, so $404$ is even. Also, $404 < 405$. Therefore, the largest even integer strictly less than $405$ is $404$.",
+    "answer": "404",
+    "id": "229_1",
+    "question": "Find the largest even integer that is strictly less than $405$. Recall that an even integer is any integer divisible by $2$."
+  },
+  {
+    "solution": "For an arithmetic sequence, the $n$-th term satisfies $a_n = a_1 + (n-1)d$. Substitute $a_n = 404$, $a_1 = 204$, and $d = 2$: \\[404 = 204 + (n-1)\\cdot 2.\\] Subtract $204$ from both sides: \\[200 = 2(n-1).\\] Divide by $2$: \\[100 = n - 1.\\] Add $1$: \\[n = 101.\\] Therefore, there are $101$ even integers strictly between $202$ and $405$.",
+    "answer": "101",
+    "id": "229_2",
+    "question": "Consider the list of even integers strictly between $202$ and $405$: $204, 206, 208, \\ldots, 404$. This forms an arithmetic sequence with first term $a_1 = 204$, common difference $d = 2$, and last term $a_n = 404$. How many terms are in this sequence?"
+  },
+  {
+    "solution": "The triple-angle identity is \\(\\sin 3x = 3 \\sin x - 4 \\sin^3 x\\). Set \\(x = 10^\\circ\\). Then \\(3x = 30^\\circ\\) and \\(\\sin 30^\\circ = \\tfrac{1}{2}\\). Hence,\\[\\frac{1}{2} = 3s - 4s^3.\\]Multiply both sides by 2: \\[1 = 6s - 8s^3 \\implies 8s^3 - 6s + 1 = 0.\\]",
+    "answer": "\\(8s^3 - 6s + 1 = 0\\)",
+    "id": "230_1",
+    "question": "Let \\(s = \\sin 10^\\circ\\). Use the triple-angle identity to derive a polynomial equation satisfied by \\(s\\)."
+  },
+  {
+    "solution": "First, note \\(s = \\sin 10^\\circ \\neq 0\\), so division by \\(s\\) is valid. Multiply \\(E\\) by \\(2s\\) to clear the denominator: \\[2sE = 2s\\left(\\frac{1}{2s} - 2 + 4s^2\\right) = 1 - 4s + 8s^3.\\]Using the given relation \\(8s^3 = 6s - 1\\), substitute into the expression: \\[2sE = 1 - 4s + (6s - 1) = 2s.\\]Since \\(s \\neq 0\\), divide both sides by \\(2s\\) to obtain \\(E = 1\\).",
+    "answer": "1",
+    "id": "230_2",
+    "question": "Let \\(s = \\sin 10^\\circ\\), and suppose \\(s\\) satisfies \\(8s^3 = 6s - 1\\). Evaluate \\(E = \\frac{1}{2s} - 2 + 4s^2\\) exactly."
+  },
+  {
+    "solution": "Let $n = 2k + 1$ with integer $k \\ge 0$. The sum is\n\\[ S = n + (n+2) + (n+4) + (n+6) = 4n + 12. \\]\nSubstitute $n = 2k + 1$:\n\\[ S = 4(2k + 1) + 12 = 8k + 16 = 8(k + 2). \\]\nThus the sum factors as $8(k+2)$.",
+    "answer": "8(k+2)",
+    "id": "231_0",
+    "question": "Let $n$ be an odd positive integer. Consider four consecutive positive odd integers: $n$, $n+2$, $n+4$, and $n+6$. Express their sum in simplest factored form in terms of an integer parameter $k$ where $n = 2k + 1$."
+  },
+  {
+    "solution": "Since $S = 8(k+2)$, we have $8 \\mid S$ for all $k$. The set of values is $\\{8(k+2) : k \\ge 0\\} = \\{16, 24, 32, 40, \\dots\\}$. The greatest common divisor of all such $S$ is\n\\[ D = \\gcd\\{8(k+2) : k \\ge 0\\} = 8 \\cdot \\gcd\\{k+2 : k \\ge 0\\}. \\]\nBecause $\\{k+2 : k \\ge 0\\} = \\{2,3,4,5,\\dots\\}$ contains consecutive integers, $\\gcd(2,3) = 1$, so $\\gcd\\{k+2 : k \\ge 0\\} = 1$. Therefore,\n\\[ D = 8 \\cdot 1 = 8. \\]\nNo larger integer can divide all $S$; for instance, with $k=1$, $S=8(3)=24$ is not divisible by $16$. Hence the greatest mandatory divisor is $8$.",
+    "answer": "8",
+    "id": "231_1",
+    "question": "For an integer $k \\ge 0$, define $S = 8(k+2)$. Determine the greatest positive integer $d$ that divides $S$ for every such $k$."
+  },
+  {
+    "solution": "Made three-pointers: $0.2x$. Points from threes: $3 \\cdot (0.2x) = 0.6x$.\\nMade two-pointers: $0.3y$. Points from twos: $2 \\cdot (0.3y) = 0.6y$.\\nTotal points: $P = 0.6x + 0.6y = 0.6(x + y)$.",
+    "answer": "$0.6(x+y)$",
+    "id": "232_0",
+    "question": "Let $x$ be the number of three-point shot attempts and $y$ be the number of two-point shot attempts by a player. The player makes 20% of her three-point attempts and 30% of her two-point attempts. Express the total points $P$ scored in terms of $x$ and $y$, and simplify."
+  },
+  {
+    "solution": "Let $x$ be the number of three-point attempts and $y$ be the number of two-point attempts, so $x + y = 30$.\\nMade threes: $0.2x \\Rightarrow$ points $= 3 \\cdot (0.2x) = 0.6x$.\\nMade twos: $0.3y \\Rightarrow$ points $= 2 \\cdot (0.3y) = 0.6y$.\\nTotal points: $P = 0.6x + 0.6y = 0.6(x + y) = 0.6 \\cdot 30 = 18$.",
+    "answer": "$18$",
+    "id": "232_1",
+    "question": "A player attempts only three-point and two-point shots in a game. She makes 20% of her three-point attempts and 30% of her two-point attempts. If the total number of shot attempts is $30$, compute the total number of points she scores."
+  },
+  {
+    "solution": "Let $d=\\gcd(3n+4, n)$. By definition, $d\\mid(3n+4)$ and $d\\mid n$. Hence $d\\mid\\big((3n+4)-3n\\big)=4$, so $d$ is a common divisor of $4$ and $n$, implying $d\\le \\gcd(4,n)$. Conversely, let $g=\\gcd(4,n)$. Then $g\\mid 4$ and $g\\mid n$, so $g\\mid 3n$ and thus $g\\mid (3n+4)$. Therefore $g$ is a common divisor of $3n+4$ and $n$, implying $g\\le \\gcd(3n+4,n)=d$. Combining, $d\\le g$ and $g\\le d$, hence $d=g$. Therefore $\\gcd(3n+4, n)=\\gcd(4, n)$ for all positive integers $n$.",
+    "answer": "\\gcd(4, n)",
+    "id": "233_0",
+    "question": "For any positive integer $n$, define $d(n)=\\gcd(3n+4, n)$. Prove that $d(n)=\\gcd(4, n)$."
+  },
+  {
+    "solution": "By the Euclidean algorithm, for any positive integer $n$, $\\gcd(3n+4, n)=\\gcd\\big((3n+4)-3n,\\,n\\big)=\\gcd(4,n)$. Thus the possible values of $\\gcd(3n+4,n)$ are exactly the possible values of $\\gcd(4,n)$. For any $n$, $\\gcd(4,n)$ must divide $4$, so $\\gcd(4,n)\\in\\{1,2,4\\}$. Each value occurs: if $n$ is odd (e.g., $n=1$), then $\\gcd(4,n)=1$; if $n\\equiv 2\\pmod{4}$ (e.g., $n=2$), then $\\gcd(4,n)=2$; if $n\\equiv 0\\pmod{4}$ (e.g., $n=4$), then $\\gcd(4,n)=4$. Therefore the distinct possible values are $\\{1,2,4\\}$, and their sum is $1+2+4=7$.",
+    "answer": "7",
+    "id": "233_1",
+    "question": "As $n$ ranges over the positive integers, determine the sum of all distinct possible values of $\\gcd(3n+4, n)$."
+  },
+  {
+    "solution": "We check the signs: $x=1 \\ge 0$ and $y=-1<0$. The pair is not both nonnegative, and not both negative (since $x \\ge 0$), so we use the \"otherwise\" case. Thus, $p(1,-1)=3\\cdot 1+(-1)=3-1=2$.",
+    "answer": "2",
+    "id": "234_0",
+    "question": "Define the function $p(x,y)$ by: if $x \\ge 0$ and $y \\ge 0$, then $p(x,y)=x+y$; if $x<0$ and $y<0$, then $p(x,y)=x-2y$; otherwise, $p(x,y)=3x+y$. Compute $p(1,-1)$."
+  },
+  {
+    "solution": "We check the signs: $x=-5<0$ and $y=-2<0$, so both are negative. Therefore, we use $p(x,y)=x-2y$. Compute: $p(-5,-2)=-5-2(-2)=-5+4=-1$.",
+    "answer": "-1",
+    "id": "234_1",
+    "question": "Define the function $p(x,y)$ by: if $x \\ge 0$ and $y \\ge 0$, then $p(x,y)=x+y$; if $x<0$ and $y<0$, then $p(x,y)=x-2y$; otherwise, $p(x,y)=3x+y$. Compute $p(-5,-2)$."
+  },
+  {
+    "solution": "We check the signs: $x=2 \\ge 0$ and $y=-1<0$. The pair is neither both nonnegative nor both negative, so we use the \"otherwise\" case. Thus, $p(2,-1)=3\\cdot 2+(-1)=6-1=5$.",
+    "answer": "5",
+    "id": "234_2",
+    "question": "Define the function $p(x,y)$ by: if $x \\ge 0$ and $y \\ge 0$, then $p(x,y)=x+y$; if $x<0$ and $y<0$, then $p(x,y)=x-2y$; otherwise, $p(x,y)=3x+y$. Compute $p(2,-1)$."
+  },
+  {
+    "solution": "We seek integers $q$ and $r$ with $0\\le r<7$ such that $150=7q+r$. Compute multiples of $7$ near $150$: $7\\cdot 21=147$ and $7\\cdot 22=154>150$. Therefore, the largest multiple of $7$ not exceeding $150$ is $147$, which corresponds to $q=21$. The remainder is $r=150-7\\cdot 21=150-147=3$, and this satisfies $0\\le 3<7$. Hence $(q,r)=(21,3)$.",
+    "answer": "$(21,3)$",
+    "id": "235_0",
+    "question": "Find integers $q$ and $r$ with $0\\le r<7$ such that $150=7q+r$ (the division algorithm for dividing $150$ by $7$). State your answer as the ordered pair $(q,r)$."
+  },
+  {
+    "solution": "We count the positive integers $k$ such that $7k<150$. Since $7>0$, dividing both sides by $7$ preserves the inequality: $k<\\dfrac{150}{7}$. Using $150=7\\cdot 21+3$, we have \\[\\frac{150}{7}=21+\\frac{3}{7}.\\] Thus $k<21+\\dfrac{3}{7}$. As $k$ must be an integer, the largest possible $k$ is $21$, so the valid $k$ are $k\\in\\{1,2,\\dots,21\\}$. The number of such integers is $21$. Therefore, there are $21$ positive multiples of $7$ that are strictly less than $150$.",
+    "answer": "$21$",
+    "id": "235_1",
+    "question": "A positive multiple of $7$ is any integer of the form $7k$ with $k\\in\\mathbb{Z}_{>0}$. Given that $150=7\\cdot 21+3$ with $0\\le 3<7$, determine how many positive multiples of $7$ are strictly less than $150$."
+  },
+  {
+    "solution": "Start with the algebraic identity for nonzero complex numbers $z$ and $w$:\n\\[\n\\frac{1}{z} + \\frac{1}{w} = \\frac{w+z}{zw} = \\frac{z+w}{zw}.\n\\]\nTaking magnitudes and using $\\left|\\frac{a}{b}\\right| = \\frac{|a|}{|b|}$ for complex numbers (which follows from $|ab|=|a||b|$ and $|1/b|=1/|b|$), we obtain:\n\\[\n\\left| \\frac{1}{z} + \\frac{1}{w} \\right| = \\left| \\frac{z+w}{zw} \\right| = \\frac{|z+w|}{|zw|}.\n\\]\nIt remains to express $|zw|$ in terms of $|z|$ and $|w|$. Write $z = r e^{i\\theta}$ and $w = s e^{i\\phi}$ with $r=|z|>0$ and $s=|w|>0$. Then\n\\[\nzw = rs\\, e^{i(\\theta+\\phi)} \\implies |zw| = rs = |z|\\,|w|.\n\\]\nSubstituting this into the previous expression gives the desired formula:\n\\[\n\\left| \\frac{1}{z} + \\frac{1}{w} \\right| = \\frac{|z+w|}{|z|\\,|w|}.\n\\]",
+    "answer": "\\frac{|z+w|}{|z|\\,|w|}",
+    "id": "236_0",
+    "question": "Let $z$ and $w$ be nonzero complex numbers. Derive a general formula for the magnitude $\\left| \\frac{1}{z} + \\frac{1}{w} \\right|$ in terms of $|z+w|$, $|z|$, and $|w|$."
+  },
+  {
+    "solution": "Since $|z|=1$ and $|w|=3$, both $z$ and $w$ are nonzero, so the reciprocals exist. Using the identity\n\\[\n\\frac{1}{z} + \\frac{1}{w} = \\frac{z+w}{zw},\n\\]\nwe take magnitudes and apply $\\left|\\frac{a}{b}\\right|=\\frac{|a|}{|b|}$ to get\n\\[\n\\left| \\frac{1}{z} + \\frac{1}{w} \\right| = \\frac{|z+w|}{|zw|}.\n\\]\nCompute the denominator using $|zw| = |z|\\,|w|$:\n\\[\n|zw| = |z|\\,|w| = 1\\cdot 3 = 3.\n\\]\nNow substitute $|z+w|=2$ and $|zw|=3$:\n\\[\n\\left| \\frac{1}{z} + \\frac{1}{w} \\right| = \\frac{2}{3}.\n\\]",
+    "answer": "\\frac{2}{3}",
+    "id": "236_1",
+    "question": "Let $z$ and $w$ be complex numbers with $|z|=1$, $|w|=3$, and $|z+w|=2$. Compute $\\left| \\frac{1}{z} + \\frac{1}{w} \\right|$."
+  },
+  {
+    "solution": "First simplify each radical: $\\sqrt{245}=7\\sqrt{5}$, $\\sqrt{125}=5\\sqrt{5}$, $\\sqrt{45}=3\\sqrt{5}$. Then the denominator becomes\n$\\sqrt{245}+3\\sqrt{125}+4\\sqrt{45} = 7\\sqrt{5} + 3\\cdot 5\\sqrt{5} + 4\\cdot 3\\sqrt{5} = 7\\sqrt{5} + 15\\sqrt{5} + 12\\sqrt{5} = 34\\sqrt{5}$.\nThus,\n$E = \\dfrac{6}{34\\sqrt{5}} = \\dfrac{3}{17\\sqrt{5}}$ after dividing numerator and denominator by $2$.",
+    "answer": "\\dfrac{3}{17\\sqrt{5}}",
+    "id": "237_1",
+    "question": "Compute $E = \\dfrac{6}{\\sqrt{245}+3\\sqrt{125}+4\\sqrt{45}}$ by simplifying the radicals and combining like terms. Express $E$ in the form $\\dfrac{p}{q\\sqrt{5}}$ with integers $p$ and $q$ in lowest terms."
+  },
+  {
+    "solution": "Multiply numerator and denominator by $\\sqrt{5}$ to remove the radical from the denominator:\n$\\dfrac{3}{17\\sqrt{5}} \\cdot \\dfrac{\\sqrt{5}}{\\sqrt{5}} = \\dfrac{3\\sqrt{5}}{17\\cdot 5} = \\dfrac{3\\sqrt{5}}{85}$.\nHere $A=3$, $B=5$, $C=85$. We check $\\gcd(A,C)=\\gcd(3,85)=1$, and $B=5$ is squarefree.",
+    "answer": "\\dfrac{3\\sqrt{5}}{85}",
+    "id": "237_2",
+    "question": "Rationalize the denominator of $\\dfrac{3}{17\\sqrt{5}}$ and express the result in the form $\\dfrac{A\\sqrt{B}}{C}$, where $A$ and $C$ are relatively prime integers with $C>0$, and $B$ is not divisible by the square of any prime (i.e., $B$ is squarefree)."
+  },
+  {
+    "solution": "From $\\dfrac{3\\sqrt{5}}{85}$, we have $A=3$, $B=5$, $C=85$. Therefore, $A+B+C=3+5+85=93$.",
+    "answer": "93",
+    "id": "237_3",
+    "question": "Given the expression $\\dfrac{3\\sqrt{5}}{85}$ is in the form $\\dfrac{A\\sqrt{B}}{C}$ with $\\gcd(A,C)=1$, $C>0$, and $B$ squarefree, compute $A+B+C$."
+  },
+  {
+    "solution": "We use the identity $a^2 - b^2 = (a-b)(a+b)$. From the recognition, \n\\[ x^2 + 4x + 4 - 81x^4 = (x+2)^2 - (9x^2)^2. \\]\nLet $a = x+2$ and $b = 9x^2$. Then\n\\[ (x+2)^2 - (9x^2)^2 = ((x+2) - 9x^2)((x+2) + 9x^2). \\]\nSimplify each factor to standard quadratic form:\n\\[ (x+2) - 9x^2 = -9x^2 + x + 2, \\]\n\\[ (x+2) + 9x^2 = 9x^2 + x + 2. \\]\nThus the factorization is\n\\[ (-9x^2 + x + 2)(9x^2 + x + 2). \\]\nCheck by expansion:\n\\[\n(-9x^2 + x + 2)(9x^2 + x + 2) = (-9x^2)(9x^2) + (-9x^2)(x) + (-9x^2)(2) + x(9x^2) + x(x) + x(2) + 2(9x^2) + 2(x) + 2(2) \\\\\n= -81x^4 - 9x^3 - 18x^2 + 9x^3 + x^2 + 2x + 18x^2 + 2x + 4 \\\\\n= -81x^4 + x^2 + 4x + 4,\n\\]\nwhich matches $x^2 + 4x + 4 - 81x^4$. The leading coefficients of the two quadratics are $-9$ and $9$, so placing the factor with $-9$ first gives $a=-9$ and $d=9$, satisfying $a<d$.",
+    "answer": "(-9x^2 + x + 2)(9x^2 + x + 2)",
+    "id": "238_1",
+    "question": "Factor $x^2 + 4x + 4 - 81x^4$ completely into two quadratic polynomials with integer coefficients. Present the result in the form $(ax^2+bx+c)(dx^2+ex+f)$ with $a<d$."
+  },
+  {
+    "solution": "For a triangle with side lengths $18$, $29$, and $x$, the triangle inequalities are:\n1) $18 + 29 > x \\implies x < 47$.\n2) $18 + x > 29 \\implies x > 11$.\n3) $29 + x > 18 \\implies x > -11$, which is automatically true since $x$ is positive.\nCombining the nontrivial bounds gives the strict range $11 < x < 47$.",
+    "answer": "11 < x < 47",
+    "id": "239_0",
+    "question": "In a triangle, two sides have lengths $18$ and $29$ units, and the third side has length $x$ (a positive real number). Using the triangle inequality, determine the range of possible values of $x$, expressed as a strict double inequality."
+  },
+  {
+    "solution": "The integers greater than $11$ begin at $12$. Since $12 < 47$, it satisfies $11 < x < 47$. Any integer less than $12$ is $\\le 11$ and would violate $11 < x$. Thus the minimum possible integer is $12$.",
+    "answer": "12",
+    "id": "239_1",
+    "question": "Let $x$ be an integer satisfying the strict inequality $11 < x < 47$. Determine the minimum possible integer value of $x$."
+  },
+  {
+    "solution": "The integers less than $47$ end at $46$. Since $46 > 11$, it satisfies $11 < x < 47$. Any integer greater than $46$ is $\\ge 47$ and would violate $x < 47$. Thus the maximum possible integer is $46$.",
+    "answer": "46",
+    "id": "239_2",
+    "question": "Let $x$ be an integer satisfying the strict inequality $11 < x < 47$. Determine the maximum possible integer value of $x$."
+  },
+  {
+    "solution": "From the bounds $11 < x < 47$, the smallest integer strictly greater than $11$ is $x_{\\min} = 12$, and the largest integer strictly less than $47$ is $x_{\\max} = 46$. Therefore, the positive difference is $x_{\\max} - x_{\\min} = 46 - 12 = 34$.",
+    "answer": "34",
+    "id": "239_3",
+    "question": "Let $x$ be an integer satisfying $11 < x < 47$. Let $x_{\\min}$ and $x_{\\max}$ denote the minimum and maximum possible values of $x$, respectively. Compute the positive difference $x_{\\max} - x_{\\min}$."
+  },
+  {
+    "solution": "Let $T$ be the total number of boxes and $N$ be the number of boxes containing neither item. Then the number of boxes containing at least one of the two items is $T - N$. Substituting the given values, we have $T = 20$ and $N = 3$, so the count is $20 - 3 = 17$.",
+    "answer": "17",
+    "id": "240_0",
+    "question": "Roslyn has $20$ boxes. Exactly $3$ of the boxes contain neither pens nor pencils. How many boxes contain at least one of the two items (a pen or a pencil)?"
+  },
+  {
+    "solution": "Let $P$ be the set of boxes containing pencils and $Q$ be the set of boxes containing pens. By the inclusion-exclusion principle, $|P \\cap Q| = |P| + |Q| - |P \\cup Q|$. Substituting the given values, $|P| = 13$, $|Q| = 9$, and $|P \\cup Q| = 17$. Therefore, $|P \\cap Q| = 13 + 9 - 17 = 5$.",
+    "answer": "5",
+    "id": "240_1",
+    "question": "In a collection of $20$ boxes, $13$ boxes contain pencils, $9$ boxes contain pens, and $17$ boxes contain at least one of pens or pencils. How many boxes contain both pens and pencils?"
+  },
+  {
+    "solution": "Steve's time for 3 miles is given as \\(24\\) minutes. Jordan's time to run \\(2\\) miles is half of this: \\(t_J = \\tfrac{1}{2} \\times 24 = 12\\) minutes. Jordan's average rate is distance divided by time: \\(r_J = \\dfrac{2\\ \\text{miles}}{12\\ \\text{minutes}} = \\dfrac{1}{6}\\ \\text{miles per minute}.\\)",
+    "answer": "1/6",
+    "id": "241_0",
+    "question": "Steve took 24 minutes to run 3 miles. Jordan ran 2 miles in half the time it took Steve to run 3 miles. Assuming constant speeds, what is Jordan\u2019s average running rate in miles per minute?"
+  },
+  {
+    "solution": "Time equals distance divided by rate: \\(t = \\dfrac{5}{\\tfrac{1}{6}} = 5 \\times 6 = 30\\) minutes.",
+    "answer": "30",
+    "id": "241_1",
+    "question": "Jordan runs at a constant rate of \\(\\tfrac{1}{6}\\) miles per minute. How many minutes would it take Jordan to run 5 miles?"
+  },
+  {
+    "solution": "The first polynomial $x^3+4x^2-7x+11$ has no $x^4$ term, so its $x^4$ coefficient is $0$. The second polynomial $-4x^4-x^3+x^2+7x+3$ has an $x^4$ coefficient of $-4$. Adding the coefficients: $0+(-4)=-4$. Therefore, the coefficient of $x^4$ in the sum is $-4$.",
+    "answer": "-4",
+    "id": "242_0",
+    "question": "Consider the sum of polynomials $(x^3+4x^2-7x+11)+(-4x^4-x^3+x^2+7x+3)$. What is the coefficient of $x^4$ in the resulting polynomial?"
+  },
+  {
+    "solution": "The first polynomial $x^3+4x^2-7x+11$ has an $x^3$ coefficient of $1$. The second polynomial $-4x^4-x^3+x^2+7x+3$ has an $x^3$ coefficient of $-1$. Adding the coefficients: $1+(-1)=0$. Therefore, the coefficient of $x^3$ in the sum is $0$.",
+    "answer": "0",
+    "id": "242_1",
+    "question": "Consider the sum of polynomials $(x^3+4x^2-7x+11)+(-4x^4-x^3+x^2+7x+3)$. What is the coefficient of $x^3$ in the resulting polynomial?"
+  },
+  {
+    "solution": "The first polynomial $x^3+4x^2-7x+11$ has an $x^2$ coefficient of $4$. The second polynomial $-4x^4-x^3+x^2+7x+3$ has an $x^2$ coefficient of $1$. Adding the coefficients: $4+1=5$. Therefore, the coefficient of $x^2$ in the sum is $5$.",
+    "answer": "5",
+    "id": "242_2",
+    "question": "Consider the sum of polynomials $(x^3+4x^2-7x+11)+(-4x^4-x^3+x^2+7x+3)$. What is the coefficient of $x^2$ in the resulting polynomial?"
+  },
+  {
+    "solution": "The first polynomial $x^3+4x^2-7x+11$ has an $x$ coefficient of $-7$. The second polynomial $-4x^4-x^3+x^2+7x+3$ has an $x$ coefficient of $7$. Adding the coefficients: $-7+7=0$. Therefore, the coefficient of $x$ in the sum is $0$.",
+    "answer": "0",
+    "id": "242_3",
+    "question": "Consider the sum of polynomials $(x^3+4x^2-7x+11)+(-4x^4-x^3+x^2+7x+3)$. What is the coefficient of $x$ in the resulting polynomial?"
+  },
+  {
+    "solution": "The constant term of the first polynomial $x^3+4x^2-7x+11$ is $11$. The constant term of the second polynomial $-4x^4-x^3+x^2+7x+3$ is $3$. Adding the constants: $11+3=14$. Therefore, the constant term in the sum is $14$.",
+    "answer": "14",
+    "id": "242_4",
+    "question": "Consider the sum of polynomials $(x^3+4x^2-7x+11)+(-4x^4-x^3+x^2+7x+3)$. What is the constant term (the coefficient of $x^0$) in the resulting polynomial?"
+  },
+  {
+    "solution": "Assemble the polynomial from the given coefficients: $-4x^4 + 0x^3 + 5x^2 + 0x + 14$. Omit the zero-coefficient terms $0x^3$ and $0x$: the result is $-4x^4 + 5x^2 + 14$. This is already in decreasing degree order (degrees $4,2,0$).",
+    "answer": "-4x^4+5x^2+14",
+    "id": "242_5",
+    "question": "Using the combined coefficients from the sum $(x^3+4x^2-7x+11)+(-4x^4-x^3+x^2+7x+3)$, where the coefficient of $x^4$ is $-4$, the coefficient of $x^3$ is $0$, the coefficient of $x^2$ is $5$, the coefficient of $x$ is $0$, and the constant term is $14$, write the resulting polynomial in decreasing degree order, omitting any terms with zero coefficient."
+  },
+  {
+    "solution": "Multiply the integers: $7 \\times 6 = 42$.",
+    "answer": "42",
+    "id": "243_0",
+    "question": "Compute the product $7 \\times 6$."
+  },
+  {
+    "solution": "Multiply the integers: $4 \\times 3 = 12$.",
+    "answer": "12",
+    "id": "243_1",
+    "question": "Compute the product $4 \\times 3$."
+  },
+  {
+    "solution": "Evaluate from left to right since only addition and subtraction remain:\n$9-8=1$,\n$1+42=43$,\n$43+5=48$,\n$48-12=36$,\n$36+2=38$,\n$38-1=37$.\nTherefore, the value of the expression is $37$.",
+    "answer": "37",
+    "id": "243_2",
+    "question": "Evaluate the arithmetic expression $9-8+42+5-12+2-1$."
+  },
+  {
+    "solution": "List the letters explicitly: A, L, A, B, A, M, A. Counting them gives $7$ letters. Therefore, the total number of letters is $7$.",
+    "answer": "7",
+    "id": "244_0",
+    "question": "Consider the word ALABAMA. How many letters does it contain in total?"
+  },
+  {
+    "solution": "Write the word with indexed positions: 1:A, 2:L, 3:A, 4:B, 5:A, 6:M, 7:A. The letter $A$ appears at positions $1, 3, 5, 7$, which is $4$ occurrences.",
+    "answer": "4",
+    "id": "244_1",
+    "question": "Consider the word ALABAMA. How many times does the letter $A$ appear?"
+  },
+  {
+    "solution": "Since $L$, $B$, and $M$ each occur once, their multiplicities are $1, 1, 1$. Thus the product of factorials is $(1!)(1!)(1!) = 1 \\cdot 1 \\cdot 1 = 1$.",
+    "answer": "1",
+    "id": "244_2",
+    "question": "In the word ALABAMA, aside from the letter $A$, the distinct letters are $L$, $B$, and $M$. Each of these occurs exactly once. Compute the product of the factorials of their multiplicities, i.e., $(1!)(1!)(1!)$."
+  },
+  {
+    "solution": "For a multiset with $n$ total letters and multiplicities $m_1, m_2, \\dots$, the number of distinct permutations is given by $\\dfrac{n!}{(m_1!)(m_2!)\\cdots}$. Here, $n = 7$ and the multiplicities are $4, 1, 1, 1$. Therefore, the count is \\[ \\frac{7!}{(4!)(1!)(1!)(1!)} = \\frac{5040}{24} = 210. \\]",
+    "answer": "210",
+    "id": "244_3",
+    "question": "Determine the number of distinct permutations of the letters of the word ALABAMA. The word has $7$ letters with multiplicities: $A$ occurs $4$ times, and $L$, $B$, $M$ each occur once."
+  },
+  {
+    "solution": "From the general analysis of $y = a\\csc(bx)$, the distance between consecutive vertical asymptotes is $\\dfrac{\\pi}{b}$. The given graph shows this distance to be $3\\pi$. Set these equal: \\[\\frac{\\pi}{b} = 3\\pi.\\] Divide both sides by $\\pi$ to obtain \\[\\frac{1}{b} = 3,\\] hence \\[b = \\frac{1}{3}.\\]",
+    "answer": "1/3",
+    "id": "245_1",
+    "question": "A graph of $y = a\\csc(bx)$ (with $a,b>0$) shows vertical asymptotes at $x=-3\\pi$, $x=0$, and $x=3\\pi$, so the distance between consecutive vertical asymptotes is $3\\pi$. Using the general spacing formula for vertical asymptotes of $y = a\\csc(bx)$, find $b$."
+  },
+  {
+    "solution": "We have $1729 \\le 1768 < 2\\cdot 1729$, so the quotient is $q = 1$. Then the remainder is $r = 1768 - 1729\\cdot 1 = 39$. This satisfies $0 \\le 39 < 1729$. Therefore, $1768 = 1729\\cdot 1 + 39$ and the remainder is $r = 39$.",
+    "answer": "39",
+    "id": "246_0",
+    "question": "Use the division algorithm to divide $1768$ by $1729$: find integers $q$ and $r$ such that $1768 = 1729q + r$ with $0 \\le r < 1729$. Report the remainder $r$."
+  },
+  {
+    "solution": "Compute $\\left\\lfloor \\dfrac{1729}{39} \\right\\rfloor$. Note that $39\\cdot 44 = 1716$ and $39\\cdot 45 = 1755 > 1729$, so $q = 44$. Then $r = 1729 - 39\\cdot 44 = 1729 - 1716 = 13$. This satisfies $0 \\le 13 < 39$. Therefore, $1729 = 39\\cdot 44 + 13$ and the remainder is $r = 13$.",
+    "answer": "13",
+    "id": "246_1",
+    "question": "Use the division algorithm to divide $1729$ by $39$: find integers $q$ and $r$ such that $1729 = 39q + r$ with $0 \\le r < 39$. Report the remainder $r$. "
+  },
+  {
+    "solution": "Since $13\\cdot 3 = 39$, we have $q = 3$ and $r = 39 - 13\\cdot 3 = 0$. This satisfies $0 \\le 0 < 13$. Therefore, $39 = 13\\cdot 3 + 0$ and the remainder is $r = 0$.",
+    "answer": "0",
+    "id": "246_2",
+    "question": "Use the division algorithm to divide $39$ by $13$: find integers $q$ and $r$ such that $39 = 13q + r$ with $0 \\le r < 13$. Report the remainder $r$."
+  },
+  {
+    "solution": "By the Euclidean algorithm, $\\gcd(a,b) = \\gcd(b, a \\bmod b)$. From $1768 = 1729\\cdot 1 + 39$, we get $\\gcd(1768,1729) = \\gcd(1729,39)$. From $1729 = 39\\cdot 44 + 13$, we get $\\gcd(1729,39) = \\gcd(39,13)$. From $39 = 13\\cdot 3 + 0$, we get $\\gcd(39,13) = \\gcd(13,0)$. For any integer $a \\ne 0$, $\\gcd(a,0) = |a|$, so $\\gcd(13,0) = 13$. Therefore, $\\gcd(1768,1729) = 13$.",
+    "answer": "13",
+    "id": "246_3",
+    "question": "Given the identities from applying the Euclidean algorithm: $1768 = 1729\\cdot 1 + 39$, $1729 = 39\\cdot 44 + 13$, and $39 = 13\\cdot 3 + 0$, determine $\\gcd(1768,1729)$. "
+  },
+  {
+    "solution": "First, observe that if $n \\equiv 2 \\pmod{4}$, then $4 \\mid (n-2)$, so $n-2=4k$ for some integer $k$. Hence $n=4k+2=2(2k+1)$ is even, which implies $2 \\mid n$, i.e., $n \\equiv 0 \\pmod{2}$. Therefore, the condition $n \\equiv 0 \\pmod{2}$ is redundant, and it suffices to solve the system $n \\equiv 2 \\pmod{4}$ and $n \\equiv 1 \\pmod{3}$. Since $\\gcd(4,3)=1$, the solution is unique modulo $\\operatorname{lcm}(4,3)=12$. Enumerate integers congruent to $2 \\pmod{4}$: $2,6,10,14,\\dots$. Reduce each modulo $3$: $2 \\equiv 2 \\pmod{3}$ (not $1$), $6 \\equiv 0 \\pmod{3}$ (not $1$), $10 \\equiv 1 \\pmod{3}$ (works). Therefore, the simultaneous solutions are exactly those with $n \\equiv 10 \\pmod{12}$. ",
+    "answer": "n \\equiv 10 \\pmod{12}",
+    "id": "247_0",
+    "question": "Let n be an integer. The notation $n \\equiv a \\pmod{m}$ means that $m$ divides $n-a$. Find the unique residue class modulo $12$ of all integers $n$ that simultaneously satisfy: $n \\equiv 0 \\pmod{2}$, $n \\equiv 1 \\pmod{3}$, and $n \\equiv 2 \\pmod{4}$. Express your answer as a single congruence modulo $12$."
+  },
+  {
+    "solution": "All solutions to $n \\equiv 10 \\pmod{12}$ are of the form $n = 10 + 12k$ for $k \\in \\mathbb{Z}$. For $k=0$, $n=10$. For $k<0$, $n \\le 10-12=-2$ are not positive. For $k>0$, $n \\ge 22$ are larger than $10$. Therefore, the least positive solution is $n=10$.",
+    "answer": "10",
+    "id": "247_1",
+    "question": "Given the congruence $n \\equiv 10 \\pmod{12}$, where $n \\equiv a \\pmod{m}$ means $m$ divides $n-a$, determine the least positive integer $n$ that satisfies it."
+  },
+  {
+    "solution": "In base $b$:\n- $13 = 1\\cdot b + 3 = b + 3$,\n- $1 = 1$,\n- $11 = 1\\cdot b + 1 = b + 1$.\nThus the top row sum is $(b+3) + 1 + (b+1) = 2b + 5$.",
+    "answer": "2b+5",
+    "id": "248_0",
+    "question": "Consider a 3\u00d73 array whose top row contains the base-$b$ numerals 13, 1, 11 (written in base $b$). Interpreting each numeral in base $b$ (so a two-digit numeral $xy$ equals $x\\cdot b + y$), compute the sum of the numbers in the top row as a function of $b$."
+  },
+  {
+    "solution": "In base $b$:\n- $4 = 4$,\n- $14 = 1\\cdot b + 4 = b + 4$,\n- $2 = 2$.\nThus the bottom row sum is $4 + (b+4) + 2 = b + 10$.",
+    "answer": "b+10",
+    "id": "248_1",
+    "question": "Consider the same 3\u00d73 array whose bottom row contains the base-$b$ numerals 4, 14, 2 (written in base $b$). Interpreting each numeral in base $b$ (so a two-digit numeral $xy$ equals $x\\cdot b + y$), compute the sum of the numbers in the bottom row as a function of $b$."
+  },
+  {
+    "solution": "From base-$b$ interpretation:\n- Top row sum: $(b+3) + 1 + (b+1) = 2b + 5$.\n- Bottom row sum: $4 + (b+4) + 2 = b + 10$.\nSet them equal for a magic square: $2b + 5 = b + 10$.\nSubtract $b$ from both sides: $b + 5 = 10$.\nSubtract $5$: $b = 5$.\nThis satisfies $b \\ge 5$, so it is valid.",
+    "answer": "5",
+    "id": "248_2",
+    "question": "A magic square has equal sums in each row. For the 3\u00d73 array with top row 13, 1, 11 and bottom row 4, 14, 2 (numerals written in base $b$), set the top row sum equal to the bottom row sum and solve for the base $b$. Note that the presence of the digit 4 requires $b \\ge 5$."
+  },
+  {
+    "solution": "The $t$ interior intersection points cut the new segment $S$ into $t+1$ subsegments. Before adding $S$, each of these $t+1$ subsegments lies entirely inside a single existing region (because consecutive intersection points along $S$ are on the boundary between adjacent regions). Cutting along each such subsegment splits that region into two. Thus, each subsegment contributes exactly one new region. Therefore, the total number of newly created regions equals the number of subsegments, which is $t+1$.",
+    "answer": "t+1",
+    "id": "249_0",
+    "question": "Let a rectangle be partitioned by $m \\ge 0$ straight line segments, each drawn as a straight chord with endpoints on the boundary. Assume general position: no two segments overlap, any two segments meet at most once, all intersections occur strictly in the interior, and no three segments pass through the same interior point. A new segment $S$ is added whose interior intersects exactly $t \\ge 0$ of the existing segments at distinct interior points, and whose endpoints are not incident with any existing intersection. How many new regions are created by adding $S$?"
+  },
+  {
+    "solution": "Order the segments arbitrarily and add them one at a time. Let $t_k$ be the number of interior intersections that the $k$-th added segment has with the previously placed $k-1$ segments. By the result that a segment intersecting $t_k$ existing segments creates $t_k+1$ new regions, starting from $R_0=1$ we obtain: $$R_n=R_0+\\sum_{k=1}^{n}(t_k+1)=1+\\sum_{k=1}^{n}t_k+\\sum_{k=1}^{n}1=1+I+n,$$ because each of the $I$ intersection points is counted exactly once in $\\sum t_k$ (when the later of its two segments is added). Therefore, the region count is $$R=1+n+I.$$",
+    "answer": "1+n+I",
+    "id": "249_2",
+    "question": "Let $n\\ge 1$ straight line segments be drawn inside a rectangle under general position assumptions: endpoints lie on the boundary, no two segments overlap, any two segments meet at most once, intersections (if any) occur in the interior, and no three segments meet at the same interior point. Denote by $I$ the total number of interior intersection points among the segments. Derive a formula for the number $R$ of regions determined by these segments in terms of $n$ and $I$."
+  },
+  {
+    "solution": "With $n=4$ segments and $I=\\binom{4}{2}=6$ interior intersections achievable as described, the formula gives $$R=1+n+I=1+4+6=11.$$ The first segment alone yields $2$ regions, and each additional segment in this configuration increases the count optimally, so $R=11$ is both achievable and maximal (since no pair can intersect more than once, $I\\le\\binom{4}{2}$).",
+    "answer": "11",
+    "id": "249_3",
+    "question": "Inside a rectangle, draw $4$ straight line segments with endpoints on the boundary, in general position. It is possible to choose them so that every pair intersects exactly once in the interior (for example, connect four points on the left edge to four points on the right edge with reversed vertical order, which yields $I=\\binom{4}{2}=6$ interior intersections). Using the general formula $R=1+n+I$, compute the maximum possible number of regions $R$ determined by these $4$ segments."
+  },
+  {
+    "solution": "First expand each square:\n\\[(ac+bd)^2 = a^2c^2 + 2abcd + b^2d^2,\\]\n\\[(bc - ad)^2 = b^2c^2 - 2abcd + a^2d^2.\\]\nAdd the two results:\n\\[(ac+bd)^2 + (bc - ad)^2 = (a^2c^2 + 2abcd + b^2d^2) + (b^2c^2 - 2abcd + a^2d^2).\\]\nThe cross terms cancel, giving:\n\\[a^2c^2 + b^2c^2 + a^2d^2 + b^2d^2 = a^2(c^2 + d^2) + b^2(c^2 + d^2).\\]\nFactor out $(c^2 + d^2)$:\n\\[(a^2 + b^2)(c^2 + d^2).\\]",
+    "answer": "(a^2+b^2)(c^2+d^2)",
+    "id": "250_0",
+    "question": "Let $a$, $b$, $c$, and $d$ be real numbers. Expand and simplify the expression $(ac+bd)^2 + (bc - ad)^2$ into a form that depends only on $a^2$, $b^2$, $c^2$, and $d^2$."
+  },
+  {
+    "solution": "From direct expansion, we have the identity\n\\[(ac+bd)^2 + (bc - ad)^2 = (a^2 + b^2)(c^2 + d^2).\\]\nSubstitute the given values $a^2 + b^2 = 3$ and $c^2 + d^2 = 4$:\n\\[(ac+bd)^2 + (bc - ad)^2 = 3 \\cdot 4 = 12.\\]",
+    "answer": "12",
+    "id": "250_1",
+    "question": "Let $a$, $b$, $c$, and $d$ be real numbers satisfying $a^2 + b^2 = 3$ and $c^2 + d^2 = 4$. Evaluate $(ac+bd)^2 + (bc - ad)^2$."
+  },
+  {
+    "solution": "There are $4$ favorable outcomes (the 4 Jacks) out of $52$ equally likely possible cards. Therefore, the probability is\n\\[ \\frac{4}{52} = \\frac{1}{13}. \\]",
+    "answer": "\\frac{1}{13}",
+    "id": "251_0",
+    "question": "A standard 52-card deck has 4 suits and 13 ranks, including exactly 4 Jacks. One card is dealt uniformly at random from the well-shuffled deck (without replacement). What is the probability that the first card dealt is a Jack?"
+  },
+  {
+    "solution": "After one Jack is dealt, there are $51$ cards remaining. The number of Queens remains $4$ (Jacks and Queens are distinct ranks). Hence the probability that the second card is a Queen is\n\\[ \\frac{4}{51}. \\]",
+    "answer": "\\frac{4}{51}",
+    "id": "251_1",
+    "question": "From a standard 52-card deck, suppose the first card dealt (without replacement) is a Jack. What is the probability that the second card dealt is a Queen?"
+  },
+  {
+    "solution": "Use the multiplication rule for sequential dependent events. The probabilities are:\n- First card is a Jack: \\( \\frac{4}{52} = \\frac{1}{13} \\).\n- Given the first is a Jack, second card is a Queen: \\( \\frac{4}{51} \\).\n- Given the first two are Jack and Queen, there are $50$ cards left with $4$ Kings, so third card is a King: \\( \\frac{4}{50} = \\frac{2}{25} \\).\nTherefore, the desired probability is\n\\[ \\left(\\frac{4}{52}\\right)\\left(\\frac{4}{51}\\right)\\left(\\frac{4}{50}\\right) = \\left(\\frac{1}{13}\\right)\\left(\\frac{4}{51}\\right)\\left(\\frac{2}{25}\\right) = \\frac{8}{13\\cdot 51\\cdot 25} = \\frac{8}{16575}. \\]",
+    "answer": "\\frac{8}{16575}",
+    "id": "251_2",
+    "question": "From a standard 52-card deck, cards are dealt without replacement. What is the probability that the first card is a Jack, the second card is a Queen, and the third card is a King (in that order)?"
+  },
+  {
+    "solution": "1) Compute the cross product: \\(\\mathbf{u} \\times \\mathbf{v} = (u_2 v_3 - u_3 v_2,\\; u_3 v_1 - u_1 v_3,\\; u_1 v_2 - u_2 v_1)\\).\n2) Take the dot product with \\(\\mathbf{u}\\):\n\\[\\mathbf{u} \\cdot (\\mathbf{u} \\times \\mathbf{v}) = u_1(u_2 v_3 - u_3 v_2) + u_2(u_3 v_1 - u_1 v_3) + u_3(u_1 v_2 - u_2 v_1).\\]\n3) Expand and group terms:\n\\[u_1 u_2 v_3 - u_1 u_3 v_2 + u_2 u_3 v_1 - u_2 u_1 v_3 + u_3 u_1 v_2 - u_3 u_2 v_1.\\]\n4) Observe pairwise cancellation: \\(u_1 u_2 v_3 - u_2 u_1 v_3 = 0\\), \\(-u_1 u_3 v_2 + u_3 u_1 v_2 = 0\\), and \\(u_2 u_3 v_1 - u_3 u_2 v_1 = 0\\).\n5) Therefore, \\(\\mathbf{u} \\cdot (\\mathbf{u} \\times \\mathbf{v}) = 0\\).",
+    "answer": "0",
+    "id": "252_0",
+    "question": "Let \\(\\mathbf{u} = (u_1,u_2,u_3)\\) and \\(\\mathbf{v} = (v_1,v_2,v_3)\\) be vectors in \\(\\mathbb{R}^3\\). Compute \\(\\mathbf{u} \\cdot (\\mathbf{u} \\times \\mathbf{v})\\)."
+  },
+  {
+    "solution": "1) Compute \\(\\mathbf{a} \\times \\mathbf{b}\\) using the determinant formula:\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 4 & \\sqrt{\\pi} & -14 \\\\ -1 & 3 & 10 \\end{vmatrix} = \\big(\\sqrt{\\pi}\\cdot 10 - (-14)\\cdot 3,\\; -(4\\cdot 10 - (-14)\\cdot(-1)),\\; 4\\cdot 3 - \\sqrt{\\pi}\\cdot(-1)\\big).\\]\n2) Simplify components: \\(\\mathbf{a} \\times \\mathbf{b} = (10\\sqrt{\\pi} + 42,\\; -26,\\; 12 + \\sqrt{\\pi})\\).\n3) Compute the dot product \\(\\mathbf{a} \\cdot (\\mathbf{a} \\times \\mathbf{b})\\):\n\\[4(10\\sqrt{\\pi}+42) + \\sqrt{\\pi}(-26) + (-14)(12 + \\sqrt{\\pi}).\\]\n4) Expand: \\(40\\sqrt{\\pi} + 168 - 26\\sqrt{\\pi} - 168 - 14\\sqrt{\\pi} = (40 - 26 - 14)\\sqrt{\\pi} + (168 - 168) = 0\\).\n5) Therefore, \\(\\mathbf{a} \\cdot (\\mathbf{a} \\times \\mathbf{b}) = 0\\).",
+    "answer": "0",
+    "id": "252_1",
+    "question": "Let \\(\\mathbf{a} = \\begin{pmatrix} 4 \\\\ \\sqrt{\\pi} \\\\ -14 \\end{pmatrix}\\) and \\(\\mathbf{b} = \\begin{pmatrix} -1 \\\\ 3 \\\\ 10 \\end{pmatrix}\\). Compute \\(\\mathbf{a} \\cdot (\\mathbf{a} \\times \\mathbf{b})\\)."
+  },
+  {
+    "solution": "We test consecutive integers. Compute $4^3 = 64$, which satisfies $64 < 100$. Next, compute $5^3 = 125$, which satisfies $125 > 100$. Since $4^3 \\le 100 < 5^3$, the smallest integer $L$ with $L^3 > 100$ is $L = 5$.",
+    "answer": "5",
+    "id": "253_0",
+    "question": "Find the smallest integer $L$ such that $L^3 > 100$ (i.e., the least integer whose cube is strictly greater than $100$)."
+  },
+  {
+    "solution": "We test consecutive integers near the cube root of $900$. Compute $9^3 = 729$, which satisfies $729 < 900$. Next, compute $10^3 = 1000$, which satisfies $1000 > 900$. Since $9^3 < 900 < 10^3$, the largest integer $U$ with $U^3 < 900$ is $U = 9$.",
+    "answer": "9",
+    "id": "253_1",
+    "question": "Find the largest integer $U$ such that $U^3 < 900$ (i.e., the greatest integer whose cube is strictly less than $900$)."
+  },
+  {
+    "solution": "The integers $n$ with $5 \\le n \\le 9$ are $5,6,7,8,9$. The count is $N = U - L + 1 = 9 - 5 + 1 = 5$. Therefore, there are $5$ perfect cubes strictly between $100$ and $900$ (specifically, $5^3=125$, $6^3=216$, $7^3=343$, $8^3=512$, $9^3=729$).",
+    "answer": "5",
+    "id": "253_2",
+    "question": "Given $L = 5$ and $U = 9$, compute the number $N$ of integers $n$ satisfying $L \\le n \\le U$. This $N$ equals the number of perfect cubes strictly between $100$ and $900$."
+  },
+  {
+    "solution": "By definition, $25\\% = 25/100 = 1/4$. Winning $25\\%$ of $T$ games means $W = (1/4)\\cdot T = T/4$.",
+    "answer": "$W = T/4$",
+    "id": "254_0",
+    "question": "Let $T$ be the total number of games Kent played on Saturday and $W$ the number of games he won. Given that he won $25\\%$ of the games, express $W$ in terms of $T$."
+  },
+  {
+    "solution": "With no ties, the total equals wins plus losses: $T = W + L$. Given $L = 12$, substitute to obtain $T = W + 12$.",
+    "answer": "$T = W + 12$",
+    "id": "254_1",
+    "question": "Let $T$ be the total number of games Kent played on Saturday, $W$ the number of games he won, and $L$ the number of games he lost. Assuming no ties and given that he lost $12$ games, express $T$ in terms of $W$."
+  },
+  {
+    "solution": "From $W = T/4$, multiply both sides by $4$ to get $4W = T$. Substitute into $T = W + 12$ to obtain $4W = W + 12$. Subtract $W$ from both sides: $3W = 12$. Divide both sides by $3$: $W = 12/3 = 4$.",
+    "answer": "4",
+    "id": "254_2",
+    "question": "Solve for the number of wins $W$ given the system of equations $W = T/4$ and $T = W + 12$."
+  },
+  {
+    "solution": "For a multiset of $n$ items with multiplicities $a_1,a_2,\\dots,a_k$ (where $\\sum a_i=n$), the number of distinct permutations is given by the multinomial formula:\n\\[ \\frac{n!}{a_1!\\,a_2!\\,\\cdots\\,a_k!}. \\]\nHere, $n=11$ with multiplicities $1,4,4,2$, so\n\\[ \\frac{11!}{1!\\,4!\\,4!\\,2!} = \\frac{11!}{4!\\,4!\\,2!} \\quad (\\text{since } 1!=1). \\]",
+    "answer": "$\\frac{11!}{4!\\,4!\\,2!}$",
+    "id": "255_1",
+    "question": "A word consists of $n=11$ letters with repeated letters: $M$ appears $1$ time, $I$ appears $4$ times, $S$ appears $4$ times, and $P$ appears $2$ times. Treat identical letters as indistinguishable. What is the number of distinct permutations of these letters? Express your answer as a factorial expression."
+  },
+  {
+    "solution": "Start by canceling factors to simplify computation:\n\\[ \\frac{11!}{4!\\,4!\\,2!} = \\frac{11\\cdot 10\\cdot 9\\cdot 8\\cdot 7\\cdot 6\\cdot 5\\cdot 4\\cdot 3\\cdot 2\\cdot 1}{(4\\cdot 3\\cdot 2\\cdot 1)(4\\cdot 3\\cdot 2\\cdot 1)(2)}. \\]\nCancel one $4!$ with the factors $4\\cdot 3\\cdot 2\\cdot 1$ in the numerator, leaving\n\\[ \\frac{11\\cdot 10\\cdot 9\\cdot 8\\cdot 7\\cdot 6\\cdot 5}{4!\\cdot 2!} = \\frac{11\\cdot 10\\cdot 9\\cdot 8\\cdot 7\\cdot 6\\cdot 5}{24\\cdot 2} = \\frac{11\\cdot 10\\cdot 9\\cdot 8\\cdot 7\\cdot 6\\cdot 5}{48}. \\]\nNow cancel factors: since $48=6\\cdot 8$, cancel the $6$ and $8$ in the numerator with the denominator $48$:\n\\[ \\frac{11\\cdot 10\\cdot 9\\cdot 7\\cdot 5}{1} = 11\\cdot 10\\cdot 9\\cdot 7\\cdot 5. \\]\nCompute step by step:\n\\[ 11\\cdot 10=110,\\quad 110\\cdot 9=990,\\quad 990\\cdot 7=6930,\\quad 6930\\cdot 5=34650. \\]\nTherefore,\n\\[ \\frac{11!}{4!\\,4!\\,2!}=34650. \\]",
+    "answer": "34650",
+    "id": "255_2",
+    "question": "Evaluate the factorial expression $\\frac{11!}{4!\\,4!\\,2!}$."
+  },
+  {
+    "solution": "1) Since $D$ lies on the $x$-axis to the right of $B=(1,0)$ and $BD=t>0$, the $x$-coordinate of $D$ is $1+t$ and the $y$-coordinate is $0$.\nTherefore, $D=(1+t,0)$.",
+    "answer": "D=(1+t,0)",
+    "id": "256_1",
+    "question": "With $A=(-1,0)$ and $B=(1,0)$ so that line $AB$ is the $x$-axis, let point $D$ lie on line $AB$ such that $B$ lies between $A$ and $D$. Let $t=BD>0$. Express the coordinates of $D$ in terms of $t$."
+  },
+  {
+    "solution": "1) Compute $CD^2$ by the distance formula: $CD^2=(1+t-0)^2+(0-4\\sqrt{3})^2=(1+t)^2+48$.\n2) Given $CD=8$, set $(1+t)^2+48=64\\implies (1+t)^2=16$.\n3) Thus $1+t=\\pm 4$, giving $t=3$ or $t=-5$.\n4) Since $t=BD>0$, take $t=3$.\nTherefore, $BD=3$.",
+    "answer": "3",
+    "id": "256_2",
+    "question": "Using the coordinates $C=(0,4\\sqrt{3})$ and $D=(1+t,0)$ with $t=BD>0$, and the condition $CD=8$, solve for $t$ and hence determine $BD$."
+  },
+  {
+    "solution": "Compute the characteristic polynomial: \\n\\[\\det(A - \\lambda I) = \\begin{vmatrix}1 - \\lambda & 4 \\\\ 4 & 7 - \\lambda\\end{vmatrix} = (1 - \\lambda)(7 - \\lambda) - 16 = \\lambda^2 - 8\\lambda - 9.\\]\\nSolve \\(\\lambda^2 - 8\\lambda - 9 = 0\\):\\n\\[\\lambda = \\frac{8 \\pm \\sqrt{64 + 36}}{2} = \\frac{8 \\pm 10}{2}.\\]\\nThus the eigenvalues are \\(9\\) and \\(-1\\), so the largest eigenvalue is \\(9\\).",
+    "answer": "9",
+    "id": "257_0",
+    "question": "Let A be the symmetric matrix \\(A = \\begin{pmatrix}1 & 4 \\\\ 4 & 7\\end{pmatrix}\\). Find the largest eigenvalue of A."
+  },
+  {
+    "solution": "A real symmetric matrix has an orthonormal eigenbasis. Let the eigenvalues of \\(A\\) be \\(\\lambda_1 = 9\\) and \\(\\lambda_2 = -1\\) with corresponding orthonormal eigenvectors \\(\\mathbf{u}_1, \\mathbf{u}_2\\). Any nonzero \\(\\mathbf{v}\\) can be written as \\(\\mathbf{v} = \\alpha \\mathbf{u}_1 + \\beta \\mathbf{u}_2\\). Then\\n\\[\\mathbf{v}^T \\mathbf{v} = \\alpha^2 + \\beta^2, \\quad \\mathbf{v}^T A \\mathbf{v} = 9\\alpha^2 + (-1)\\beta^2.\\]\\nHence\\n\\[R(\\mathbf{v}) = \\frac{9\\alpha^2 - \\beta^2}{\\alpha^2 + \\beta^2} \\le 9,\\]\\nwith equality when \\(\\beta = 0\\), i.e., when \\(\\mathbf{v}\\) is an eigenvector for \\(\\lambda_1 = 9\\). Therefore, the maximum of the Rayleigh quotient is \\(9\\).",
+    "answer": "9",
+    "id": "257_1",
+    "question": "For the symmetric matrix \\(A = \\begin{pmatrix}1 & 4 \\\\ 4 & 7\\end{pmatrix}\\), consider the Rayleigh quotient \\(R(\\mathbf{v}) = \\frac{\\mathbf{v}^T A \\mathbf{v}}{\\mathbf{v}^T \\mathbf{v}}\\) for nonzero \\(\\mathbf{v} \\in \\mathbb{R}^2\\). Determine the maximum possible value of \\(R(\\mathbf{v})\\)."
+  },
+  {
+    "solution": "From \\(\\mathbf{v}^T A \\mathbf{v} \\le 9\\, \\mathbf{v}^T \\mathbf{v}\\) and the constraint \\(\\mathbf{v}^T A \\mathbf{v} = 225\\), we obtain\\n\\[225 \\le 9\\, \\mathbf{v}^T \\mathbf{v} \\quad \\Rightarrow \\quad \\mathbf{v}^T \\mathbf{v} \\ge \\frac{225}{9} = 25.\\]\\nTo see this lower bound is attained, take \\(\\mathbf{v} = t\\, \\mathbf{u}_1\\), where \\(\\mathbf{u}_1\\) is a unit eigenvector of \\(A\\) with eigenvalue \\(9\\). Then \\(\\mathbf{v}^T A \\mathbf{v} = 9 t^2\\). Enforcing \\(9 t^2 = 225\\) gives \\(t^2 = 25\\), hence \\(\\mathbf{v}^T \\mathbf{v} = t^2 = 25\\). Therefore, the minimum possible value of \\(x^2 + y^2\\) is \\(25\\).",
+    "answer": "25",
+    "id": "257_2",
+    "question": "Let \\(A = \\begin{pmatrix}1 & 4 \\\\ 4 & 7\\end{pmatrix}\\) and \\(\\mathbf{v} = \\begin{pmatrix}x \\\\ y\\end{pmatrix} \\ne \\mathbf{0}\\) satisfy the constraint \\(\\mathbf{v}^T A \\mathbf{v} = 225\\), i.e., \\(x^2 + 8xy + 7y^2 = 225\\). Using the fact that \\(\\mathbf{v}^T A \\mathbf{v} \\le 9\\, \\mathbf{v}^T \\mathbf{v}\\) for all nonzero \\(\\mathbf{v}\\) (with equality when \\(\\mathbf{v}\\) is an eigenvector for eigenvalue \\(9\\)), find the minimum possible value of \\(\\mathbf{v}^T \\mathbf{v} = x^2 + y^2\\) and show it is achieved."
+  },
+  {
+    "solution": "The minimal distance is \\(d_{\\min} = \\sqrt{\\min(x^2 + y^2)} = \\sqrt{25} = 5\\).",
+    "answer": "5",
+    "id": "257_3",
+    "question": "Let \\(P = (x,y)\\) satisfy \\(x^2 + 8xy + 7y^2 = 225\\). The Euclidean distance from the origin to \\(P\\) is \\(d = \\sqrt{x^2 + y^2}\\). If the minimum possible value of \\(x^2 + y^2\\) under this constraint is \\(25\\), compute the minimum possible distance \\(d\\)."
+  },
+  {
+    "solution": "We test the smallest two-digit integer, $10$. Compute its remainder modulo $3$:\n\n$10 = 3\\cdot 3 + 1 \\Rightarrow 10 \\equiv 1 \\pmod{3}$.\n\nTherefore, the smallest two-digit positive integer congruent to $1 \\pmod{3}$ is $10$.",
+    "answer": "10",
+    "id": "258_0",
+    "question": "Find the smallest two-digit positive integer that is congruent to $1 \\pmod{3}$. A two-digit positive integer is any integer from $10$ to $99$ inclusive. For integers $a$ and $b$, the statement $a \\equiv b \\pmod{3}$ means that $3$ divides $a-b$."
+  },
+  {
+    "solution": "We examine the largest two-digit integer, $99$. Since $99 = 3\\cdot 33$, we have $99 \\equiv 0 \\pmod{3}$. Then $98 \\equiv -1 \\equiv 2 \\pmod{3}$, and $97 \\equiv -2 \\equiv 1 \\pmod{3}$. Also, $97 = 3\\cdot 32 + 1$, confirming $97 \\equiv 1 \\pmod{3}$. Hence, the largest two-digit positive integer congruent to $1 \\pmod{3}$ is $97$.",
+    "answer": "97",
+    "id": "258_1",
+    "question": "Find the largest two-digit positive integer that is congruent to $1 \\pmod{3}$. A two-digit positive integer is any integer from $10$ to $99$ inclusive. For integers $a$ and $b$, the statement $a \\equiv b \\pmod{3}$ means that $3$ divides $a-b$."
+  },
+  {
+    "solution": "All such integers form an arithmetic progression starting at $10$ with common difference $3$: $10, 13, 16, \\dots, 97$. The general term is $10 + 3k$ for integer $k \\ge 0$. To find the largest $k$ with $10 + 3k \\le 97$:\n\n$10 + 3k \\le 97 \\Rightarrow 3k \\le 87 \\Rightarrow k \\le 29.$\n\nThus $k$ ranges from $0$ to $29$, yielding $29 - 0 + 1 = 30$ terms. Therefore, there are $30$ two-digit integers congruent to $1 \\pmod{3}$.",
+    "answer": "30",
+    "id": "258_2",
+    "question": "Given that the smallest and largest two-digit positive integers congruent to $1 \\pmod{3}$ are $10$ and $97$, respectively, count how many integers in the interval $[10,99]$ are congruent to $1 \\pmod{3}$."
+  },
+  {
+    "solution": "Using the identity with a = 24 and b = n, we have\n\\[ 24\\,n = \\gcd(24,n)\\,\\operatorname{lcm}(24,n). \\]\nGiven \\(\\gcd(24,n) = x+2\\) and \\(\\operatorname{lcm}(24,n) = x(x+2)\\), substitute to get\n\\[ 24\\,n = (x+2)\\cdot x(x+2) = x(x+2)^2. \\]\nSolving for n gives\n\\[ n = \\frac{x(x+2)^2}{24}. \\]",
+    "answer": "\\frac{x(x+2)^2}{24}",
+    "id": "259_0",
+    "question": "Let the two positive integers be 24 and n. It is given that their greatest common divisor is x+2 and their least common multiple is x(x+2), where x is a positive integer. Using the identity for any positive integers a and b, that ab = \\gcd(a,b)\\,\\operatorname{lcm}(a,b), express n in terms of x."
+  },
+  {
+    "solution": "Since d = \\gcd(24,n), we must have d \\mid 24 and d \\ge 3 (because x > 0 implies d = x+2 \\ge 3). The divisors of 24 that are \\(\\ge 3\\) are\n\\[ d \\in \\{3,4,6,8,12,24\\}. \\]\nFor each d, compute \\(n = \\frac{(d-2)d^2}{24}\\) and verify both \\(\\gcd(24,n) = d\\) and \\(\\operatorname{lcm}(24,n) = (d-2)d\\):\n- d = 3: \\(n = \\frac{(3-2)\\cdot 3^2}{24} = \\frac{9}{24} = \\frac{3}{8}\\) (not an integer) \\(\\Rightarrow\\) discard.\n- d = 4: \\(n = \\frac{(4-2)\\cdot 4^2}{24} = \\frac{32}{24} = \\frac{4}{3}\\) (not an integer) \\(\\Rightarrow\\) discard.\n- d = 6: \\(n = \\frac{(6-2)\\cdot 6^2}{24} = \\frac{144}{24} = 6\\). Then \\(\\gcd(24,6) = 6 = d\\), and \\(\\operatorname{lcm}(24,6) = \\frac{24\\cdot 6}{\\gcd(24,6)} = \\frac{144}{6} = 24 = (6-2)\\cdot 6\\). Valid.\n- d = 8: \\(n = \\frac{(8-2)\\cdot 8^2}{24} = \\frac{384}{24} = 16\\). Then \\(\\gcd(24,16) = 8 = d\\), and \\(\\operatorname{lcm}(24,16) = \\frac{24\\cdot 16}{8} = 48 = (8-2)\\cdot 8\\). Valid.\n- d = 12: \\(n = \\frac{(12-2)\\cdot 12^2}{24} = \\frac{1440}{24} = 60\\). Then \\(\\gcd(24,60) = 12 = d\\), and \\(\\operatorname{lcm}(24,60) = \\frac{24\\cdot 60}{12} = 120 = (12-2)\\cdot 12\\). Valid.\n- d = 24: \\(n = \\frac{(24-2)\\cdot 24^2}{24} = 22\\cdot 24 = 528\\). Then \\(\\gcd(24,528) = 24 = d\\), and \\(\\operatorname{lcm}(24,528) = \\frac{24\\cdot 528}{24} = 528 = (24-2)\\cdot 24\\). Valid.\nAmong valid d values, the smallest is \\(d = 6\\).",
+    "answer": "6",
+    "id": "259_1",
+    "question": "Let d = x+2. Suppose two positive integers 24 and n satisfy \\(\\gcd(24,n) = d\\) and \\(\\operatorname{lcm}(24,n) = (d-2)d\\) with x positive, so d \\ge 3. Using the product identity, \\(n = \\frac{(d-2)d^2}{24}\\). Since a greatest common divisor must divide 24, require d \\mid 24. Among all divisors d of 24 with d \\ge 3, determine the smallest d for which there exists an integer n that also satisfies the given gcd and lcm conditions."
+  },
+  {
+    "solution": "Use the identity \\(ab = \\gcd(a,b)\\,\\operatorname{lcm}(a,b)\\) with \\(a = 24\\) and \\(b = n\\):\n\\[ 24\\,n = 6\\cdot 24. \\]\nDivide both sides by 24:\n\\[ n = \\frac{6\\cdot 24}{24} = 6. \\]\nCheck: \\(\\gcd(24,6) = 6\\) and \\(\\operatorname{lcm}(24,6) = 24\\), consistent.",
+    "answer": "6",
+    "id": "259_2",
+    "question": "Given two positive integers 24 and n with \\(\\gcd(24,n) = 6\\) and \\(\\operatorname{lcm}(24,n) = 24\\), compute n."
+  },
+  {
+    "solution": "To find the number of made shots, compute 55% of 20: \\(55\\% = \\frac{55}{100} = \\frac{11}{20}\\). Then \\(\\frac{11}{20} \\times 20 = 11\\).",
+    "answer": "11",
+    "id": "260_0",
+    "question": "A basketball player has attempted 20 shots and made 55% of them. How many shots did the player make?"
+  },
+  {
+    "solution": "Compute 56% of 25: \\(56\\% = \\frac{56}{100}\\). Then \\(\\frac{56}{100} \\times 25 = \\frac{56 \\times 25}{100} = \\frac{1400}{100} = 14\\).",
+    "answer": "14",
+    "id": "260_1",
+    "question": "A basketball player has attempted 25 shots and has a success rate of 56%. How many shots did the player make?"
+  },
+  {
+    "solution": "The number of made shots in the last 5 attempts is the increase in made shots: \\(14 - 11 = 3\\).",
+    "answer": "3",
+    "id": "260_2",
+    "question": "A player made 11 shots in the first 20 attempts. After taking 5 more shots (for a total of 25 attempts), the total number of made shots is 14. How many of the last 5 shots were made?"
+  },
+  {
+    "solution": "We test each integer from 18 to 31 for primality using trial division by primes up to \\(\\sqrt{n}\\).\\n- \\(18\\): even, composite.\\n- \\(19\\): check divisors \\(2,3,5\\). Not divisible by \\(2\\) (odd), not by \\(3\\) (\\(1+9=10\\) not multiple of \\(3\\)), not by \\(5\\) (does not end in \\(0\\) or \\(5\\)). Hence \\(19\\) is prime.\\n- \\(20\\): even, composite.\\n- \\(21=3\\times 7\\): composite.\\n- \\(22\\): even, composite.\\n- \\(23\\): check divisors \\(2,3,5\\). Not divisible by \\(2\\) (odd), not by \\(3\\) (\\(2+3=5\\) not multiple of \\(3\\)), not by \\(5\\) (does not end in \\(0\\) or \\(5\\)). Hence \\(23\\) is prime.\\n- \\(24\\): even, composite.\\n- \\(25=5^2\\): composite.\\n- \\(26\\): even, composite.\\n- \\(27=3^3\\): composite.\\n- \\(28\\): even, composite.\\n- \\(29\\): check divisors \\(2,3,5\\). Not divisible by \\(2\\) (odd), not by \\(3\\) (\\(2+9=11\\) not multiple of \\(3\\)), not by \\(5\\). Hence \\(29\\) is prime.\\n- \\(30\\): even, composite.\\n- \\(31\\): check divisors \\(2,3,5\\). Not divisible by \\(2\\) (odd), not by \\(3\\) (\\(3+1=4\\) not multiple of \\(3\\)), not by \\(5\\). Hence \\(31\\) is prime.\\nTherefore, the primes in \\([18,31]\\) are \\(19,23,29,31\\).",
+    "answer": "[19, 23, 29, 31]",
+    "id": "261_0",
+    "question": "List all prime numbers n with 18 \\le n \\le 31. A prime is a positive integer greater than 1 with no positive divisors other than 1 and itself."
+  },
+  {
+    "solution": "We test primes greater than \\(17\\) in increasing order: \\(19,23,29,31,\\dots\\).\\n- \\(19\\): \\(\\operatorname{rev}(19)=91=7\\times 13\\), composite, so \\(19\\) is not reversible.\\n- \\(23\\): \\(\\operatorname{rev}(23)=32=2^5\\), composite, so \\(23\\) is not reversible.\\n- \\(29\\): \\(\\operatorname{rev}(29)=92=2^2\\times 23\\), composite, so \\(29\\) is not reversible.\\n- \\(31\\): Compute \\(\\operatorname{rev}(31)=13\\). Check that both \\(31\\) and \\(13\\) are prime.\\n  \u2022 \\(31\\): \\(\\sqrt{31}<6\\), test divisors \\(2,3,5\\). Not divisible by \\(2\\) (odd), by \\(3\\) (\\(3+1=4\\) not multiple of \\(3\\)), or by \\(5\\); hence prime.\\n  \u2022 \\(13\\): \\(\\sqrt{13}<4\\), test divisors \\(2,3\\). Not divisible by \\(2\\) (odd) or \\(3\\) (\\(1+3=4\\) not multiple of \\(3\\)); hence prime.\\nTherefore, \\(31\\) is the smallest reversible prime greater than \\(17\\).",
+    "answer": "31",
+    "id": "261_4",
+    "question": "A reversible prime is a prime \\(p\\) such that the number formed by reversing its digits, \\(\\operatorname{rev}(p)\\), is also prime. Determine the smallest reversible prime greater than \\(17\\)."
+  },
+  {
+    "solution": "Because the four segments are parallel to a side and extend fully across the square, each rectangle has height $h = s$. The five rectangles are congruent and arranged side-by-side, so their widths sum to $s$, giving width $w = \\frac{s}{5}$. The perimeter of one rectangle is $P = 2(w + h) = 2\\left(\\frac{s}{5} + s\\right) = 2s\\left(\\frac{1}{5} + 1\\right) = 2s\\cdot\\frac{6}{5} = \\frac{12}{5}s$.",
+    "answer": "$\\frac{12}{5}s$",
+    "id": "262_0",
+    "question": "Consider a square of side length $s$ inches. It is partitioned by four line segments drawn parallel to one side, each extending from one side of the square to the opposite side, thereby creating five congruent rectangles arranged side-by-side. Express the perimeter $P$ of one of these rectangles as a function of $s$."
+  },
+  {
+    "solution": "Set $\\frac{12}{5}s = 36$. Multiply both sides by $\\frac{5}{12}$ to solve for $s$: $$s = 36\\cdot\\frac{5}{12} = \\frac{180}{12} = 15.$$ Thus, the side length is $s = 15$ inches.",
+    "answer": "$15$",
+    "id": "262_1",
+    "question": "In the configuration of five congruent rectangles formed by partitioning a square of side length $s$ inches with four parallel cuts as described, the perimeter of each rectangle is $P = \\frac{12}{5}s$. If the given perimeter of each rectangle is $36$ inches, find the side length $s$ of the square in inches."
+  },
+  {
+    "solution": "The perimeter of a square is $4s$. Substituting $s = 15$ gives $$4\\cdot 15 = 60.$$",
+    "answer": "$60$",
+    "id": "262_2",
+    "question": "A square has side length $s = 15$ inches. Compute its perimeter."
+  },
+  {
+    "solution": "The odd-position digits are: position 1: $9$, position 3: $8$, position 5: $9$, position 7: $1$, position 9: $0$, position 11: $6$.\nCompute the sum: $9+8+9+1+0+6 = 17+9+1+0+6 = 26+1+0+6 = 27+0+6 = 33$.\nTherefore, the sum of the odd-position digits is $33$.",
+    "answer": "33",
+    "id": "263_1",
+    "question": "Using the 12-digit sequence $\\left(9,7,8,0,9,4,1,1,0,0,6,x\\right)$ from the UPC code 9-78094-11006-$x$, compute the sum of the digits in the odd positions (positions $1,3,5,7,9,11$)."
+  },
+  {
+    "solution": "The even-position digits are: position 2: $7$, position 4: $0$, position 6: $4$, position 8: $1$, position 10: $0$, position 12: $x$.\nSum the known digits: $7+0+4+1+0 = 12$.\nIncluding the unknown final digit gives $12 + x$.",
+    "answer": "12 + x",
+    "id": "263_2",
+    "question": "Using the 12-digit sequence $\\left(9,7,8,0,9,4,1,1,0,0,6,x\\right)$ from the UPC code 9-78094-11006-$x$, compute the sum of the digits in the even positions (positions $2,4,6,8,10,12$) as an expression in $x$."
+  },
+  {
+    "solution": "Compute $n$:\n$\\displaystyle n = 3\\cdot 33 + (12 + x) = 99 + 12 + x = 111 + x.$\nFor validity, $n \\equiv 0 \\pmod{10}$. Since $111 \\equiv 1 \\pmod{10}$, we need $1 + x \\equiv 0 \\pmod{10}$, i.e., $x \\equiv 9 \\pmod{10}$.\nBecause $x$ is a single digit, $x=9$.",
+    "answer": "9",
+    "id": "263_3",
+    "question": "A UPC code is valid if $n$, defined by $n=3\\times(\\text{sum of odd-position digits}) + (\\text{sum of even-position digits})$, is divisible by $10$. For the UPC code 9-78094-11006-$x$, the odd-position sum is $33$ and the even-position sum is $12+x$. Find the digit $x\\in\\{0,1,\\dots,9\\}$ such that $n$ is divisible by $10$."
+  },
+  {
+    "solution": "For a complex number $a+bi$, the modulus is $|a+bi| = \\sqrt{a^2 + b^2}$. Here, $a = 4\\sqrt{2}$ and $b = -4$. Compute: $(4\\sqrt{2})^2 = 16\\cdot 2 = 32$ and $(-4)^2 = 16$. Thus, $|z| = \\sqrt{32 + 16} = \\sqrt{48} = \\sqrt{16\\cdot 3} = 4\\sqrt{3}$.",
+    "answer": "4\\sqrt{3}",
+    "id": "264_0",
+    "question": "Compute the modulus of the complex number $z = 4\\sqrt{2} - 4i$."
+  },
+  {
+    "solution": "For a complex number $a+bi$, the modulus is $|a+bi| = \\sqrt{a^2 + b^2}$. Here, $a = \\sqrt{3}$ and $b = 3$. Compute: $(\\sqrt{3})^2 = 3$ and $3^2 = 9$. Thus, $|w| = \\sqrt{3 + 9} = \\sqrt{12} = \\sqrt{4\\cdot 3} = 2\\sqrt{3}$.",
+    "answer": "2\\sqrt{3}",
+    "id": "264_1",
+    "question": "Compute the modulus of the complex number $w = \\sqrt{3} + 3i$."
+  },
+  {
+    "solution": "Let $z = 4\\sqrt{2} - 4i$ and $w = \\sqrt{3} + 3i$. Use $|zw| = |z|\\,|w|$. Compute $|z| = \\sqrt{(4\\sqrt{2})^2 + (-4)^2} = \\sqrt{32 + 16} = \\sqrt{48} = 4\\sqrt{3}$. Compute $|w| = \\sqrt{(\\sqrt{3})^2 + 3^2} = \\sqrt{3 + 9} = \\sqrt{12} = 2\\sqrt{3}$. Therefore, $|(4\\sqrt{2} - 4i)(\\sqrt{3} + 3i)| = (4\\sqrt{3})(2\\sqrt{3}) = 8(\\sqrt{3}\\cdot\\sqrt{3}) = 8\\cdot 3 = 24$.",
+    "answer": "24",
+    "id": "264_2",
+    "question": "Evaluate $|(4\\sqrt{2} - 4i)(\\sqrt{3} + 3i)|$ using the identity $|zw| = |z|\\,|w|$ for complex numbers $z$ and $w$."
+  },
+  {
+    "solution": "Compute directly:\n$-(2k-1) + 2k = -2k + 1 + 2k = 1$.\nThus, for any positive integer $k$, the value is $1$.",
+    "answer": "1",
+    "id": "265_0",
+    "question": "For any positive integer $k$, consider the two-term expression $-(2k-1) + 2k$. Compute its value."
+  },
+  {
+    "solution": "The sum $S$ contains all integers from $1$ to $10000$ with alternating signs, so there are $10000$ terms in total. Grouping consecutive terms forms pairs of $2$ terms each. Therefore, the number of pairs is $\\dfrac{10000}{2} = 5000$.\nAlternatively, the last term is $10000 = 2 \\cdot 5000$, so the pairs are indexed by $k=1,2,\\ldots,5000$, giving $5000$ pairs.",
+    "answer": "5000",
+    "id": "265_1",
+    "question": "Consider the finite alternating sum $S = -1 + 2 - 3 + 4 - 5 + 6 - \\cdots + 10000$. If you group the terms into consecutive pairs $(-1+2),\\,(-3+4),\\,\\ldots,\\,(-9999+10000)$, how many such pairs are there?"
+  },
+  {
+    "solution": "Group the sum into consecutive pairs:\n$S = \\sum_{k=1}^{5000} \\big( -(2k-1) + 2k \\big)$.\nFor each $k$, compute the pair value:\n$-(2k-1) + 2k = -2k + 1 + 2k = 1$.\nHence,\n$S = \\sum_{k=1}^{5000} 1 = 5000$.",
+    "answer": "5000",
+    "id": "265_2",
+    "question": "Evaluate the sum $S = -1 + 2 - 3 + 4 - 5 + 6 - \\cdots + 10000$ by grouping consecutive terms into pairs."
+  },
+  {
+    "solution": "With x = 1/k, we have \\frac{1}{k^n} = x^n, so the series becomes S = \\sum_{n=1}^{\\infty} (5n - 1) x^n = 5 \\sum_{n=1}^{\\infty} n x^n - \\sum_{n=1}^{\\infty} x^n. For |x| < 1, the known sums are \\sum_{n=1}^{\\infty} x^n = \\frac{x}{1 - x} and \\sum_{n=1}^{\\infty} n x^n = \\frac{x}{(1 - x)^2}. Therefore, S = 5 \\cdot \\frac{x}{(1 - x)^2} - \\frac{x}{1 - x} = x \\left( \\frac{5}{(1 - x)^2} - \\frac{1}{1 - x} \\right). Put over the common denominator (1 - x)^2: \\frac{5}{(1 - x)^2} - \\frac{1}{1 - x} = \\frac{5 - (1 - x)}{(1 - x)^2} = \\frac{4 + x}{(1 - x)^2}. Hence S = \\frac{x(4 + x)}{(1 - x)^2}.",
+    "answer": "\\frac{x(4 + x)}{(1 - x)^2}",
+    "id": "266_0",
+    "question": "Let k be a real number with k > 1. Define x = 1/k (so 0 < x < 1). Evaluate the infinite series S(k) = \\sum_{n=1}^{\\infty} \\frac{5n - 1}{k^n} in terms of x, and simplify it to a single rational expression in x."
+  },
+  {
+    "solution": "Start with \\frac{x(4 + x)}{(1 - x)^2} = \\frac{13}{4}. Cross-multiply: 4x(4 + x) = 13(1 - 2x + x^2). Expand both sides: 16x + 4x^2 = 13 - 26x + 13x^2. Rearrange to standard form: 0 = 13 - 26x + 13x^2 - 16x - 4x^2 = 13 - 42x + 9x^2, i.e., 9x^2 - 42x + 13 = 0. Compute the discriminant: \\Delta = (-42)^2 - 4\\cdot 9\\cdot 13 = 1764 - 468 = 1296, so \\sqrt{\\Delta} = 36. Thus x = \\frac{42 \\pm 36}{18}. The two roots are x = \\frac{78}{18} = \\frac{13}{3} (> 1) and x = \\frac{6}{18} = \\frac{1}{3}. Since 0 < x < 1, we take x = \\frac{1}{3}.",
+    "answer": "\\frac{1}{3}",
+    "id": "266_1",
+    "question": "Solve for x in the interval 0 < x < 1 the equation \\frac{x(4 + x)}{(1 - x)^2} = \\frac{13}{4}."
+  },
+  {
+    "solution": "From x = \\frac{1}{k} and x = \\frac{1}{3}, we have \\frac{1}{k} = \\frac{1}{3}. Taking reciprocals yields k = 3, which satisfies k > 1.",
+    "answer": "3",
+    "id": "266_2",
+    "question": "Given a real number k > 1 and a variable x defined by x = 1/k, and given x = \\frac{1}{3}, find the value of k."
+  },
+  {
+    "solution": "Let the three angles be $3k$, $2k$, and $k$ degrees. The sum of the interior angles of a triangle is $180^\\circ$, so \\[3k+2k+k=6k=180^\\circ.\\] Solving for $k$ gives \\[k=\\frac{180^\\circ}{6}=30^\\circ.\\] Therefore, the three angles are \\[3k=90^\\circ,\\quad 2k=60^\\circ,\\quad k=30^\\circ.\\]",
+    "answer": "\\left(90^\\circ, 60^\\circ, 30^\\circ\\right)",
+    "id": "267_0",
+    "question": "A triangle has interior angles in the ratio $3:2:1$. Find the exact measures (in degrees) of the three angles."
+  },
+  {
+    "solution": "Let the common scale factor be $k$. Then the sides are $k\\cdot 1$, $k\\cdot \\sqrt{3}$, and $k\\cdot 2$. Given the shortest side is $12$, we have \\[k\\cdot 1=12 \\implies k=12.\\] Therefore, the longest side (opposite $90^\\circ$) is \\[k\\cdot 2=2\\cdot 12=24.\\]",
+    "answer": "24",
+    "id": "267_2",
+    "question": "A $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle has side lengths in the ratio $1: \\sqrt{3}: 2$, corresponding respectively to the sides opposite $30^\\circ$, $60^\\circ$, and $90^\\circ$. If the shortest side (opposite $30^\\circ$) is $12$ meters, find the length of the longest side (opposite $90^\\circ$)."
+  },
+  {
+    "solution": "Starting with the given equations:\n1) $A + B = C + D$.\n2) $A + D = B + C + 4$.\nSubtract equation (2) from equation (1):\n$$(A+B) - (A+D) = (C+D) - (B+C+4).$$\nSimplify both sides:\n$$B - D = D - B - 4.$$\nAdd $B + D$ to both sides:\n$$2B = 2D - 4.$$\nRearrange to isolate $D$:\n$$2D = 2B + 4 \\implies D = B + 2.$$\nThus, $D$ is $2$ more than $B$.",
+    "answer": "B+2",
+    "id": "268_0",
+    "question": "Let $A$, $B$, $C$, and $D$ denote the numbers of questions answered incorrectly by Andy, Beth, Charlie, and Daniel, respectively. Suppose the sums satisfy $A+B=C+D$ and $A+D=B+C+4$. Express $D$ in terms of $B$."
+  },
+  {
+    "solution": "Use $A+B=C+D$ with $C=5$ and $D=B+2$:\n$$A + B = 5 + (B + 2) = B + 7.$$\nSubtract $B$ from both sides:\n$$A = 7.$$\nTherefore, Andy got $7$ questions wrong.",
+    "answer": "7",
+    "id": "268_1",
+    "question": "Let $A$, $B$, $C$, and $D$ denote the numbers of questions answered incorrectly by Andy, Beth, Charlie, and Daniel, respectively. Suppose $A+B=C+D$, Charlie has $C=5$, and it is known that $D=B+2$. Find $A$."
+  },
+  {
+    "solution": "From $S=\\dfrac{k}{H}$, multiply both sides by $H$ to obtain $k=SH$. Substitute $S=70$ and $H=8$: $k=70\\cdot 8=560$.",
+    "answer": "560",
+    "id": "269_0",
+    "question": "Assume John's exam score $S$ is inversely proportional to the hours of sleep $H$ the night before: $S=\\dfrac{k}{H}$ for some constant $k>0$. Given that on one exam he slept $H=8$ hours and scored $S=70$, determine the constant $k$."
+  },
+  {
+    "solution": "Start with $\\dfrac{S_1+S_2}{2}=80$. Multiply both sides by $2$: $S_1+S_2=160$. Substitute $S_1=70$: $70+S_2=160$. Solve for $S_2$: $S_2=160-70=90$.",
+    "answer": "90",
+    "id": "269_1",
+    "question": "John took two exams. On the first, his score was $S_1=70$. What score $S_2$ on the second exam is needed so that the average score is $80$, i.e., $\\dfrac{S_1+S_2}{2}=80$?"
+  },
+  {
+    "solution": "Set $90=\\dfrac{560}{H}$. Solve for $H$ by multiplying both sides by $H$ and dividing by $90$: $H=\\dfrac{560}{90}=\\dfrac{56}{9}$. Compute $\\dfrac{56}{9}\\approx 6.222\\ldots$. Rounding to the nearest tenth gives $H\\approx 6.2$.",
+    "answer": "6.2",
+    "id": "269_2",
+    "question": "Using the inverse model $S=\\dfrac{k}{H}$ with constant $k=560$, find the required sleep hours $H$ so that the second-exam score is $S=90$. Then round $H$ to the nearest tenth."
+  },
+  {
+    "solution": "We seek $\\theta = \\dfrac{11\\pi}{2} - 2\\pi k$ with $0 \\le \\theta < 2\\pi$.\nCompute the quotient: $\\dfrac{\\frac{11\\pi}{2}}{2\\pi} = \\dfrac{11}{4} = 2.75$, so take $k = \\lfloor 2.75 \\rfloor = 2$.\nThen $\\theta = \\dfrac{11\\pi}{2} - 2\\pi \\cdot 2 = \\dfrac{11\\pi}{2} - 4\\pi = \\dfrac{11\\pi - 8\\pi}{2} = \\dfrac{3\\pi}{2}$.\nCheck: $0 \\le \\dfrac{3\\pi}{2} < 2\\pi$ holds. Thus the principal value is $\\theta = \\dfrac{3\\pi}{2}$.",
+    "answer": "$\\frac{3\\pi}{2}$",
+    "id": "270_0",
+    "question": "Find the principal value $\\theta \\in [0, 2\\pi)$ such that $\\theta \\equiv \\tfrac{11\\pi}{2} \\pmod{2\\pi}$. In other words, determine $\\theta$ of the form $\\theta = \\tfrac{11\\pi}{2} - 2\\pi k$ for some integer $k$, with $0 \\le \\theta < 2\\pi$."
+  },
+  {
+    "solution": "By Euler's formula, $e^{i\\theta} = \\cos\\theta + i\\sin\\theta$.\nFor $\\theta = \\dfrac{3\\pi}{2}$, we have $\\cos\\left(\\dfrac{3\\pi}{2}\\right) = 0$ and $\\sin\\left(\\dfrac{3\\pi}{2}\\right) = -1$.\nTherefore, $e^{i\\cdot \\frac{3\\pi}{2}} = 0 + i(-1) = -i$.\nHence the rectangular form is $-i$.",
+    "answer": "$-i$",
+    "id": "270_1",
+    "question": "Using Euler's formula $e^{i\\theta} = \\cos\\theta + i\\sin\\theta$, compute the rectangular form (i.e., $a+bi$) of $e^{i\\cdot \\frac{3\\pi}{2}}$."
+  },
+  {
+    "solution": "Rewrite the given equation in vertex form.\nWe have $y = 4x^2 - 3 = 4(x - 0)^2 - 3$.\nThus, the vertex parameters are $h = 0$ and $k = -3$.\nTherefore, the vertex is $(0, -3)$.",
+    "answer": "(0, -3)",
+    "id": "271_0",
+    "question": "Determine the vertex of the parabola with equation $y = 4x^2 - 3$. Recall that a vertical parabola can be written in vertex form $y = a(x - h)^2 + k$, where $(h, k)$ is the vertex."
+  },
+  {
+    "solution": "Compare coefficients of $x^2$:\n$4 = \\frac{1}{4p}$.\nMultiply both sides by $4p$ to get $16p = 1$.\nSolve for $p$: $p = \\frac{1}{16}$.",
+    "answer": "\\frac{1}{16}",
+    "id": "271_1",
+    "question": "For a vertical parabola written in the form $y = \\frac{1}{4p}(x - h)^2 + k$, the parameter $p$ is the directed distance from the vertex to the focus. Given the parabola $y = 4x^2 - 3$, match it to $y = \\frac{1}{4p}x^2 + k$ and solve for $p$."
+  },
+  {
+    "solution": "Use the focus formula $(h, k + p)$.\nSubstitute $h = 0$, $k = -3$, and $p = \\frac{1}{16}$:\n$k + p = -3 + \\frac{1}{16} = -\\frac{48}{16} + \\frac{1}{16} = -\\frac{47}{16}$.\nTherefore, the focus is $(0, -\\frac{47}{16})$.",
+    "answer": "\\left(0, -\\frac{47}{16}\\right)",
+    "id": "271_2",
+    "question": "A vertical parabola with vertex $(h, k)$ has focus at $(h, k + p)$, where $p$ is the directed distance from the vertex to the focus. Given vertex $(h, k) = (0, -3)$ and $p = \\frac{1}{16}$, find the focus coordinates."
+  },
+  {
+    "solution": "The number of distinct permutations of a multiset with total size \\(4\\) and multiplicities \\(2\\) for digit \\(2\\) and \\(2\\) for digit \\(9\\) is given by the multinomial count \\(4!/(2!2!)\\). Compute: \\(4! = 24\\). Also, \\(2! = 2\\), so \\(2!2! = 2*2 = 4\\). Therefore, the number of distinct sequences is \\(24/4 = 6\\).",
+    "answer": "6",
+    "id": "272_0",
+    "question": "How many distinct 4-position sequences can be formed by arranging the multiset of digits \\(\\{2,2,9,9\\}\\)? Each sequence uses all four digits, with identical digits indistinguishable."
+  },
+  {
+    "solution": "The available digits are \\(2,2,9,9\\). None of these is \\(0\\). Therefore, the leading digit cannot be \\(0\\) in any arrangement. Hence, the number of arrangements invalid due to a leading zero is \\(0\\).",
+    "answer": "0",
+    "id": "272_1",
+    "question": "When forming positive four-digit integers by arranging the digits \\(2,2,9,9\\) (each used exactly once), how many arrangements are invalid due to a leading zero?"
+  },
+  {
+    "solution": "All distinct arrangements of the multiset \\(\\{2,2,9,9\\}\\) produce four-digit sequences, and none is invalid due to a leading zero. The number of distinct arrangements is \\(4!/(2!2!) = 24/4 = 6\\). The number invalid due to a leading zero is \\(0\\). Therefore, the total number of valid four-digit integers is \\(6 - 0 = 6\\).",
+    "answer": "6",
+    "id": "272_2",
+    "question": "How many different positive, four-digit integers can be formed using the digits \\(2,2,9,9\\), each used exactly once?"
+  },
+  {
+    "solution": "List the $a$-terms in $E$: $a, a, a, a$. Each is $1\\cdot a$. Sum the coefficients: $1+1+1+1=4$. Therefore, after combining like terms, the coefficient of $a$ is $4$.",
+    "answer": "4",
+    "id": "273_0",
+    "question": "Let $a$ be a real number. Consider the expression $E=a+1+a-2+a+3+a-4$. What is the coefficient of $a$ in $E$ after combining like terms? (The coefficient of $a$ is the scalar multiplying $a$ when all $a$-terms are combined.)"
+  },
+  {
+    "solution": "Evaluate step by step: $1-2=-1$. Then $-1+3=2$. Finally, $2-4=-2$. Thus, the sum of the constant terms is $-2$.",
+    "answer": "-2",
+    "id": "273_1",
+    "question": "Let $a$ be a real number. Consider the expression $E=a+1+a-2+a+3+a-4$. Compute the sum of the constant terms in $E$, namely evaluate $1-2+3-4$."
+  },
+  {
+    "solution": "Combine the $a$-terms: $a+a+a+a=4a$. Combine the constants: $1-2+3-4=-2$ (since $1-2=-1$, $-1+3=2$, and $2-4=-2$). Therefore, $E=4a+(-2)=4a-2$.",
+    "answer": "4a-2",
+    "id": "273_2",
+    "question": "Let $a$ be a real number. Simplify the expression $E=a+1+a-2+a+3+a-4$ by combining like terms."
+  },
+  {
+    "solution": "Step 1: The digits (from left to right) are $4,3,2,1,0$ with place values $6^4,6^3,6^2,6^1,6^0$. Step 2: Expand: $4(6^4)+3(6^3)+2(6^2)+1(6^1)+0(6^0)$. Step 3: Compute powers: $6^2=36$, $6^3=216$, $6^4=1296$, $6^0=1$. Step 4: Multiply: $4(1296)=5184$, $3(216)=648$, $2(36)=72$, $1(6)=6$, $0(1)=0$. Step 5: Sum: $5184+648=5832$, $5832+72=5904$, $5904+6=5910$, $5910+0=5910$. Therefore, $43210_6=5910$ in base 10.",
+    "answer": "$5910$",
+    "id": "274_0",
+    "question": "Convert the base-6 numeral $43210_6$ to its base-10 value. A base-$b$ numeral has value obtained by multiplying each digit by $b^k$ where $k$ is the position counted from $0$ at the right, and summing the results."
+  },
+  {
+    "solution": "Step 1: The digits (from left to right) are $3,2,1,0$ with place values $7^3,7^2,7^1,7^0$. Step 2: Expand: $3(7^3)+2(7^2)+1(7^1)+0(7^0)$. Step 3: Compute powers: $7^2=49$, $7^3=343$, $7^0=1$. Step 4: Multiply: $3(343)=1029$, $2(49)=98$, $1(7)=7$, $0(1)=0$. Step 5: Sum: $1029+98=1127$, $1127+7=1134$, $1134+0=1134$. Therefore, $3210_7=1134$ in base 10.",
+    "answer": "$1134$",
+    "id": "274_1",
+    "question": "Convert the base-7 numeral $3210_7$ to its base-10 value. A base-$b$ numeral has value obtained by multiplying each digit by $b^k$ where $k$ is the position counted from $0$ at the right, and summing the results."
+  },
+  {
+    "solution": "Step 1: Substitute the base-10 values: compute $5910-1134$. Step 2: Subtract in parts: $5910-1000=4910$. Step 3: Subtract the remaining $134$: $4910-100=4810$, $4810-30=4780$, $4780-4=4776$. Therefore, $5910-1134=4776$.",
+    "answer": "$4776$",
+    "id": "274_2",
+    "question": "Given $43210_6=5910$ and $3210_7=1134$ in base 10, compute the base-10 value of $43210_6-3210_7$."
+  },
+  {
+    "solution": "The least common multiple satisfies the identity \\(\\mathrm{lcm}(a,b) = \\dfrac{ab}{\\gcd(a,b)}\\). The numbers \\(11\\) and \\(5\\) are distinct primes, so \\(\\gcd(11,5) = 1\\). Therefore, \\(\\mathrm{lcm}(11,5) = \\dfrac{11\\cdot 5}{1} = 55\\).",
+    "answer": "55",
+    "id": "275_0",
+    "question": "Compute the least common multiple (LCM) of the integers 11 and 5."
+  },
+  {
+    "solution": "We count multiples of \\(55\\) in the interval \\([100,999]\\). For a positive integer \\(m\\), the count of integers divisible by \\(m\\) in \\([A,B]\\) is \\(\\left\\lfloor \\dfrac{B}{m} \\right\\rfloor - \\left\\lfloor \\dfrac{A-1}{m} \\right\\rfloor\\). Here, \\(A=100\\), \\(B=999\\), and \\(m=55\\). Compute \\(\\left\\lfloor \\dfrac{999}{55} \\right\\rfloor\\): since \\(55\\cdot 18 = 990\\) and \\(55\\cdot 19 = 1045 > 999\\), we have \\(\\left\\lfloor \\dfrac{999}{55} \\right\\rfloor = 18\\). Compute \\(\\left\\lfloor \\dfrac{99}{55} \\right\\rfloor\\): since \\(55\\cdot 1 = 55\\) and \\(55\\cdot 2 = 110 > 99\\), we have \\(\\left\\lfloor \\dfrac{99}{55} \\right\\rfloor = 1\\). Therefore, the count is \\(18 - 1 = 17\\).",
+    "answer": "17",
+    "id": "275_1",
+    "question": "How many positive three-digit integers (from 100 to 999 inclusive) are divisible by 55?"
+  },
+  {
+    "solution": "Recognize that $256 = 2^8$ and write the expression as a difference of squares:\n\\[x^8 - 256 = (x^4)^2 - 16^2 = (x^4 - 16)(x^4 + 16).\\]\nThis factors the degree-$8$ polynomial into two quartic polynomials over the real numbers.",
+    "answer": "(x^4 - 16)(x^4 + 16)",
+    "id": "276_0",
+    "question": "Factor the polynomial $x^8 - 256$ over the real numbers by applying the difference of squares to split it into two quartic factors."
+  },
+  {
+    "solution": "Apply the difference of squares twice:\n\\[x^4 - 16 = (x^2)^2 - 4^2 = (x^2 - 4)(x^2 + 4).\\]\nThen factor $x^2 - 4$ again as a difference of squares:\n\\[x^2 - 4 = (x - 2)(x + 2).\\]\nThe factor $x^2 + 4$ has no real roots, so it is irreducible over the reals. Therefore,\n\\[x^4 - 16 = (x - 2)(x + 2)(x^2 + 4).\\]",
+    "answer": "(x - 2)(x + 2)(x^2 + 4)",
+    "id": "276_1",
+    "question": "Completely factor the quartic polynomial $x^4 - 16$ over the real numbers."
+  },
+  {
+    "solution": "Assume a factorization of the form\n\\[x^4 + 16 = (x^2 + px + q)(x^2 - px + q),\\]\nwhich ensures the $x^3$ and $x$ coefficients cancel. Expanding gives\n\\[(x^2 + px + q)(x^2 - px + q) = x^4 + (2q - p^2)x^2 + q^2.\\]\nMatch coefficients with $x^4 + 16$ to obtain the system\n\\[2q - p^2 = 0, \\quad q^2 = 16.\\]\nFrom $q^2 = 16$, we have $q = \\pm 4$. Since $2q - p^2 = 0$ implies $q = \\tfrac{p^2}{2} \\ge 0$, we must take $q = 4$. Then $\\tfrac{p^2}{2} = 4 \\Rightarrow p^2 = 8 \\Rightarrow p = \\pm 2\\sqrt{2}$. Hence,\n\\[x^4 + 16 = (x^2 + 2\\sqrt{2}\\,x + 4)(x^2 - 2\\sqrt{2}\\,x + 4).\\]\nA quick check: \\((x^2 + 2\\sqrt{2}\\,x + 4)(x^2 - 2\\sqrt{2}\\,x + 4) = (x^2 + 4)^2 - (2\\sqrt{2}\\,x)^2 = x^4 + 8x^2 + 16 - 8x^2 = x^4 + 16\\).",
+    "answer": "(x^2 + 2\\sqrt{2}x + 4)(x^2 - 2\\sqrt{2}x + 4)",
+    "id": "276_2",
+    "question": "Factor the quartic polynomial $x^4 + 16$ over the real numbers into a product of two quadratic polynomials with real coefficients."
+  },
+  {
+    "solution": "Start with the difference of squares:\n\\[x^8 - 256 = (x^4 - 16)(x^4 + 16).\\]\nFactor $x^4 - 16$ further:\n\\[x^4 - 16 = (x^2 - 4)(x^2 + 4) = (x - 2)(x + 2)(x^2 + 4).\\]\nFactor $x^4 + 16$ into real quadratics:\n\\[x^4 + 16 = (x^2 + 2\\sqrt{2}\\,x + 4)(x^2 - 2\\sqrt{2}\\,x + 4).\\]\nCombine all factors to obtain the complete factorization over the reals:\n\\[x^8 - 256 = (x - 2)(x + 2)(x^2 + 4)(x^2 + 2\\sqrt{2}\\,x + 4)(x^2 - 2\\sqrt{2}\\,x + 4).\\]\nThis is a product of linear and irreducible quadratic factors with real coefficients.",
+    "answer": "(x - 2)(x + 2)(x^2 + 4)(x^2 + 2\\sqrt{2}x + 4)(x^2 - 2\\sqrt{2}x + 4)",
+    "id": "276_3",
+    "question": "Completely factor $x^8 - 256$ over the real numbers, expressing the result as a product of linear and irreducible quadratic factors with real coefficients."
+  },
+  {
+    "solution": "We need to solve $N(N+1) = 9900$ for a positive integer $N$. This is the quadratic equation $N^2 + N - 9900 = 0$. The discriminant is $\\Delta = 1 + 4\\cdot 9900 = 1 + 39600 = 39601$. Since $39601 = 199^2$, the roots are $N = \\frac{-1 \\pm 199}{2}$. The two roots are $N = \\frac{198}{2} = 99$ and $N = \\frac{-200}{2} = -100$. Only the positive integer root is valid for the sequence index, so $N = 99$.",
+    "answer": "99",
+    "id": "277_0",
+    "question": "In the sequence of terms of the form $\\frac{1}{n(n+1)}$ for positive integers $n$, suppose the last given term is $\\frac{1}{9900}$. Find the positive integer $N$ such that $\\frac{1}{9900} = \\frac{1}{N(N+1)}$."
+  },
+  {
+    "solution": "Use partial fractions: for each $n$, write \\[\\frac{1}{n(n+1)} = \\frac{A}{n} + \\frac{B}{n+1}.\\] Solve $1 = A(n+1) + Bn = (A+B)n + A$. Matching coefficients gives $A + B = 0$ and $A = 1$, hence $A = 1$ and $B = -1$. Therefore, \\[\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}.\\] Summing from $n=1$ to $N$ telescopes: \\[T(N) = \\sum_{n=1}^{N} \\left(\\frac{1}{n} - \\frac{1}{n+1}\\right) = \\left(1 - \\frac{1}{2}\\right) + \\left(\\frac{1}{2} - \\frac{1}{3}\\right) + \\cdots + \\left(\\frac{1}{N} - \\frac{1}{N+1}\\right) = 1 - \\frac{1}{N+1}.\\]",
+    "answer": "1 - \\frac{1}{N+1}",
+    "id": "277_1",
+    "question": "For a positive integer $N$, evaluate the finite sum $T(N) = \\sum_{n=1}^{N} \\frac{1}{n(n+1)}$ in simplest form."
+  },
+  {
+    "solution": "Using the identity $\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}$, the sum telescopes: \\[S = \\sum_{n=1}^{99} \\left(\\frac{1}{n} - \\frac{1}{n+1}\\right) = 1 - \\frac{1}{100} = \\frac{100}{100} - \\frac{1}{100} = \\frac{99}{100}.\\]",
+    "answer": "99/100",
+    "id": "277_2",
+    "question": "Compute the sum $S = \\sum_{n=1}^{99} \\frac{1}{n(n+1)}$."
+  },
+  {
+    "solution": "The leading term of $P(x)$ is $x^4$ and that of $D(x)$ is $x^2$. Thus, the first quotient term is $q_1 = \\dfrac{x^4}{x^2} = x^2$.\\nCompute $q_1 D(x)$: $x^2(x^2 + 2x - 1) = x^4 + 2x^3 - x^2$.\\nSubtract to get the remainder:\\n$P(x) - q_1 D(x) = (x^4 + 0x^3 + 3x^2 - 7x + 0) - (x^4 + 2x^3 - x^2) = -2x^3 + 4x^2 - 7x$.\\nHence, $R_1(x) = -2x^3 + 4x^2 - 7x$.",
+    "answer": "(x^2, -2x^3 + 4x^2 - 7x)",
+    "id": "278_0",
+    "question": "Perform the first step of polynomial long division for dividing the polynomial $P(x) = x^4 + 3x^2 - 7x$ by the polynomial $D(x) = x^2 + 2x - 1$. Determine the leading term $q_1$ of the quotient by dividing the leading term of $P(x)$ by the leading term of $D(x)$, compute $q_1 D(x)$, and subtract it from $P(x)$ to obtain the intermediate remainder $R_1(x)$. Provide your answer as the ordered pair $(q_1, R_1(x))$."
+  },
+  {
+    "solution": "The leading term of $R_1(x)$ is $-2x^3$. Divide by the leading term of $D(x)$, which is $x^2$, to get $q_2 = \\dfrac{-2x^3}{x^2} = -2x$.\\nCompute $q_2 D(x)$: $(-2x)(x^2 + 2x - 1) = -2x^3 - 4x^2 + 2x$.\\nSubtract to get the new remainder:\\n$R_1(x) - q_2 D(x) = (-2x^3 + 4x^2 - 7x) - (-2x^3 - 4x^2 + 2x) = 8x^2 - 9x$.\\nHence, $R_2(x) = 8x^2 - 9x$.",
+    "answer": "(-2x, 8x^2 - 9x)",
+    "id": "278_1",
+    "question": "Given the divisor $D(x) = x^2 + 2x - 1$ and the intermediate remainder $R_1(x) = -2x^3 + 4x^2 - 7x$, perform the next step of the division: find the next quotient term $q_2$ by dividing the leading term of $R_1(x)$ by the leading term of $D(x)$, compute $q_2 D(x)$, and subtract to obtain the next remainder $R_2(x)$. Provide your answer as the ordered pair $(q_2, R_2(x))$."
+  },
+  {
+    "solution": "The leading term of $R_2(x)$ is $8x^2$. Divide by the leading term of $D(x)$, $x^2$, to get $q_3 = \\dfrac{8x^2}{x^2} = 8$.\\nCompute $q_3 D(x)$: $8(x^2 + 2x - 1) = 8x^2 + 16x - 8$.\\nSubtract to obtain the final remainder:\\n$R_3(x) = R_2(x) - q_3 D(x) = (8x^2 - 9x) - (8x^2 + 16x - 8) = -25x + 8$.\\nSince $\\deg(R_3) = 1 < \\deg(D) = 2$, the division terminates. The complete quotient is $Q(x) = q_1 + q_2 + q_3 = x^2 - 2x + 8$.",
+    "answer": "x^2 - 2x + 8",
+    "id": "278_2",
+    "question": "Given the divisor $D(x) = x^2 + 2x - 1$, the accumulated quotient terms $q_1 = x^2$ and $q_2 = -2x$, and the intermediate remainder $R_2(x) = 8x^2 - 9x$, perform the final step of the division: find the next quotient term $q_3$ and the final remainder $R_3(x)$. Then state the complete quotient $Q(x) = q_1 + q_2 + q_3$. Provide your answer as $Q(x)$ only."
+  },
+  {
+    "solution": "Convert the percentage to a fraction: \\(25\\% = \\frac{25}{100} = \\frac{1}{4}\\). The combined fraction for Business and Economy is \\(\\frac{1}{4} + \\frac{2}{3}\\). Using a common denominator of 12, we get \\(\\frac{1}{4} = \\frac{3}{12}\\) and \\(\\frac{2}{3} = \\frac{8}{12}\\), so the sum is \\(\\frac{3}{12} + \\frac{8}{12} = \\frac{11}{12}\\). Therefore, the First Class fraction is the remainder: \\(1 - \\frac{11}{12} = \\frac{12}{12} - \\frac{11}{12} = \\frac{1}{12}\\).",
+    "answer": "\\frac{1}{12}",
+    "id": "279_0",
+    "question": "An airplane's seating is divided into three parts: Business Class is 25% of the total seats, Economy Class is \\(\\frac{2}{3}\\) of the total seats, and the remainder are First Class seats. What fraction of the total seats are in First Class?"
+  },
+  {
+    "solution": "Let \\(T\\) be the total number of seats. Since First Class is \\(\\frac{1}{12}\\) of the total, we have the equation \\(24 = \\frac{1}{12}T\\). Multiply both sides by 12 to solve for \\(T\\): \\(12 \\cdot 24 = T\\). Compute: \\(12 \\cdot 24 = 288\\). Thus, \\(T = 288\\).",
+    "answer": "288",
+    "id": "279_1",
+    "question": "In an airplane, First Class has 24 seats and constitutes \\(\\frac{1}{12}\\) of the total number of seats. Find the total number of seats \\(T\\)."
+  },
+  {
+    "solution": "Factor $576$ into primes: $576 = 64 \\cdot 9 = 2^6 \\cdot 3^2$.\\nThen compute the fourth root: $(576)^{1/4} = (2^6 \\cdot 3^2)^{1/4} = 2^{6/4} \\cdot 3^{2/4} = 2^{3/2} \\cdot 3^{1/2}$.\\nConvert to radicals: $2^{3/2} = 2\\sqrt{2}$ and $3^{1/2} = \\sqrt{3}$.\\nMultiply: $(2\\sqrt{2})(\\sqrt{3}) = 2\\sqrt{6}$.",
+    "answer": "$2\\sqrt{6}$",
+    "id": "280_0",
+    "question": "Simplify the fourth root of 576 to its simplest radical form."
+  },
+  {
+    "solution": "Factor $216$ as $216 = 36 \\cdot 6$.\\nThen $\\sqrt{216} = \\sqrt{36} \\cdot \\sqrt{6} = 6\\sqrt{6}$.",
+    "answer": "$6\\sqrt{6}$",
+    "id": "280_1",
+    "question": "Simplify the square root of 216 to its simplest radical form."
+  },
+  {
+    "solution": "Multiply coefficients and radicals separately: $(2\\sqrt{6})(6\\sqrt{6}) = (2\\cdot 6)(\\sqrt{6}\\cdot \\sqrt{6}) = 12 \\cdot \\sqrt{36} = 12 \\cdot 6 = 72$.",
+    "answer": "72",
+    "id": "280_2",
+    "question": "Evaluate the product $(2\\sqrt{6})(6\\sqrt{6})$."
+  },
+  {
+    "solution": "We show that $m = 0$ is the only possibility.\n1) Verification that $m = 0$ works: For any nonzero integer $n$, choose $k = 0$. Then \\(0 = n \\cdot 0\\), so $0$ is a multiple of every nonzero integer.\n2) Uniqueness: Suppose, for contradiction, that $m \\in \\mathbb{Z}$ with $m \\neq 0$ satisfies: for every nonzero integer $n$, there exists $k \\in \\mathbb{Z}$ such that $m = n k$.\nTake $n = |m| + 1$, which is a positive (hence nonzero) integer. Then there exists $k \\in \\mathbb{Z}$ with\n\\[\nm = n k = (|m| + 1) k.\n\\]\nTaking absolute values gives\n\\[\n|m| = |(|m| + 1) k| = (|m| + 1)\\,|k|.\n\\]\nIf $|k| \\ge 1$, then\n\\[\n|m| \\ge |m| + 1,\n\\]\nwhich is impossible. Hence $|k| = 0$, so $k = 0$, which forces $m = 0$, contradicting $m \\neq 0$. Therefore no nonzero $m$ can be a multiple of every nonzero integer.\nConsequently, the unique integer with the stated property is $m = 0$.",
+    "answer": "0",
+    "id": "281_1",
+    "question": "Determine the unique integer $m$ such that for every nonzero integer $n$, there exists an integer $k$ with $m = n k$ (i.e., $m$ is a multiple of every nonzero integer)."
+  },
+  {
+    "solution": "For two horizontal lines $y=c_1$ and $y=c_2$, the perpendicular distance between them is $|c_2-c_1|$. Here, $c_1=2$ and $c_2=5$, so the distance is $|5-2|=3$.",
+    "answer": "3",
+    "id": "282_0",
+    "question": "Compute the perpendicular distance between the two horizontal lines $y=2$ and $y=5$ in the coordinate plane."
+  },
+  {
+    "solution": "For these lines to bound an axis-aligned square, the horizontal distance between the vertical lines must equal the vertical distance between the horizontal lines. The vertical distance is $|5-2|=3$. The horizontal distance between $x=1$ and $x=a$ is $|a-1|$. Therefore, we require $|a-1|=3$. Solving $|a-1|=3$ gives two linear equations: $a-1=3$ and $a-1=-3$. From $a-1=3$, we get $a=4$. From $a-1=-3$, we get $a=-2$. Both values produce a square since the width between the vertical lines equals $3$, matching the height.",
+    "answer": "\\{-2,4\\}",
+    "id": "282_1",
+    "question": "Suppose the four lines $y=2$, $y=5$, $x=1$, and $x=a$ are the four sides of an axis-aligned square in the plane. Determine all real values of $a$ that make this possible."
+  },
+  {
+    "solution": "The product is $(-2)\\cdot 4=-8$.",
+    "answer": "-8",
+    "id": "282_2",
+    "question": "Given that the possible real values of $a$ are $-2$ and $4$, compute the product of these values."
+  },
+  {
+    "solution": "Her time per page for fiction is $\\frac{7\\text{ minutes}}{5\\text{ pages}}=\\frac{7}{5}\\text{ minutes per page}$. For $30$ pages, the total time is $30\\cdot\\frac{7}{5}=\\frac{210}{5}=42$ minutes.",
+    "answer": "42",
+    "id": "283_0",
+    "question": "Kelly reads 5 pages of a fiction book in 7 minutes. How many minutes must she read to complete 30 pages of fiction?"
+  },
+  {
+    "solution": "Her time per page for history is $\\frac{7\\text{ minutes}}{2\\text{ pages}}=\\frac{7}{2}\\text{ minutes per page}$. For $30$ pages, the total time is $30\\cdot\\frac{7}{2}=\\frac{210}{2}=105$ minutes.",
+    "answer": "105",
+    "id": "283_1",
+    "question": "Kelly reads 2 pages of a history textbook in 7 minutes. How many minutes must she read to complete 30 pages of history?"
+  },
+  {
+    "solution": "Add the times: $42+105=147$ minutes.",
+    "answer": "147",
+    "id": "283_2",
+    "question": "If it takes 42 minutes to read 30 pages of fiction and 105 minutes to read 30 pages of history, what is the total number of minutes Kelly must read to complete both readings?"
+  },
+  {
+    "solution": "By the Remainder Theorem, when a polynomial $P(x)$ is divided by $x-c$, the remainder equals $P(c)$. Therefore, since the remainder upon division by $x-17$ is $14$, we have $P(17)=14$. Similarly, since the remainder upon division by $x-13$ is $6$, we have $P(13)=6$. Thus, the required values are $P(17)=14$ and $P(13)=6$.",
+    "answer": "$P(17)=14,\\ P(13)=6$",
+    "id": "284_0",
+    "question": "Let $P(x)$ be a polynomial such that when $P(x)$ is divided by $x-17$ the remainder is $14$, and when divided by $x-13$ the remainder is $6$. Using the Remainder Theorem, determine the values of $P(17)$ and $P(13)$."
+  },
+  {
+    "solution": "When dividing by the quadratic $(x-13)(x-17)$, the remainder $R(x)$ has degree at most $1$, so write $R(x)=ax+b$. Since $P(x)-R(x)$ is divisible by both $x-13$ and $x-17$, we must have $R(13)=P(13)=6$ and $R(17)=P(17)=14$. These give the system: $17a+b=14$ and $13a+b=6$. Subtract the second from the first to get $4a=8$, hence $a=2$. Substitute back: $17\\cdot 2 + b = 14 \\Rightarrow 34 + b = 14 \\Rightarrow b = -20$. Therefore, $R(x)=2x-20$.",
+    "answer": "$2x-20$",
+    "id": "284_1",
+    "question": "Let $P(x)$ be a polynomial with $P(17)=14$ and $P(13)=6$. Let $R(x)$ denote the remainder when $P(x)$ is divided by $(x-13)(x-17)$. Find $R(x)$."
+  },
+  {
+    "solution": "The total number of socks is $10 + 8 = 18$. The number of unordered pairs of socks is given by the binomial coefficient $\\binom{18}{2}$. Compute: $\\binom{18}{2} = \\frac{18 \\cdot 17}{2} = 9 \\cdot 17 = 153$.",
+    "answer": "153",
+    "id": "285_0",
+    "question": "Tim's drawer contains 10 gray-bottomed socks and 8 white-bottomed socks, for a total of 18 distinct socks. He picks 2 socks uniformly at random without replacement. If we count unordered pairs (order does not matter), how many distinct pairs of socks can he select in total?"
+  },
+  {
+    "solution": "The number of ways to pick two gray socks from 10 is $\\binom{10}{2} = \\frac{10 \\cdot 9}{2} = 45$. The number of ways to pick two white socks from 8 is $\\binom{8}{2} = \\frac{8 \\cdot 7}{2} = 28$. Therefore, the total number of matching pairs is $45 + 28 = 73$.",
+    "answer": "73",
+    "id": "285_1",
+    "question": "Tim's drawer contains 10 gray-bottomed socks and 8 white-bottomed socks. A matching pair means both socks have the same bottom color. Counting unordered pairs, how many favorable pairs are matching (either both gray or both white)?"
+  },
+  {
+    "solution": "The number of favorable matching pairs is $\\binom{10}{2} + \\binom{8}{2} = 45 + 28 = 73$. The total number of unordered pairs is $\\binom{18}{2} = 153$. Hence the probability is \\( \\dfrac{\\binom{10}{2} + \\binom{8}{2}}{\\binom{18}{2}} = \\dfrac{73}{153} \\). The greatest common divisor of $73$ and $153$ is $1$, so the fraction is already in lowest terms.",
+    "answer": "73/153",
+    "id": "285_2",
+    "question": "Tim's drawer contains 10 gray-bottomed socks and 8 white-bottomed socks. He picks 2 socks uniformly at random without replacement. What is the probability that the two socks form a matching pair (both gray or both white)? Express your answer as a reduced fraction."
+  },
+  {
+    "solution": "A two-digit integer is any integer from $10$ to $99$ inclusive. Therefore, for the power of two $2^n$ to be a two-digit number, it must satisfy the double inequality $10 \\le 2^n \\le 99$.",
+    "answer": "$10 \\le 2^n \\le 99$",
+    "id": "286_0",
+    "question": "Define precisely when a power of two is a two-digit number. Express the condition that the number $2^n$, where $n$ is an integer, is a two-digit integer as a single inequality involving $2^n$."
+  },
+  {
+    "solution": "Compute small powers of $2$: $2^1=2$, $2^2=4$, $2^3=8$, $2^4=16$. We see that $2^3=8<10$ and $2^4=16\\ge 10$. Hence, the smallest integer $n$ with $2^n \\ge 10$ is $n=4$.",
+    "answer": "4",
+    "id": "286_1",
+    "question": "Find the smallest integer $n$ such that $2^n \\ge 10$."
+  },
+  {
+    "solution": "Compute successive powers near $100$: $2^6=64$ and $2^7=128$. Since $2^6=64\\le 99$ and $2^7=128>99$, the largest integer $n$ with $2^n \\le 99$ is $n=6$.",
+    "answer": "6",
+    "id": "286_2",
+    "question": "Find the largest integer $n$ such that $2^n \\le 99$."
+  },
+  {
+    "solution": "The integers $n$ in the inclusive interval $[4,6]$ are $4,5,6$. The count is $6-4+1=3$. Concretely, these correspond to $2^4=16$, $2^5=32$, and $2^6=64$, which are all two-digit numbers.",
+    "answer": "3",
+    "id": "286_3",
+    "question": "Given that the integers $n$ producing two-digit powers of two satisfy $4 \\le n \\le 6$, determine how many distinct two-digit numbers can be written in the form $2^n$."
+  },
+  {
+    "solution": "Because $x$ and $y$ are positive integers with $|x-y|=2$, assume without loss of generality that $y=x+2$ (the case $x=y+2$ is symmetric).\nSubstitute into the product condition:\n$x(x+2)=120 \\implies x^2+2x-120=0$.\nSolve the quadratic using the quadratic formula:\n$x=\\frac{-2\\pm\\sqrt{2^2-4(1)(-120)}}{2} = \\frac{-2\\pm\\sqrt{4+480}}{2} = \\frac{-2\\pm\\sqrt{484}}{2} = \\frac{-2\\pm 22}{2}$.\nThus $x=\\frac{20}{2}=10$ or $x=\\frac{-24}{2}=-12$. Since $x$ must be positive, $x=10$.\nThen $y=x+2=12$.\nTherefore, the unique pair is $(x,y)=(10,12)$.",
+    "answer": "$(10,12)$",
+    "id": "287_0",
+    "question": "Find the unique pair of positive integers $(x,y)$ satisfying $xy=120$ and $|x-y|=2$. Determine $(x,y)$."
+  },
+  {
+    "solution": "Compute the sum: $x+y=10+12=22$.",
+    "answer": "$22$",
+    "id": "287_1",
+    "question": "Given two positive integers $x=10$ and $y=12$, compute their sum $x+y$."
+  },
+  {
+    "solution": "Using logarithm properties, $\\log_{10}12+\\log_{10}75=\\log_{10}(12\\cdot 75)=\\log_{10}900$. Therefore, $10^{\\log_{10}12+\\log_{10}75}=10^{\\log_{10}900}=900$.",
+    "answer": "900",
+    "id": "288_1",
+    "question": "Compute the exact value of $10^{\\log_{10}12+\\log_{10}75}$."
+  },
+  {
+    "solution": "Since $75>12$, we have $\\left|\\log_{10}12-\\log_{10}75\\right|=\\log_{10}75-\\log_{10}12=\\log_{10}\\!\\left(\\frac{75}{12}\\right)$. Simplify $\\frac{75}{12}=\\frac{25}{4}$. Hence, $10^{\\left|\\log_{10}12-\\log_{10}75\\right|}=10^{\\log_{10}(25/4)}=\\frac{25}{4}$.",
+    "answer": "\\frac{25}{4}",
+    "id": "288_2",
+    "question": "Compute the exact value of $10^{\\left|\\log_{10}12-\\log_{10}75\\right|}$."
+  },
+  {
+    "solution": "The inequality $\\frac{25}{4}<n<900$ is $6.25<n<900$. The smallest integer $n$ is $\\lceil 6.25\\rceil=7$, and the largest integer less than $900$ is $899$. The count is $899-7+1=893$.",
+    "answer": "893",
+    "id": "288_3",
+    "question": "Let $n$ be a positive integer satisfying the strict inequalities $\\frac{25}{4}<n<900$. How many possible values of $n$ are there?"
+  },
+  {
+    "solution": "We seek $6k$ such that $6k > -25$. Divide both sides by $6$ (positive), preserving the inequality: $k > -\\frac{25}{6} = -4.166\\ldots$. The smallest integer greater than $-4.166\\ldots$ is $-4$. Therefore, the smallest multiple of $6$ greater than $-25$ is $6 \\cdot (-4) = -24$.",
+    "answer": "-24",
+    "id": "289_0",
+    "question": "Find the smallest integer multiple of 6 that is strictly greater than $-25$. A multiple of 6 is any integer of the form $6k$ where $k$ is an integer."
+  },
+  {
+    "solution": "We seek $6k$ such that $6k < 25$. Divide both sides by $6$ (positive), preserving the inequality: $k < \\frac{25}{6} = 4.166\\ldots$. The largest integer less than $4.166\\ldots$ is $4$. Therefore, the largest multiple of $6$ less than $25$ is $6 \\cdot 4 = 24$.",
+    "answer": "24",
+    "id": "289_1",
+    "question": "Find the largest integer multiple of 6 that is strictly less than $25$. A multiple of 6 is any integer of the form $6k$ where $k$ is an integer."
+  },
+  {
+    "solution": "Let $6k \\in [-24, 24]$. Divide by $6$ (positive), giving $k \\in [-4, 4]$. The integers in this range are $-4, -3, -2, -1, 0, 1, 2, 3, 4$. The count is $4 - (-4) + 1 = 9$.",
+    "answer": "9",
+    "id": "289_2",
+    "question": "How many integer multiples of $6$ lie in the inclusive interval $[-24, 24]$? (Equivalently, count all integers of the form $6k$ with $k \\in \\mathbb{Z}$ satisfying $-24 \\le 6k \\le 24$.)"
+  },
+  {
+    "solution": "Combine all factors into a single fraction: \\[P=\\frac{4\\cdot 6\\cdot 8\\cdot 10\\cdot 12\\cdot 14}{3\\cdot 4\\cdot 5\\cdot 6\\cdot 7\\cdot 8}.\\] Cancel common factors that appear in both numerator and denominator: \\(4\\) cancels with \\(4\\), \\(6\\) cancels with \\(6\\), and \\(8\\) cancels with \\(8\\). Thus, \\[P=\\frac{10\\cdot 12\\cdot 14}{3\\cdot 5\\cdot 7}.\\]",
+    "answer": "\\(\\frac{10\\cdot 12\\cdot 14}{3\\cdot 5\\cdot 7}\\)",
+    "id": "290_0",
+    "question": "Compute the product \\(P=\\dfrac{4}{3}\\cdot\\dfrac{6}{4}\\cdot\\dfrac{8}{5}\\cdot\\dfrac{10}{6}\\cdot\\dfrac{12}{7}\\cdot\\dfrac{14}{8}\\) by first combining it into a single fraction and canceling common factors to express \\(P\\) as a simpler exact fraction."
+  },
+  {
+    "solution": "Factor each term in the numerator: \\(10=2\\cdot 5\\), \\(12=3\\cdot 2\\cdot 2\\), \\(14=2\\cdot 7\\). Then \\[\\frac{10\\cdot 12\\cdot 14}{3\\cdot 5\\cdot 7}=\\frac{(2\\cdot 5)\\cdot(3\\cdot 2\\cdot 2)\\cdot(2\\cdot 7)}{3\\cdot 5\\cdot 7}.\\] Cancel common factors \\(5\\), \\(3\\), and \\(7\\) from numerator and denominator to obtain \\[\\frac{2\\cdot 2\\cdot 2\\cdot 2}{1}=16.\\]",
+    "answer": "16",
+    "id": "290_1",
+    "question": "Evaluate the exact value of the fraction \\(\\dfrac{10\\cdot 12\\cdot 14}{3\\cdot 5\\cdot 7}\\) by factoring and canceling."
+  },
+  {
+    "solution": "Use the conversion $1\\text{ hr} = 60\\text{ min}$. Thus, $1\\text{ hr }15\\text{ min} = 60 + 15 = 75\\text{ min}$.",
+    "answer": "75",
+    "id": "291_0",
+    "question": "Convert 1 hour 15 minutes into minutes."
+  },
+  {
+    "solution": "Use the conversion $1\\text{ hr} = 60\\text{ min}$. Thus, $1\\text{ hr }30\\text{ min} = 60 + 30 = 90\\text{ min}$.",
+    "answer": "90",
+    "id": "291_1",
+    "question": "Convert 1 hour 30 minutes into minutes."
+  },
+  {
+    "solution": "First convert durations to minutes: $1\\text{ hr }15\\text{ min} = 75\\text{ min}$ and $1\\text{ hr }30\\text{ min} = 90\\text{ min}$. Total over 5 days at $75\\text{ min}$: $5\\times 75 = 375$. Total over 3 days at $90\\text{ min}$: $3\\times 90 = 270$. Sum: $375 + 270 = 645$.",
+    "answer": "645",
+    "id": "291_2",
+    "question": "Gage skated for $1\\text{ hr }15\\text{ min}$ each day for 5 days and $1\\text{ hr }30\\text{ min}$ each day for 3 days. Compute the total number of minutes skated over these 8 days."
+  },
+  {
+    "solution": "If the average is $85$ minutes per day over $9$ days, the total required minutes is $85\\times 9 = 765$.",
+    "answer": "765",
+    "id": "291_3",
+    "question": "To average $85$ minutes per day over $9$ days, what is the total number of minutes required?"
+  },
+  {
+    "solution": "Let $x$ be the required minutes on the ninth day. The total needed is $765$, and the total already skated is $645$. Thus, $x = 765 - 645 = 120$.",
+    "answer": "120",
+    "id": "291_4",
+    "question": "Gage has skated a total of $645$ minutes over the first 8 days. To average $85$ minutes per day over 9 days (requiring a total of $765$ minutes), how many minutes must he skate on the ninth day?"
+  },
+  {
+    "solution": "The total value in dollars is $0.10n$. The condition \"strictly more than $\\$1.00$ but strictly less than $\\$10.00$\" translates to the inequality $1 < 0.10n < 10$. Multiply all parts by $10$ to clear the decimal: $10 < n < 100$. Since $n$ is an integer (number of dimes), this means $n \\in \\{11,12,\\dots,99\\}$.",
+    "answer": "10 < n < 100",
+    "id": "292_0",
+    "question": "Let $n$ be the number of dimes Natasha has. Each dime is worth $\\$0.10$. If the total value is strictly more than $\\$1.00$ but strictly less than $\\$10.00$, derive the inequality that $n$ must satisfy."
+  },
+  {
+    "solution": "The conditions are $n \\equiv 1 \\pmod{3}$, $n \\equiv 1 \\pmod{4}$, and $n \\equiv 1 \\pmod{5}$. A number that is congruent to $1$ modulo each of $3$, $4$, and $5$ is congruent to $1$ modulo their least common multiple. Compute the least common multiple: $3 = 3$, $4 = 2^2$, $5 = 5$, so $\\mathrm{lcm}(3,4,5) = 2^2\\cdot 3\\cdot 5 = 60$. Therefore, the three congruences are equivalent to the single congruence $n \\equiv 1 \\pmod{60}$.",
+    "answer": "n \\equiv 1 \\pmod{60}",
+    "id": "292_1",
+    "question": "Let $n$ be a positive integer. If, when $n$ objects are grouped into stacks of $3$, $4$, or $5$, there is always $1$ object left over, express this as a single congruence modulo $m$."
+  },
+  {
+    "solution": "From $n \\equiv 1 \\pmod{60}$, write $n = 60k + 1$ for some integer $k$. Impose the inequality: $10 < 60k + 1 < 100$. Subtract $1$ from all parts: $9 < 60k < 99$. Divide by $60$: $0.15 < k < 1.65$. Since $k$ must be an integer, $k = 1$. Thus $n = 60\\cdot 1 + 1 = 61$. Verification: $61 \\equiv 1 \\pmod{3}$, $61 \\equiv 1 \\pmod{4}$, $61 \\equiv 1 \\pmod{5}$, and $10 < 61 < 100$.",
+    "answer": "61",
+    "id": "292_2",
+    "question": "Find the integer $n$ such that $10 < n < 100$ and $n \\equiv 1 \\pmod{60}$."
+  },
+  {
+    "solution": "Compute the square: $\\omega^2 = (1 - 5i)^2$. Expand using $(a - b)^2 = a^2 - 2ab + b^2$: $(1 - 5i)^2 = 1 - 10i + 25i^2$. Since $i^2 = -1$, we have $25i^2 = 25(-1) = -25$. Therefore, $\\omega^2 = 1 - 10i - 25 = -24 - 10i$.",
+    "answer": "-24 - 10i",
+    "id": "293_0",
+    "question": "Let $\\omega$ be the complex number $\\omega = 1 - 5i$, where $i$ denotes the imaginary unit with $i^2 = -1$. Compute $\\omega^2$ and express the result in the form $a + bi$ with real numbers $a$ and $b$."
+  },
+  {
+    "solution": "First compute $\\omega^2$: $(1 - 5i)^2 = 1 - 10i + 25i^2 = 1 - 10i - 25 = -24 - 10i$. Then compute each term: $2\\omega^2 = 2(-24 - 10i) = -48 - 20i$, and $-4\\omega = -4(1 - 5i) = -4 + 20i$. Now sum: $z = (2\\omega^2) + (-4\\omega) - 30 = (-48 - 20i) + (-4 + 20i) - 30 = (-48 - 4 - 30) + (-20i + 20i) = -82 + 0i = -82$.",
+    "answer": "-82",
+    "id": "293_1",
+    "question": "Let $\\omega = 1 - 5i$, where $i^2 = -1$. Compute $z = 2\\omega^2 - 4\\omega - 30$ and simplify $z$ to the form $a + bi$ with real numbers $a$ and $b$."
+  },
+  {
+    "solution": "Let $E = 2(1 - 5i)^2 - 4(1 - 5i) - 30$. First compute $(1 - 5i)^2 = 1 - 10i + 25i^2 = 1 - 10i - 25 = -24 - 10i$. Then $E = 2(-24 - 10i) - 4(1 - 5i) - 30 = (-48 - 20i) + (-4 + 20i) - 30 = -82$. Since $E$ is the real number $-82$, its modulus is $|E| = |-82| = 82$. Equivalently, using the formula $|a + bi| = \\sqrt{a^2 + b^2}$ with $a = -82$ and $b = 0$, we get $\\sqrt{(-82)^2 + 0^2} = 82$.",
+    "answer": "82",
+    "id": "293_2",
+    "question": "Let $i$ be the imaginary unit satisfying $i^2 = -1$. Evaluate the modulus $\\left|2(1 - 5i)^2 - 4(1 - 5i) - 30\\right|$. Recall that for a complex number $a + bi$, its modulus is $|a + bi| = \\sqrt{a^2 + b^2}$."
+  },
+  {
+    "solution": "The word is \"MADAM\", which consists of the letters $M, A, D, A, M$. Counting these letters gives a total of $5$ letters. Therefore, the total number of letters is $n = 5$.",
+    "answer": "5",
+    "id": "294_0",
+    "question": "Consider the word \"MADAM\". How many letters does it contain in total?"
+  },
+  {
+    "solution": "Compute each factorial: $2! = 2$, $2! = 2$, and $1! = 1$. Then multiply: $2! \\cdot 2! \\cdot 1! = 2 \\cdot 2 \\cdot 1 = 4$.",
+    "answer": "4",
+    "id": "294_1",
+    "question": "In the word \"MADAM\", the letters have multiplicities: $M$ appears $2$ times, $A$ appears $2$ times, and $D$ appears $1$ time. Compute the product of the factorials of these multiplicities, i.e., $2! \\cdot 2! \\cdot 1!$."
+  },
+  {
+    "solution": "The number of distinct permutations of a multiset with $n$ items and multiplicities $k_1, k_2, \\dots, k_r$ is given by $\\dfrac{n!}{k_1!\\,k_2!\\cdots k_r!}$. Here, $n = 5$ and the multiplicities are $(2,2,1)$. Compute the numerator: $5! = 120$. Compute the denominator: $2!\\cdot 2!\\cdot 1! = 2\\cdot 2\\cdot 1 = 4$. Therefore, the number of distinct arrangements is $\\dfrac{5!}{2!\\,2!\\,1!} = \\dfrac{120}{4} = 30$.",
+    "answer": "30",
+    "id": "294_2",
+    "question": "Using the multinomial formula, determine the number of distinct arrangements of the letters in the word \"MADAM\". The word has $n = 5$ letters with multiplicities $M:2$, $A:2$, and $D:1$. Compute $\\frac{5!}{2!\\,2!\\,1!}$."
+  },
+  {
+    "solution": "From $y + \\frac{1}{x} = \\frac{5}{12}$, solve for $y$: \\[ y = \\frac{5}{12} - \\frac{1}{x}, \\quad x \\ne 0. \\] Then \\[ \\frac{1}{y} = \\frac{1}{\\frac{5}{12} - \\frac{1}{x}} = \\frac{1}{\\frac{5x - 12}{12x}} = \\frac{12x}{5x - 12}, \\quad 5x - 12 \\ne 0. \\] Substitute into $x + \\frac{1}{y} = 10$: \\[ x + \\frac{12x}{5x - 12} = 10. \\] Multiply both sides by $5x - 12$: \\[ x(5x - 12) + 12x = 10(5x - 12). \\] Expand and simplify: \\[ 5x^2 - 12x + 12x = 50x - 120 \\implies 5x^2 = 50x - 120. \\] Move all terms to one side and divide by $5$: \\[ 5x^2 - 50x + 120 = 0 \\implies x^2 - 10x + 24 = 0. \\] Note: If $5x - 12 = 0$, then $x = \\tfrac{12}{5}$, which yields $y = \\tfrac{5}{12} - \\tfrac{1}{x} = 0$, violating $y \\ne 0$, so no solution is lost.",
+    "answer": "x^2 - 10x + 24 = 0",
+    "id": "295_0",
+    "question": "Let $x$ and $y$ be nonzero real numbers satisfying the system $x + \\frac{1}{y} = 10$ and $y + \\frac{1}{x} = \\frac{5}{12}$. Eliminate $y$ to obtain a single polynomial equation in $x$ in standard form."
+  },
+  {
+    "solution": "Factor the quadratic: \\[ x^2 - 10x + 24 = (x - 4)(x - 6) = 0. \\] Therefore, the real solutions are \\[ x = 4 \\quad \\text{or} \\quad x = 6. \\]",
+    "answer": "4, 6",
+    "id": "295_1",
+    "question": "Solve the quadratic equation $x^2 - 10x + 24 = 0$ over the real numbers."
+  },
+  {
+    "solution": "Using anti-commutativity with $\\mathbf{a} = \\mathbf{b} = \\mathbf{u}$, we have $\\mathbf{u} \\times \\mathbf{u} = - (\\mathbf{u} \\times \\mathbf{u})$. Adding $\\mathbf{u} \\times \\mathbf{u}$ to both sides gives $2(\\mathbf{u} \\times \\mathbf{u}) = \\mathbf{0}$. Since $2 \\neq 0$ in $\\mathbb{R}$, it follows that $\\mathbf{u} \\times \\mathbf{u} = \\mathbf{0}$.",
+    "answer": "\\mathbf{0}",
+    "id": "296_0",
+    "question": "In the three-dimensional real vector space $\\mathbb{R}^3$, the cross product $\\times$ satisfies anti-commutativity: for any vectors $\\mathbf{a}, \\mathbf{b} \\in \\mathbb{R}^3$, $\\mathbf{a} \\times \\mathbf{b} = - (\\mathbf{b} \\times \\mathbf{a})$. Show that for any vector $\\mathbf{u} \\in \\mathbb{R}^3$, $\\mathbf{u} \\times \\mathbf{u} = \\mathbf{0}$."
+  },
+  {
+    "solution": "Use bilinearity of the cross product: $(\\mathbf{v} + \\mathbf{w}) \\times (\\mathbf{v} + \\mathbf{w}) = \\mathbf{v} \\times \\mathbf{v} + \\mathbf{v} \\times \\mathbf{w} + \\mathbf{w} \\times \\mathbf{v} + \\mathbf{w} \\times \\mathbf{w}$. By anti-commutativity, $\\mathbf{w} \\times \\mathbf{v} = - (\\mathbf{v} \\times \\mathbf{w})$. Also, by anti-commutativity with equal vectors (as shown by $\\mathbf{a} \\times \\mathbf{a} = - (\\mathbf{a} \\times \\mathbf{a}) \\implies 2(\\mathbf{a} \\times \\mathbf{a}) = \\mathbf{0}$), we have $\\mathbf{v} \\times \\mathbf{v} = \\mathbf{0}$ and $\\mathbf{w} \\times \\mathbf{w} = \\mathbf{0}$. Therefore, $(\\mathbf{v} + \\mathbf{w}) \\times (\\mathbf{v} + \\mathbf{w}) = \\mathbf{0} + \\begin{pmatrix} 5 \\\\ -2 \\\\ 4 \\end{pmatrix} - \\begin{pmatrix} 5 \\\\ -2 \\\\ 4 \\end{pmatrix} + \\mathbf{0} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}$.",
+    "answer": "\\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}",
+    "id": "296_1",
+    "question": "Let $\\mathbf{v}, \\mathbf{w} \\in \\mathbb{R}^3$ satisfy $\\mathbf{v} \\times \\mathbf{w} = \\begin{pmatrix} 5 \\\\ -2 \\\\ 4 \\end{pmatrix}$. Compute $(\\mathbf{v} + \\mathbf{w}) \\times (\\mathbf{v} + \\mathbf{w})$."
+  },
+  {
+    "solution": "The area of a parallelogram equals base times height. Choose the side of length $a$ as the base. The height corresponding to this base is the component of the side of length $b$ perpendicular to the base, which is $b\\sin\\theta$. Therefore, the area is $A = a \\times (b\\sin\\theta) = ab\\sin\\theta$. This is symmetric if we choose $b$ as the base, leading to the same expression.",
+    "answer": "ab\\sin\\theta",
+    "id": "297_0",
+    "question": "For a parallelogram with two consecutive side lengths $a$ and $b$, and the included angle between them equal to $\\theta$ (with $0<\\theta<\\pi$), express the area $A$ of the parallelogram in terms of $a$, $b$, and $\\theta$."
+  },
+  {
+    "solution": "Use the identity $\\sin(180^{\\circ}-x)=\\sin x$. Since $120^{\\circ}=180^{\\circ}-60^{\\circ}$, we have $\\sin(120^{\\circ})=\\sin(60^{\\circ})$. The exact value is $\\sin(60^{\\circ})=\\frac{\\sqrt{3}}{2}$. Therefore, $\\sin(120^{\\circ})=\\frac{\\sqrt{3}}{2}$.",
+    "answer": "\\frac{\\sqrt{3}}{2}",
+    "id": "297_1",
+    "question": "Compute $\\sin(120^{\\circ})$ in simplest radical form."
+  },
+  {
+    "solution": "Use the area formula for a parallelogram with consecutive sides $a$ and $b$ and included angle $\\theta$: $A=ab\\sin\\theta$. Here, $a=8$, $b=15$, and $\\theta=120^{\\circ}$. Compute: $A=8\\cdot 15\\cdot \\sin(120^{\\circ})=120\\cdot \\frac{\\sqrt{3}}{2}=60\\sqrt{3}$.",
+    "answer": "60\\sqrt{3}",
+    "id": "297_2",
+    "question": "A parallelogram has two consecutive sides of lengths $8$ inches and $15$ inches, and the included angle between them is $120^{\\circ}$. Find its area in simplest radical form."
+  },
+  {
+    "solution": "Let the total surface area be $1$. The statement implies the land fraction is one quarter of the total. Thus, the land fraction is $L = \\frac{1}{4} \\cdot 1 = \\frac{1}{4}$.",
+    "answer": "1/4",
+    "id": "298_0",
+    "question": "Assume the Earth's total surface area is normalized to 1. If only one quarter of the Earth's surface is not covered by bodies of water, what fraction of the Earth's surface is land?"
+  },
+  {
+    "solution": "Let $L = \\frac{1}{4}$ be the land fraction. If only half of the land is inhabitable, the inhabitable fraction is $H = \\frac{1}{2} \\cdot L = \\frac{1}{2} \\cdot \\frac{1}{4} = \\frac{1 \\cdot 1}{2 \\cdot 4} = \\frac{1}{8}$.",
+    "answer": "1/8",
+    "id": "298_1",
+    "question": "Given that the fraction of the Earth's surface that is land is $\\frac{1}{4}$, and only one half of that land is inhabitable for humans, what fraction of the Earth's total surface is inhabitable?"
+  },
+  {
+    "solution": "For a palindrome, the digits must satisfy the symmetry condition $d_i = d_{8-i}$ for $i=1,2,3,4$. Concretely, this gives the equalities $d_1 = d_7$, $d_2 = d_6$, $d_3 = d_5$, while $d_4$ is the central digit and can be chosen freely. Therefore, the independent (freely choosable) positions are $d_1, d_2, d_3, d_4$, totaling $4$ independent positions.",
+    "answer": "4",
+    "id": "299_0",
+    "question": "A seven-digit integer is called a palindrome if its digits read the same forwards and backwards. Let its digits be labeled as $d_1 d_2 d_3 d_4 d_5 d_6 d_7$. How many independent digit positions (free choices) are there, i.e., how many of $d_1,\\ldots,d_7$ can be chosen arbitrarily before the palindrome condition forces the rest?"
+  },
+  {
+    "solution": "Each independent digit must be selected from the allowed set $\\{7,8,9\\}$. This set has exactly $3$ elements. Therefore, any single independently chosen digit has $3$ possible values.",
+    "answer": "3",
+    "id": "299_1",
+    "question": "When forming a seven-digit palindrome using only the digits $\\{7,8,9\\}$, how many possible values are there for any single independently chosen digit (for example, any of $d_1, d_2, d_3,$ or $d_4$)?"
+  },
+  {
+    "solution": "By the multiplication principle, the total number of palindromes equals the product of choices for each independent position. With $4$ independent positions and $3$ choices for each, the total is $3\\times 3\\times 3\\times 3 = 3^4$. Evaluating, $3^2 = 9$ and $3^4 = 9\\times 9 = 81$. Hence, there are $81$ such palindromes.",
+    "answer": "81",
+    "id": "299_2",
+    "question": "Given that a seven-digit palindrome has $4$ independent digit positions and that each independent position can be filled with any of the $3$ digits in $\\{7,8,9\\}$, compute the total number of positive seven-digit palindromic integers that can be formed using only the digits $7,8,9$."
+  }
+]
