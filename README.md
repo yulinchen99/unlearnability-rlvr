@@ -2,11 +2,7 @@
 
 Code release for the ICML 2026 paper: "The Unlearnability Phenomenon in RLVR for Language Models"
 
-A substantial subset of "hard" examples in RLVR receive correct rollouts during
-GRPO training but show no improvement in success rate. This repo lets you reproduce
-the identification of these *unlearnable* examples, the hypothesis-elimination
-experiments that rule out optimization fixes, and the gradient-similarity and
-data-augmentation analyses.
+> **TL;DR** A substantial fraction of "hard" prompts in RLVR receive correct rollouts during GRPO training yet show no improvement in pass rate. We call these *unlearnable* examples and show is't likely fundamental representation issue with gradient analysis. 
 
 The walkthrough below reproduces the **Qwen2.5-0.5B + MATH levels 1–4** configuration.
 
@@ -200,7 +196,7 @@ JSONL ready for rollouts at
 We include the generated augment data used in our experiment in `./example_data`.
 
 
-### 4. Hypothesis-elimination experiments
+### 4. Hypothesis-elimination Experiments
 
 Section 4 in the paper.
 
