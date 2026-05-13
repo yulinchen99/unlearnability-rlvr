@@ -2,17 +2,17 @@
 
 Code release for the ICML 2026 paper: "The Unlearnability Phenomenon in RLVR for Language Models"
 
-> **TL;DR** A substantial fraction of "hard" prompts in RLVR receive correct rollouts during GRPO training yet show no improvement in pass rate. We call these *unlearnable* examples and show is't likely fundamental representation issue with gradient analysis. 
+> **TL;DR** A substantial fraction of "hard" prompts in RLVR receive correct rollouts during GRPO training yet show no improvement in pass rate. We call these *unlearnable* examples and show they are gradient outliers that optimization techniques cannot fix, suggesting a representation flaw in LLMs.
 
 The walkthrough below reproduces the **Qwen2.5-0.5B + MATH levels 1–4** configuration.
 
-## Hardware & dependencies
+## Hardware & Dependencies
 
 - **GPUs:** ≥2 GPUs for training (the default driver allocates `--num-gpus 4`),
   ≥1 for inference / gradient analysis.
 - **Python env:** `pip install -r requirements.txt`
 
-## Environment variables
+## Environment Variables
 
 | Variable | Used by | Default | Notes |
 |---|---|---|---|
@@ -45,7 +45,7 @@ The walkthrough below reproduces the **Qwen2.5-0.5B + MATH levels 1–4** config
 ├── classification/                    unlearnability partition
 ├── data_augmentation/                 similar-problem + sub-problem generation
 ├── gradient_analysis/                 per-prompt GRPO gradients + cosine similarity
-├── data/                              shipped paper artifacts (filtered augmentations)
+├── example_data/                     shipped paper artifacts (filtered augmentations, example ids, reward stats)
 └── common/                            shared utilities (math verifier, OpenAI client)
 ```
 
@@ -113,7 +113,7 @@ Writes `example_ids/qwen_0.5b_math_level1to4_{unlearnable,learnable,no_reward,ea
 After classification, sample 100 prompts from each of `easy`, `learnable`,
 and `unlearnable`, then compute pairwise GRPO-gradient cosine similarity at
 the initial checkpoint.
-If you skip previous step, you can simply use data in [`example_data/example_ids`](./example_data/example_ids)
+If you skip the previous step, you can simply use data in [`example_data/example_ids`](./example_data/example_ids)
 
 **(1) Sample prompts and generate rollouts**
 
@@ -182,8 +182,8 @@ MODE=augmented \
 bash data_augmentation/pipeline.sh
 
 # MODE
-# augmented: similar problems
-# decomposition: same prompts, sub-problems instead of similar problems.
+# augmented:  similar problems
+# decomposed: same prompts, sub-problems instead of similar problems
 MODE=decomposed bash data_augmentation/pipeline.sh
 ```
 
