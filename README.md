@@ -248,4 +248,15 @@ training data, and learning rate change.
 
 
 ## Citation
+```bibtex
+@misc{chen2026unlearnabilityphenomenonrlvrlanguage,
+      title={The Unlearnability Phenomenon in RLVR for Language Models}, 
+      author={Yulin Chen and He He and Chen Zhao},
+      year={2026},
+      eprint={2605.16787},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.16787}, 
+}
+```
 
